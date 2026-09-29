@@ -56,8 +56,38 @@ export interface NavbarData {
   cta: NavbarCta;
 }
 
+// ─── Banner Types ──────────────────────────────────────────────────────────────
+
+export interface BannerIconItem {
+  id: string;
+  /** Name of the react-icons icon component (e.g. "LuLeaf") */
+  icon: string;
+  label: string;
+}
+
+export interface BannerLink {
+  label: string;
+  href: string;
+}
+
+export interface BannerData {
+  image: { src: string; alt: string };
+  eyebrow: string;
+  titleLine1: string;
+  titleLine2: string;
+  description: string;
+  features: BannerIconItem[];
+  primaryCta: BannerLink;
+  secondaryCta: BannerLink;
+  highlights: BannerIconItem[];
+  tagText: string;
+  bottomFeatures: BannerIconItem[];
+  tagline: string;
+}
+
 export interface AppData {
   navbar: NavbarData;
+  banner: BannerData;
 }
 
 // ─── Exports ───────────────────────────────────────────────────────────────────

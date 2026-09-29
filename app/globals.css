@@ -4,6 +4,26 @@
   --color-teal-dark: #0a4b56;
   --color-teal-light: #c2e8e5;
   --color-gold: #ffbe30;
+  --color-navy: #0b2d4a;
+  --color-teal: #14808f;
+}
+
+/*
+ * Banner sizes are authored against a 1024x408 design.
+ * --s is one design pixel of the background image (tracks width).
+ * --u is one design pixel for the text; it shrinks so the banner plus the
+ * 126px desktop navbar fits in the viewport height.
+ */
+.hero-banner {
+  --s: 0.72px;
+  --u: 0.72px;
+}
+@media (min-width: 64rem) {
+  .hero-banner {
+    --s: calc(100cqw / 1024);
+    --u: max(calc(var(--s) * 0.9), min(var(--s), calc((100svh - 126px) / 408)));
+    height: calc(408 * var(--u));
+  }
 }
 
 @layer base {

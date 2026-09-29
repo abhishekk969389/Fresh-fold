@@ -109,5 +109,35 @@
       "href": "/booking",
       "icon": "BsCalendarCheck"
     }
+  },
+  "banner": {
+    "image": {
+      "src": "/banner.png",
+      "alt": "Modern laundry room with washing machines and a basket of fresh towels"
+    },
+    "eyebrow": "Premium Laundry & Dry Cleaning Service",
+    "titleLine1": "Fresh Clothes",
+    "titleLine2": "Happier You",
+    "description": "Professional laundry and dry cleaning care for a cleaner, fresher and brighter tomorrow.",
+    "features": [
+      { "id": "eco", "icon": "FaLeaf", "label": "Eco-Friendly Cleaning" },
+      { "id": "fabric", "icon": "LuShirt", "label": "Expert Fabric Care" },
+      { "id": "pickup", "icon": "LuTruck", "label": "Free Pickup & Delivery" },
+      { "id": "stain", "icon": "LuShieldCheck", "label": "Stain Removal Experts" }
+    ],
+    "primaryCta": { "label": "Schedule a Pickup", "href": "/booking" },
+    "secondaryCta": { "label": "Watch Our Story", "href": "/about" },
+    "highlights": [
+      { "id": "cleaner", "icon": "LuLeaf", "label": "Cleaner Clothes" },
+      { "id": "healthier", "icon": "LuHeart", "label": "Healthier Living" },
+      { "id": "brighter", "icon": "LuSmile", "label": "Brighter Tomorrows" }
+    ],
+    "tagText": "Care for a Better Tomorrow",
+    "bottomFeatures": [
+      { "id": "quality", "icon": "LuSparkles", "label": "Quality Cleaning" },
+      { "id": "safe", "icon": "LuLeaf", "label": "Safe for All Fabrics" },
+      { "id": "trusted", "icon": "LuUsers", "label": "Trusted by Thousands" }
+    ],
+    "tagline": "Because You Deserve Fresh"
   }
 }
