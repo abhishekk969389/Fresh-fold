@@ -1,0 +1,113 @@
+{
+  "navbar": {
+    "logo": {
+      "src": "/logo-main.png",
+      "alt": "FreshFold Laundry & Dry Cleaning",
+      "width": 160,
+      "height": 64
+    },
+    "topBar": {
+      "info": [
+        {
+          "id": "hours",
+          "icon": "FiClock",
+          "primary": "8:00 am - 5:00 pm",
+          "secondary": "Sat - Sun"
+        },
+        {
+          "id": "phone",
+          "icon": "FiPhone",
+          "primary": "+117 875 74885",
+          "secondary": "Call Us Anytime"
+        },
+        {
+          "id": "location",
+          "icon": "FiMapPin",
+          "primary": "Syracuse, Connecticut - 17A",
+          "secondary": "Our Location"
+        }
+      ],
+      "socials": [
+        {
+          "id": "facebook",
+          "icon": "FaFacebookF",
+          "href": "https://facebook.com",
+          "label": "Facebook"
+        },
+        {
+          "id": "twitter",
+          "icon": "FaTwitter",
+          "href": "https://twitter.com",
+          "label": "Twitter"
+        },
+        {
+          "id": "linkedin",
+          "icon": "FaLinkedinIn",
+          "href": "https://linkedin.com",
+          "label": "LinkedIn"
+        },
+        {
+          "id": "instagram",
+          "icon": "FaInstagram",
+          "href": "https://instagram.com",
+          "label": "Instagram"
+        }
+      ]
+    },
+    "navLinks": [
+      {
+        "id": "home",
+        "label": "Home",
+        "href": "/",
+        "hasDropdown": false
+      },
+      {
+        "id": "about",
+        "label": "About",
+        "href": "/about",
+        "hasDropdown": false
+      },
+      {
+        "id": "services",
+        "label": "Services",
+        "href": "/services",
+        "hasDropdown": true,
+        "dropdown": [
+          { "id": "laundry", "label": "Laundry", "href": "/services/laundry" },
+          { "id": "dry-cleaning", "label": "Dry Cleaning", "href": "/services/dry-cleaning" },
+          { "id": "ironing", "label": "Ironing", "href": "/services/ironing" },
+          { "id": "stain-removal", "label": "Stain Removal", "href": "/services/stain-removal" }
+        ]
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "href": "/pricing",
+        "hasDropdown": false
+      },
+      {
+        "id": "gallery",
+        "label": "Gallery",
+        "href": "/gallery",
+        "hasDropdown": false
+      },
+      {
+        "id": "blog",
+        "label": "Blog",
+        "href": "/blog",
+        "hasDropdown": false
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "href": "/contact",
+        "hasDropdown": false
+      }
+    ],
+    "cta": {
+      "label": "Book a Pickup",
+      "href": "/booking",
+      "icon": "BsCalendarCheck"
+    }
+  }
+}
