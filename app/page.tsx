@@ -1,11 +1,25 @@
-import Navbar from "@/app/components/homelayout/navbar";
 import Banner from "@/app/components/homelayout/banner";
+import About from "@/app/components/homelayout/about";
+import Services from "@/app/components/homelayout/services";
+import Works from "@/app/components/homelayout/works";
+import WhyChoose from "@/app/components/homelayout/whychoose";
+import Testimonial from "@/app/components/homelayout/testimonial";
+import Counting from "@/app/components/homelayout/counting";
+import Blog from "@/app/components/homelayout/blog";
+import CTA from "@/app/components/ui/cta";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
       <Banner />
+      <About />
+      <Services />
+      <Works />
+      <WhyChoose />
+      <Testimonial />
+      <Counting />
+      <Blog />
+      <CTA />
     </>
   );
 }

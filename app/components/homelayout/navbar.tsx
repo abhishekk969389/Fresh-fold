@@ -75,11 +75,11 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
-  const desktopClasses = `relative flex items-center gap-1 px-3 xl:px-4 py-2.5 text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] font-bold text-teal-dark transition-colors whitespace-nowrap group`;
+  const desktopClasses = `relative flex items-center gap-1 px-2.5 xl:px-3 py-2.5 text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] font-bold text-teal-dark transition-colors whitespace-nowrap group`;
   const mobileClasses = `flex items-center justify-between w-full px-3.5 py-3 text-[15px] font-semibold text-teal-dark rounded-md transition-colors hover:bg-teal-light hover:text-teal-dark`;
   
   const underline = (
-    <span className={`absolute bottom-0.5 left-3 right-3 xl:left-4 xl:right-4 h-[2.5px] bg-teal-dark origin-center transition-transform duration-200 ${link.id === 'home' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
+    <span className={`absolute bottom-0.5 left-2 right-2 xl:left-3 xl:right-3 h-[2.5px] bg-teal-dark origin-center transition-transform duration-200 ${link.id === 'home' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
   );
 
   if (!link.hasDropdown) {
@@ -94,22 +94,28 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
   }
 
   return (
-    <li ref={ref} className="relative">
-      <button
+    <li ref={ref} className="relative group">
+      <Link
+        href={link.href}
         className={mobile ? mobileClasses : desktopClasses}
-        onClick={() => setOpen((v) => !v)}
-        aria-expanded={open}
+        onClick={(e) => {
+          if (mobile) {
+            e.preventDefault();
+            setOpen((v) => !v);
+          }
+        }}
+        aria-expanded={mobile ? open : undefined}
       >
         {link.label}
         {!mobile && underline}
-        <FiChevronDown className={`text-[16px] shrink-0 transition-transform ${open ? 'rotate-180' : ''}`} />
-      </button>
+        <FiChevronDown className={`text-[16px] shrink-0 transition-transform ${mobile && open ? 'rotate-180' : 'group-hover:rotate-180'}`} />
+      </Link>
 
-      {open && (
-        <ul className={mobile 
-          ? "list-none bg-teal-light rounded-md my-1 ml-3 overflow-hidden" 
-          : "absolute top-[calc(100%+8px)] left-1/2 -translate-x-1/2 min-w-[200px] bg-white rounded-[10px] shadow-[0_8px_32px_rgba(10,75,86,0.12)] border border-teal-light overflow-hidden z-50"
-        }>
+      <div className={mobile 
+        ? `list-none bg-teal-light rounded-md my-1 ml-3 overflow-hidden transition-all duration-300 ${open ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 hidden'}`
+        : `absolute top-full left-1/2 -translate-x-1/2 pt-2 min-w-[200px] z-50 transition-all duration-300 opacity-0 invisible translate-y-2 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0`
+      }>
+        <ul className={mobile ? "list-none" : "bg-white rounded-[10px] shadow-[0_8px_32px_rgba(10,75,86,0.12)] border border-teal-light overflow-hidden list-none"}>
           {link.dropdown?.map((item) => (
             <li key={item.id}>
               <Link
@@ -125,7 +131,7 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
             </li>
           ))}
         </ul>
-      )}
+      </div>
     </li>
   );
 }
@@ -142,18 +148,18 @@ export default function Navbar() {
       {/* ══════════════════════════════════════════════════════
           DESKTOP LAYOUT
       ══════════════════════════════════════════════════════ */}
-      <div className="hidden lg:flex items-stretch w-full min-h-[126px] max-w-[1440px] mx-auto">
+      <div className="hidden lg:flex items-stretch w-full min-h-[126px] max-w-[1360px] mx-auto">
 
         {/* ── Logo column ── */}
-        <div className="flex-[0_0_250px] xl:flex-[0_0_300px] w-[250px] xl:w-[300px] bg-white flex items-center justify-center px-2 relative z-10">
-          <Link href="/" className="flex items-center w-full justify-center">
+        <div className="flex-[0_0_280px] xl:flex-[0_0_350px] w-[280px] xl:w-[350px] bg-white flex items-center justify-start pl-6 xl:pl-12 pr-4 relative z-10">
+          <Link href="/" className="flex items-center">
             <Image
               src={logo.src}
               alt={logo.alt}
               width={logo.width}
               height={logo.height}
               priority
-              className="object-contain w-[210px] xl:w-[270px] h-auto max-h-[120px]"
+              className="object-contain w-[240px] xl:w-[300px] h-auto max-h-[120px]"
             />
           </Link>
         </div>
@@ -161,9 +167,23 @@ export default function Navbar() {
         {/* ── Right column ── */}
         <div className="flex-1 flex flex-col min-w-0">
 
-          {/* Top bar row */}
-          <div className="flex items-stretch h-[56px] bg-white relative">
-            <div className="flex-1 flex items-center bg-teal-dark rounded-[0_0_56px_56px] px-5 relative z-20">
+      {/* Top bar row */}
+          <div className="flex items-stretch h-[56px] relative overflow-visible">
+            
+            {/* Dark teal center strip with dual S-curves */}
+            <div className="relative flex-1 flex items-center justify-center bg-teal-dark px-6 z-20">
+              
+              {/* Left inverted curve transition (vertically flipped) */}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 48 56"
+                className="absolute right-full top-0 h-full w-[48px] text-teal-dark pointer-events-none fill-current"
+                preserveAspectRatio="none"
+              >
+                <path d="M48,56 C20,56 28,0 0,0 L48,0 Z" />
+              </svg>
+
+              {/* Info Items */}
               <div className="flex items-center justify-center gap-6 xl:gap-[32px] w-full">
                 {topBar.info.map((item, idx) => (
                   <React.Fragment key={item.id}>
@@ -174,21 +194,43 @@ export default function Navbar() {
                   </React.Fragment>
                 ))}
               </div>
+
+              {/* Right inverted curve transition (vertically flipped) */}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 48 56"
+                className="absolute left-full top-0 h-full w-[48px] text-teal-dark pointer-events-none fill-current"
+                preserveAspectRatio="none"
+              >
+                <path d="M0,56 C28,56 20,0 48,0 L0,0 Z" />
+              </svg>
             </div>
 
-            <div className="flex items-center bg-teal-light pl-[76px] pr-5 xl:pr-[30px] -ml-[56px] relative z-10">
-              <div className="flex items-center gap-2">
+            {/* Right teal-light background with matching curve */}
+            <div className="relative flex items-center bg-teal-light pl-14 pr-5 xl:pr-[30px] z-10">
+              {/* Curve connecting teal-light to the dark bar (vertically flipped) */}
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 48 56"
+                className="absolute right-full top-0 h-full w-[48px] text-teal-light pointer-events-none fill-current"
+                preserveAspectRatio="none"
+              >
+                <path d="M48,56 C20,56 28,0 0,0 L48,0 Z" />
+              </svg>
+
+              <div className="flex items-center gap-2 relative z-10">
                 {topBar.socials.map((social) => (
                   <SocialButton key={social.id} social={social} />
                 ))}
               </div>
             </div>
+
           </div>
 
           {/* Main bar row */}
           <div className="flex items-center justify-between h-[70px] bg-white pr-5 xl:pr-10 pl-5">
             <nav className="flex-1" aria-label="Main navigation">
-              <ul className="flex items-center justify-center gap-2 xl:gap-4 list-none">
+              <ul className="flex items-center justify-center gap-1 xl:gap-2 list-none">
                 {navLinks.map((link) => (
                   <NavItem key={link.id} link={link} />
                 ))}

@@ -98,12 +98,12 @@ export default function Banner() {
           className="object-cover object-[70%_center] lg:object-bottom"
         />
         <div
-          className="absolute inset-0 bg-linear-to-r from-white/95 via-white/80 to-white/40 lg:from-white/70 lg:via-white/10 lg:via-50% lg:to-transparent"
+          className="absolute inset-0 bg-linear-to-r from-white/95 via-white/80 to-white/40 lg:from-white/10 lg:via-transparent lg:to-transparent"
           aria-hidden="true"
         />
 
         {/* ── Left content ── */}
-        <div className="relative z-10 px-[calc(28*var(--u))] pt-[calc(48*var(--u))] pb-[calc(56*var(--u))] lg:absolute lg:left-[5.8%] lg:bottom-[calc(92*var(--s))] lg:w-[46%] lg:p-0">
+        <div className="relative z-10 px-[calc(28*var(--u))] pt-[calc(48*var(--u))] pb-[calc(56*var(--u))] lg:absolute lg:left-[max(1.5rem,calc(50%-680px+1.5rem))] xl:left-[max(3rem,calc(50%-680px+3rem))] lg:bottom-[calc(75*var(--s))] lg:w-[46%] lg:p-0">
           <p className="inline-flex items-center gap-[calc(12*var(--u))] text-[length:calc(9.5*var(--u))] font-semibold uppercase tracking-[0.28em] text-navy">
             <span className="block w-[calc(22*var(--u))] h-px bg-navy/70 shrink-0" aria-hidden="true" />
             {eyebrow}
@@ -160,7 +160,7 @@ export default function Banner() {
         </div>
 
         {/* ── Bottom wave strip ── */}
-        <ul className="relative z-10 grid grid-cols-3 bg-teal-dark px-3 py-4 list-none lg:flex lg:items-center lg:absolute lg:left-[4.2%] lg:bottom-[calc(18*var(--s))] lg:bg-transparent lg:p-0">
+        <ul className="relative z-10 grid grid-cols-3 bg-teal-dark px-3 py-4 list-none lg:flex lg:items-center lg:absolute lg:left-[max(1.25rem,calc(50%-680px+1.25rem))] lg:bottom-[calc(18*var(--s))] lg:bg-transparent lg:p-0">
           {bottomFeatures.map((item, idx) => (
             <li key={item.id} className="flex items-center justify-center">
               <span className="flex flex-col lg:flex-row items-center gap-1.5 lg:gap-[calc(10*var(--s))] px-2 lg:px-[calc(20*var(--s))] text-center text-white text-[12px] lg:text-[length:calc(10.5*var(--s))] font-medium lg:whitespace-nowrap">
@@ -176,7 +176,7 @@ export default function Banner() {
 
         {/* ── Script tagline ── */}
         <p
-          className={`${script.className} hidden lg:block absolute z-10 right-[2.2%] bottom-[calc(20*var(--s))] -rotate-[8deg] text-right text-white text-[length:calc(22*var(--s))] leading-[1.05]`}
+          className={`${script.className} hidden lg:block absolute z-10 right-[2.2%] bottom-[calc(14*var(--s))] -rotate-[8deg] text-right text-white text-[length:calc(18*var(--s))] leading-[1.05]`}
         >
           {tagline.split(" ").slice(0, 2).join(" ")}
           <br />

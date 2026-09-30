@@ -65,7 +65,12 @@
         "id": "about",
         "label": "About",
         "href": "/about",
-        "hasDropdown": false
+        "hasDropdown": true,
+        "dropdown": [
+          { "id": "about-us", "label": "About Us", "href": "/about" },
+          { "id": "why-choose-us", "label": "Why Choose Us", "href": "/whychoose" },
+          { "id": "mission-vision", "label": "Mission & Vision", "href": "/mission" }
+        ]
       },
       {
         "id": "services",
@@ -139,5 +144,2027 @@
       { "id": "trusted", "icon": "LuUsers", "label": "Trusted by Thousands" }
     ],
     "tagline": "Because You Deserve Fresh"
+  },
+  "footer": {
+    "logo": {
+      "src": "/logo-main.png",
+      "alt": "FreshFold Laundry & Dry Cleaning",
+      "width": 160,
+      "height": 64
+    },
+    "description": "At FreshFold, we provide professional laundry and dry cleaning services with care, convenience and quality you can trust.",
+    "socials": [
+      {
+        "id": "facebook",
+        "icon": "FaFacebookF",
+        "href": "https://facebook.com",
+        "label": "Facebook"
+      },
+      {
+        "id": "instagram",
+        "icon": "FaInstagram",
+        "href": "https://instagram.com",
+        "label": "Instagram"
+      },
+      {
+        "id": "linkedin",
+        "icon": "FaLinkedinIn",
+        "href": "https://linkedin.com",
+        "label": "LinkedIn"
+      },
+      {
+        "id": "youtube",
+        "icon": "FaYoutube",
+        "href": "https://youtube.com",
+        "label": "YouTube"
+      }
+    ],
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About Us", "href": "/about" },
+      { "label": "Our Services", "href": "/services" },
+      { "label": "Award & Certificate", "href": "/award" },
+      { "label": "How it Works", "href": "/works" },
+      { "label": "Testimonials", "href": "/testimonials" },
+      { "label": "Contact Us", "href": "/contact" }
+    ],
+    "ourServices": [
+      { "label": "Wash & Fold", "href": "/services/wash-fold" },
+      { "label": "Dry Cleaning", "href": "/services/dry-cleaning" },
+      { "label": "Steam Ironing", "href": "/services/ironing" },
+      { "label": "Stain Removal", "href": "/services/stain-removal" },
+      { "label": "Premium Care", "href": "/services/premium-care" },
+      { "label": "Pickup & Delivery", "href": "/services/pickup" },
+      { "label": "Corporate Laundry", "href": "/services/corporate" }
+    ],
+    "helpSupport": [
+      { "label": "Our Team", "href": "/team" },
+      { "label": "FAQ", "href": "/faq" },
+      { "label": "Terms & Conditions", "href": "/terms" },
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Refund Policy", "href": "/refund" },
+      { "label": "Sitemap", "href": "/sitemap" },
+      { "label": "Careers", "href": "/careers" }
+    ],
+    "contactInfo": [
+      {
+        "id": "phone",
+        "icon": "FiPhone",
+        "lines": ["+112345678920"]
+      },
+      {
+        "id": "email",
+        "icon": "FiMail",
+        "lines": ["support@freshfold.com"]
+      },
+      {
+        "id": "location",
+        "icon": "FiMapPin",
+        "lines": ["123 Clean Street,", "New York, NY 10001, USA"]
+      },
+      {
+        "id": "hours",
+        "icon": "FiClock",
+        "lines": ["Mon - Sat: 8:00 AM - 8:00 PM", "Sunday: Closed"]
+      }
+    ],
+    "bottomText": "© 2025 FreshFold. All Rights Reserved.",
+    "bottomLinks": [
+      { "label": "Privacy Policy", "href": "/privacy" },
+      { "label": "Terms & Conditions", "href": "/terms" },
+      { "label": "Sitemap", "href": "/sitemap" }
+    ],
+    "sideImage": {
+      "src": "/footer.png",
+      "alt": "Washing machine with fresh towels",
+      "width": 400,
+      "height": 400
+    }
+  },
+  "about": {
+    "tag": "ABOUT US",
+    "titleLine1": "We Have 25 Years Of",
+    "titleLine2": "Experience In This Field",
+    "description1": "At FreshFold, we have been providing professional laundry and dry cleaning services for over 25 years. Our commitment to quality, care, and customer satisfaction has made us a trusted choice for thousands of happy customers.",
+    "description2": "We use advanced cleaning techniques and eco-friendly products to ensure your clothes are fresh, clean, and long-lasting. Whether it's everyday laundry or special care for delicate fabrics, we handle everything with expertise and care.",
+    "features": [
+      "We are Committed",
+      "Expert Cleaning Team",
+      "Highly Rated Cleaning",
+      "Affordable & Reliable"
+    ],
+    "ctaText": "Read More",
+    "ctaLink": "/about",
+    "images": {
+      "main": {
+        "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+        "alt": "Professional laundry worker holding fresh towels"
+      },
+      "small": {
+        "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=400&auto=format&fit=crop",
+        "alt": "Person ironing clothes"
+      }
+    },
+    "satisfactionRate": "95%",
+    "satisfactionText": "Customers Satisfy",
+    "stickerText": ["Clean", "Fresh", "Confident"]
+  },
+  "services": {
+    "tag": "OUR SERVICES",
+    "titleLine1": "Professional",
+    "titleLine2": "Laundry Services",
+    "subtitle": "From everyday laundry to special care, we handle it all with expertise and care.",
+    "tabs": [
+      { "id": "laundry", "icon": "MdLocalLaundryService", "label": "Laundry Service" },
+      { "id": "dry-cleaning", "icon": "GiHanger", "label": "Dry Cleaning" },
+      { "id": "steam-ironing", "icon": "MdIron", "label": "Steam Ironing" },
+      { "id": "shoe-cleaning", "icon": "GiRunningShoe", "label": "Shoe Cleaning" },
+      { "id": "curtain-cleaning", "icon": "GiWindow", "label": "Curtain Cleaning" },
+      { "id": "carpet-cleaning", "icon": "GiRedCarpet", "label": "Carpet Cleaning" },
+      { "id": "bag-cleaning", "icon": "GiBriefcase", "label": "Bag Cleaning" },
+      { "id": "special-care", "icon": "GiSparkles", "label": "Special Care" }
+    ],
+    "activeService": {
+      "tag": "LAUNDRY SERVICE",
+      "titleLine1": "Fresh Clothes,",
+      "titleLine2": "A Brighter You",
+      "description": "Our laundry service is designed to give your everyday clothes the care they deserve. We use premium detergents and advanced cleaning techniques to remove dirt, stains, and odours, keeping your clothes fresh, soft, and long-lasting. Whether it's daily wear, work clothes, or delicate fabrics, we ensure professional cleaning with timely pickup and delivery at your doorstep.",
+      "features": [
+        { "icon": "FaLeaf", "labelLine1": "Eco-Friendly", "labelLine2": "Products" },
+        { "icon": "FaShieldAlt", "labelLine1": "Safe for", "labelLine2": "All Fabrics" },
+        { "icon": "FaMagic", "labelLine1": "Stain Removal", "labelLine2": "Expertise" },
+        { "icon": "FaClock", "labelLine1": "On-Time", "labelLine2": "Delivery" }
+      ],
+      "ctaText": "READ MORE",
+      "ctaLink": "/services/laundry",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=800&auto=format&fit=crop",
+        "alt": "Folded clean clothes in a laundry basket"
+      },
+      "stickerText": ["Clean", "Fresh", "Confident"],
+      "qualityBadge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      }
+    }
+  },
+  "works": {
+    "tag": "HOW IT WORKS",
+    "titleLine1": "Simple Steps for",
+    "titleLine2": "Fresh Clothes",
+    "subtitle": "Clean clothes, delivered to your doorstep — it's that easy!",
+    "leftSticker": ["Laundry", "Made Easy"],
+    "rightSticker": ["Clean", "Fresh", "Confident"],
+    "steps": [
+      {
+        "id": 1,
+        "icon": "FaCalendarCheck",
+        "title": "Book a Pickup",
+        "description": "Choose when and where you want us to collect your laundry."
+      },
+      {
+        "id": 2,
+        "icon": "FaShoppingBasket",
+        "title": "We Collect",
+        "description": "Our team collects your clothes from your doorstep."
+      },
+      {
+        "id": 3,
+        "icon": "MdLocalLaundryService",
+        "title": "Expert Cleaning",
+        "description": "Your clothes are cleaned with care using advanced techniques and premium products."
+      },
+      {
+        "id": 4,
+        "icon": "FaTruck",
+        "title": "We Deliver",
+        "description": "We bring back your freshly cleaned and rejuvenated clothes right to your doorstep."
+      }
+    ]
+  },
+  "whyChoose": {
+    "tag": "WHY CHOOSE US",
+    "titleLine1": "More Than Just Laundry,",
+    "titleLine2": "We Care",
+    "titleLine3": "for",
+    "titleLine4": "Your Everyday",
+    "subtitle": "Experience the perfect blend of quality, convenience and care. We go beyond just cleaning clothes, we bring freshness, comfort and peace of mind to your life.",
+    "featuresLeft": [
+      {
+        "id": "01",
+        "icon": "FaShieldAlt",
+        "title": "Premium Quality",
+        "description": "We use high-quality, fabric-safe products for long-lasting freshness and care."
+      },
+      {
+        "id": "02",
+        "icon": "FaLeaf",
+        "title": "Eco-Friendly Cleaning",
+        "description": "Safe for you, safe for the environment with eco-friendly detergents."
+      },
+      {
+        "id": "03",
+        "icon": "FaStopwatch",
+        "title": "On-Time Service",
+        "description": "Your time matters. We ensure pickup and delivery are always on schedule."
+      }
+    ],
+    "featuresRight": [
+      {
+        "id": "04",
+        "icon": "FaUsers",
+        "title": "Expert Professionals",
+        "description": "Trained and experienced staff handle every fabric with care and precision."
+      },
+      {
+        "id": "05",
+        "icon": "FaCoins",
+        "title": "Affordable Pricing",
+        "description": "Premium laundry service at a price that fits your budget."
+      },
+      {
+        "id": "06",
+        "icon": "FaHeadset",
+        "title": "Dedicated Support",
+        "description": "Friendly customer support team always ready to assist you."
+      }
+    ],
+    "centerImage": {
+      "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+      "alt": "Laundry Basket",
+      "stickerText": ["Fresh", "Clean", "Happy", "Always"],
+      "badge": {
+        "icon": "FaLeaf",
+        "line1": "CLEANER ENVIRONMENT",
+        "line2": "BRIGHTER TOMORROWS"
+      }
+    }
+  },
+  "testimonial": {
+    "tag": "TESTIMONIALS",
+    "titleLine1": "Loved by Our",
+    "titleLine2": "Customers",
+    "subtitle": "Real feedback from happy customers who trust us for clean, fresh and care.",
+    "leftSection": {
+      "tag": "CUSTOMER FEEDBACK",
+      "titleLine1": "Your Satisfaction",
+      "titleLine2": "Drives Us Forward",
+      "description": "We are proud to be a part of your daily life. Here's what our customers have to say about their experience with our laundry services.",
+      "avatars": [
+        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
+      ],
+      "happyCustomersText": "Happy Customers",
+      "happyCustomersCount": "500+"
+    },
+    "reviews": [
+      {
+        "id": "t1",
+        "name": "Aditi Sharma",
+        "location": "Delhi",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+        "text": "Excellent service! My clothes come back fresh, neatly folded and always on time. The pickup and delivery facility makes it super convenient.",
+        "rating": 5
+      },
+      {
+        "id": "t2",
+        "name": "Rahul Mehta",
+        "location": "Mumbai",
+        "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=200&auto=format&fit=crop",
+        "text": "I'm really impressed with the quality and care they provide. Even delicate fabrics are handled perfectly. Highly recommended for anyone looking for reliable laundry service.",
+        "rating": 5
+      },
+      {
+        "id": "t3",
+        "name": "Neha Verma",
+        "location": "Bangalore",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",
+        "text": "Affordable, professional and hassle-free service. My clothes always come back fresh and spotless. The staff is polite and supportive. Great experience every time!",
+        "rating": 5
+      }
+    ]
+  },
+  "counting": {
+    "videoImage": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+    "stats": [
+      {
+        "id": "c1",
+        "icon": "BsTrophy",
+        "number": "500k+",
+        "label": "Awards Win"
+      },
+      {
+        "id": "c2",
+        "icon": "BsClipboardCheck",
+        "number": "815k",
+        "label": "Completed Project"
+      },
+      {
+        "id": "c3",
+        "icon": "BsPeople",
+        "number": "999k+",
+        "label": "Happy Clients"
+      },
+      {
+        "id": "c4",
+        "icon": "BsClipboardData",
+        "number": "550k+",
+        "label": "Finish The Job"
+      }
+    ]
+  },
+  "blog": {
+    "tag": "OUR BLOG",
+    "titleLine1": "Latest News &",
+    "titleLine2": "Helpful Tips",
+    "subtitle": "Explore useful tips, care guides and laundry insights to keep your clothes fresh and long-lasting.",
+    "ctaText": "View All Blogs →",
+    "ctaLink": "/blog",
+    "posts": [
+      {
+        "id": "b1",
+        "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=600&auto=format&fit=crop",
+        "date": { "day": "15", "month": "SEP", "year": "2025" },
+        "category": "CLOTH CARE",
+        "title": "5 Easy Tips to Keep Your Clothes Fresh for Longer",
+        "description": "Discover simple yet effective laundry tips to maintain the freshness, softness and quality of your clothes for a longer time.",
+        "author": {
+          "name": "Anjali Mehta",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
+        },
+        "readTime": "5 Min Read"
+      },
+      {
+        "id": "b2",
+        "image": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=600&auto=format&fit=crop",
+        "date": { "day": "12", "month": "SEP", "year": "2025" },
+        "category": "LAUNDRY GUIDE",
+        "title": "How to Choose the Right Wash Cycle for Different Fabrics",
+        "description": "Not all fabrics are the same. Learn which wash cycle works best for your clothes and how to prevent damage while washing.",
+        "author": {
+          "name": "Rohit Verma",
+          "avatar": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&auto=format&fit=crop"
+        },
+        "readTime": "4 Min Read"
+      },
+      {
+        "id": "b3",
+        "image": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=600&auto=format&fit=crop",
+        "date": { "day": "10", "month": "SEP", "year": "2025" },
+        "category": "LAUNDRY TIPS",
+        "title": "Daily Laundry Habits for a Cleaner and Healthier Lifestyle",
+        "description": "A clean wardrobe means a healthier you. Here are some daily laundry habits that make a big difference in your lifestyle.",
+        "author": {
+          "name": "Neha Kapoor",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop"
+        },
+        "readTime": "6 Min Read"
+      }
+    ]
+  },
+  "cta": {
+    "titleStart": "Ready for ",
+    "titleHighlight": "Fresh & Clean ",
+    "titleEnd": "Clothes?",
+    "description": "Schedule your laundry service today and enjoy hassle-free cleaning with on-time pickup and delivery.",
+    "buttonText": "Book a Pickup",
+    "buttonLink": "/booking",
+    "buttonIcon": "BsCalendarCheck",
+    "mainIcon": "MdLocalLaundryService"
+  },
+  "missionVision": {
+    "mission": {
+      "tag": "OUR",
+      "title": "Mission",
+      "subtitle": "CLEANER CLOTHES HAPPIER LIVES",
+      "description": "Our mission is to provide high-quality, reliable and affordable laundry and dry cleaning services that make everyday life easier for our customers. We are committed to delivering fresh, clean and well-cared-for clothes using advanced cleaning techniques, eco-friendly products and a customer-first approach Our mission is to provide high-quality, reliable and affordable laundry and dry cleaning services that make everyday life easier for our customers. We are committed to delivering fresh, clean and well-cared-for clothes using advanced cleaning.",
+      "features": [
+        { "id": "f1", "icon": "IoDiamondOutline", "label": "Quality\nCare" },
+        { "id": "f2", "icon": "LuLeaf", "label": "Eco-Friendly\nSolutions" },
+        { "id": "f3", "icon": "FaUsers", "label": "Customer\nFirst" },
+        { "id": "f4", "icon": "FaShieldAlt", "label": "Reliable\nService" }
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=2070&auto=format&fit=crop",
+        "alt": "Folded clean towels",
+        "stickerText": ["Fresh", "Clean", "Happy", "Always"],
+        "badge": {
+          "icon": "LuLeaf",
+          "line1": "FRESH CARE",
+          "line2": "FOR A BRIGHTER TOMORROW"
+        }
+      }
+    },
+    "vision": {
+      "tag": "OUR",
+      "title": "Vision",
+      "subtitle": "A CLEANER, GREENER AND BRIGHTER TOMORROW",
+      "description": "Our vision is to become the most trusted and preferred laundry and dry cleaning brand, known for quality, convenience and sustainability. We aim to set new standards in fabric care while contributing to a cleaner, greener and healthier community for generations to come Our mission is to provide high-quality, reliable and affordable laundry and dry cleaning services that make everyday life easier for our customers. We are committed to delivering fresh, clean and well-cared-for clothes using advanced cleaning techniques.",
+      "features": [
+        { "id": "v1", "icon": "FaGlobeAmericas", "label": "A Cleaner\nEnvironment" },
+        { "id": "v2", "icon": "LuLeaf", "label": "Sustainable\nGrowth" },
+        { "id": "v3", "icon": "FaRegHeart", "label": "Happier\nCommunities" },
+        { "id": "v4", "icon": "FaUsers", "label": "A Brighter\nTomorrow" }
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1574634534894-89d7576c8259?q=80&w=2069&auto=format&fit=crop",
+        "alt": "Hanging clean white shirts",
+        "stickerText": ["A", "CLEANER", "BRIGHTER", "TOMORROW"],
+        "badge": {
+          "icon": "LuLeaf",
+          "line1": "SUSTAINABLE",
+          "line2": "CLEANER BRIGHTER"
+        }
+      }
+    }
+  },
+  "team": {
+    "tag": "OUR TEAM",
+    "titleLine1": "Dedicated People,",
+    "titleLine2": "Cleaner Results",
+    "subtitle": "Our team combines experience, skill and a genuine passion for care. From expert cleaners to friendly support staff, we all work together to make your laundry experience effortless.",
+    "members": [
+      {
+        "id": "1",
+        "name": "Rohit Sharma",
+        "role": "Operations Manager",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+          "alt": "Rohit Sharma - Operations Manager"
+        }
+      },
+      {
+        "id": "2",
+        "name": "Pooja Verma",
+        "role": "Laundry Specialist",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+          "alt": "Pooja Verma - Laundry Specialist"
+        }
+      },
+      {
+        "id": "3",
+        "name": "Amit Kumar",
+        "role": "Dry-Cleaning Expert",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+          "alt": "Amit Kumar - Dry-Cleaning Expert"
+        }
+      },
+      {
+        "id": "4",
+        "name": "Neha Singh",
+        "role": "Customer Support",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+          "alt": "Neha Singh - Customer Support"
+        }
+      },
+      {
+        "id": "5",
+        "name": "Vikram Patel",
+        "role": "Pickup & Delivery Executive",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+          "alt": "Vikram Patel - Pickup & Delivery Executive"
+        }
+      },
+      {
+        "id": "6",
+        "name": "Suresh Yadav",
+        "role": "Fabric Care Specialist",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+          "alt": "Suresh Yadav - Fabric Care Specialist"
+        }
+      },
+      {
+        "id": "7",
+        "name": "Anjali Mehta",
+        "role": "Quality Control",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+          "alt": "Anjali Mehta - Quality Control"
+        }
+      },
+      {
+        "id": "8",
+        "name": "Karan Malhotra",
+        "role": "Service Coordinator",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+          "alt": "Karan Malhotra - Service Coordinator"
+        }
+      }
+    ]
+  },
+  "servicesSection": {
+    "services": [
+      {
+        "id": "laundry-service",
+        "tag": "LAUNDRY SERVICE",
+        "titleLine1": "Fresh Clothes,",
+        "titleLine2": "A Brighter You",
+        "description": "Our laundry service is designed to give your everyday clothes the care they deserve. We use premium detergents and advanced cleaning techniques to remove dirt, stains, and odours, keeping your clothes fresh, soft, and long-lasting.",
+        "imagePosition": "left",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+          "alt": "Laundry Service Basket"
+        },
+        "badge": {
+          "icon": "GiWashingMachine",
+          "line1": "Quality Cleaning",
+          "line2": "For A Better Tomorrow"
+        },
+        "features": [
+          { "id": "1", "icon": "LuLeaf", "titleLine1": "Eco-Friendly", "titleLine2": "Products" },
+          { "id": "2", "icon": "FiShield", "titleLine1": "Safe For", "titleLine2": "All Fabrics" },
+          { "id": "3", "icon": "LuWrench", "titleLine1": "Stain Removal", "titleLine2": "Expertise" },
+          { "id": "4", "icon": "FiClock", "titleLine1": "On-Time", "titleLine2": "Delivery" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/laundry"
+      },
+      {
+        "id": "dry-cleaning",
+        "tag": "DRY CLEANING",
+        "titleLine1": "Gentle Care,",
+        "titleLine2": "Lasting Freshness",
+        "description": "Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments. Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
+        "imagePosition": "right",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=800&auto=format&fit=crop",
+          "alt": "Dry Cleaning Clothes Hangers"
+        },
+        "badge": {
+          "icon": "BiHanger",
+          "line1": "Care For",
+          "line2": "What You Wear"
+        },
+        "features": [
+          { "id": "1", "icon": "LuSparkles", "titleLine1": "Expert", "titleLine2": "Fabric Care" },
+          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
+          { "id": "3", "icon": "LuShirt", "titleLine1": "Colour", "titleLine2": "Protection" },
+          { "id": "4", "icon": "FiUsers", "titleLine1": "Trained", "titleLine2": "Professionals" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/dry-cleaning"
+      },
+      {
+        "id": "steam-ironing",
+        "tag": "STEAM IRONING",
+        "titleLine1": "Crisp Clothes,",
+        "titleLine2": "Everyday",
+        "description": "Get perfectly pressed clothes with our professional steam ironing service. We remove wrinkles and give your clothes a neat, fresh and polished look Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments..",
+        "imagePosition": "left",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1489274495757-95c7c837b101?q=80&w=800&auto=format&fit=crop",
+          "alt": "Steam Ironing Service"
+        },
+        "badge": {
+          "icon": "GiIron",
+          "line1": "Wrinkle-Free",
+          "line2": "Confident Look"
+        },
+        "features": [
+          { "id": "1", "icon": "LuSparkles", "titleLine1": "Professional", "titleLine2": "Finishing" },
+          { "id": "2", "icon": "FiShield", "titleLine1": "Safe For", "titleLine2": "All Fabrics" },
+          { "id": "3", "icon": "FiClock", "titleLine1": "Saves", "titleLine2": "Your Time" },
+          { "id": "4", "icon": "LuStar", "titleLine1": "Neat &", "titleLine2": "Fresh Look" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/steam-ironing"
+      },
+      {
+        "id": "shoe-cleaning",
+        "tag": "SHOE CLEANING",
+        "titleLine1": "Step Out in",
+        "titleLine2": "Clean Confidence",
+        "description": "We deep-clean your shoes to remove dirt, stains and odours, making them look fresh and new again. Suitable for all types of shoes, from casuals to premium footwear Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments..",
+        "imagePosition": "right",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop",
+          "alt": "Sneakers Shoe Cleaning"
+        },
+        "badge": {
+          "icon": "GiRunningShoe",
+          "line1": "Clean Shoes",
+          "line2": "Happier Steps"
+        },
+        "features": [
+          { "id": "1", "icon": "LuSparkles", "titleLine1": "Deep", "titleLine2": "Cleaning" },
+          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
+          { "id": "3", "icon": "GiRunningShoe", "titleLine1": "For All", "titleLine2": "Shoe Types" },
+          { "id": "4", "icon": "FiClock", "titleLine1": "Extends", "titleLine2": "Shoe Life" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/shoe-cleaning"
+      },
+      {
+        "id": "curtain-cleaning",
+        "tag": "CURTAIN CLEANING",
+        "titleLine1": "Fresh Curtains,",
+        "titleLine2": "Healthier Home",
+        "description": "We remove dust, stains and allergens with our expert curtain-cleaning service. Keep your home fresh, clean and allergen-free Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments..",
+        "imagePosition": "left",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+          "alt": "Curtain Cleaning Service"
+        },
+        "badge": {
+          "icon": "GiCurtains",
+          "line1": "Fresh Curtains",
+          "line2": "Brighter Spaces"
+        },
+        "features": [
+          { "id": "1", "icon": "LuLeaf", "titleLine1": "Dust & Allergen", "titleLine2": "Removal" },
+          { "id": "2", "icon": "FiShield", "titleLine1": "Safe", "titleLine2": "Cleaning" },
+          { "id": "3", "icon": "LuLayers", "titleLine1": "For All Curtain", "titleLine2": "Types" },
+          { "id": "4", "icon": "FiHome", "titleLine1": "Enhances", "titleLine2": "Home Hygiene" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/curtain-cleaning"
+      },
+      {
+        "id": "carpet-cleaning",
+        "tag": "CARPET CLEANING",
+        "titleLine1": "Deep Clean For A",
+        "titleLine2": "Healthier Home",
+        "description": "Our carpet cleaning service removes deep-seated dirt, stains and odours, giving you a cleaner, fresher and healthier living space Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
+        "imagePosition": "right",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=800&auto=format&fit=crop",
+          "alt": "Carpet Cleaning Service"
+        },
+        "badge": {
+          "icon": "GiCarpet",
+          "line1": "Cleaner Carpets",
+          "line2": "Healthier Homes"
+        },
+        "features": [
+          { "id": "1", "icon": "LuSparkles", "titleLine1": "Deep", "titleLine2": "Cleaning" },
+          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
+          { "id": "3", "icon": "FiShield", "titleLine1": "Safe &", "titleLine2": "Effective" },
+          { "id": "4", "icon": "FiClock", "titleLine1": "Prolongs", "titleLine2": "Carpet Life" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/carpet-cleaning"
+      },
+      {
+        "id": "bag-cleaning",
+        "tag": "BAG CLEANING",
+        "titleLine1": "Clean Bags,",
+        "titleLine2": "Lasting Style",
+        "description": "We specialize in cleaning handbags, backpacks and leather bags with the right care and techniques to keep them looking new. Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
+        "imagePosition": "left",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
+          "alt": "Leather Handbag Cleaning"
+        },
+        "badge": {
+          "icon": "LuShoppingBag",
+          "line1": "Care For",
+          "line2": "Every Detail"
+        },
+        "features": [
+          { "id": "1", "icon": "LuSparkles", "titleLine1": "Gentle", "titleLine2": "Cleaning" },
+          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
+          { "id": "3", "icon": "LuShoppingBag", "titleLine1": "Safe For", "titleLine2": "All Materials" },
+          { "id": "4", "icon": "LuStar", "titleLine1": "Restores", "titleLine2": "Original Look" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/bag-cleaning"
+      },
+      {
+        "id": "special-care",
+        "tag": "SPECIAL CARE",
+        "titleLine1": "Extra Care For Your",
+        "titleLine2": "Special Clothes",
+        "description": "From wool and silk to linen and designer wear, we provide specialized cleaning to maintain the quality, texture and beauty of your most valued garments. Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
+        "imagePosition": "right",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?q=80&w=800&auto=format&fit=crop",
+          "alt": "Special Care Folded Clothes"
+        },
+        "badge": {
+          "icon": "LuShirt",
+          "line1": "Special Care",
+          "line2": "For Special Clothes"
+        },
+        "features": [
+          { "id": "1", "icon": "LuSparkles", "titleLine1": "Premium", "titleLine2": "Care" },
+          { "id": "2", "icon": "FiShield", "titleLine1": "For Delicate", "titleLine2": "Fabrics" },
+          { "id": "3", "icon": "LuCrown", "titleLine1": "Maintains", "titleLine2": "Quality" },
+          { "id": "4", "icon": "FiUsers", "titleLine1": "Trusted", "titleLine2": "Experts" }
+        ],
+        "ctaText": "READ MORE",
+        "ctaLink": "/services/special-care"
+      }
+    ]
+  },
+  "pricingSection": {
+    "categories": [
+      { "id": "laundry", "name": "Laundry Services", "icon": "GiWashingMachine" },
+      { "id": "dry-cleaning", "name": "Dry Cleaning", "icon": "BiHanger" },
+      { "id": "steam-iron", "name": "Steam Iron", "icon": "GiIron" },
+      { "id": "carpet-cleaning", "name": "Carpet Cleaning", "icon": "GiCarpet" },
+      { "id": "shoe-cleaning", "name": "Shoe Cleaning", "icon": "GiRunningShoe" },
+      { "id": "alterations", "name": "Alterations & Repairs", "icon": "LuWrench" },
+      { "id": "special-care", "name": "Special Care", "icon": "LuShirt" },
+      { "id": "bag-cleaning", "name": "Bag Cleaning", "icon": "LuShoppingBag" }
+    ],
+    "tag": "LAUNDRY SERVICES",
+    "titleLine1": "Simple & Affordable",
+    "titleLine2": "Laundry Pricing",
+    "description": "Fresh, clean and neatly folded clothes — delivered to your doorstep. Choose from our flexible pricing options designed for your everyday needs.",
+    "image": {
+      "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+      "alt": "Clean Towels and Laundry Detergent"
+    },
+    "badge": {
+      "icon": "LuShirt",
+      "line1": "Quality Cleaning",
+      "line2": "At The Best Price"
+    },
+    "features": [
+      {
+        "id": "1",
+        "icon": "FiShieldCheck",
+        "title": "No Hidden Charges",
+        "subtitle": "Transparent pricing"
+      },
+      {
+        "id": "2",
+        "icon": "LuIndianRupee",
+        "title": "Affordable Rates",
+        "subtitle": "Great value for quality"
+      },
+      {
+        "id": "3",
+        "icon": "LuLeaf",
+        "title": "Premium Products",
+        "subtitle": "Safe for all fabrics"
+      },
+      {
+        "id": "4",
+        "icon": "FiClock",
+        "title": "Flexible Plans",
+        "subtitle": "One-time or subscription"
+      }
+    ],
+    "pricingTable": [
+      { "id": "1", "item": "Shirt (Wash & Fold)", "regularPrice": 40, "premiumPrice": 60, "notes": "Per piece" },
+      { "id": "2", "item": "T-Shirt", "regularPrice": 35, "premiumPrice": 50, "notes": "Per piece" },
+      { "id": "3", "item": "Jeans", "regularPrice": 80, "premiumPrice": 120, "notes": "Per piece" },
+      { "id": "4", "item": "Trousers", "regularPrice": 70, "premiumPrice": 110, "notes": "Per piece" },
+      { "id": "5", "item": "Kurta / Kurti", "regularPrice": 60, "premiumPrice": 90, "notes": "Per piece" },
+      { "id": "6", "item": "Saree (Normal)", "regularPrice": 100, "premiumPrice": 150, "notes": "Silk/Designer extra" },
+      { "id": "7", "item": "Bedsheet (Single)", "regularPrice": 80, "premiumPrice": 120, "notes": "Per piece" },
+      { "id": "8", "item": "Bedsheet (Double)", "regularPrice": 120, "premiumPrice": 180, "notes": "Per piece" },
+      { "id": "9", "item": "Pillow Cover", "regularPrice": 30, "premiumPrice": 50, "notes": "Per piece" },
+      { "id": "10", "item": "Blanket (Single)", "regularPrice": 150, "premiumPrice": 220, "notes": "Per piece" },
+      { "id": "11", "item": "Blanket (Double)", "regularPrice": 220, "premiumPrice": 300, "notes": "Per piece" }
+    ]
+  },
+  "howItWorksSection": {
+    "tag": "HOW IT WORKS",
+    "titleLine1": "Simple Steps for",
+    "titleLine2": "Fresh Clothes",
+    "description": "Clean clothes, delivered to your doorstep — it's that easy!",
+    "signatureText": "Clean\nFresh\nConfident!",
+    "steps": [
+      {
+        "id": "1",
+        "stepNumber": "01",
+        "icon": "FiSmartphone",
+        "title": "Book a Pickup",
+        "subtitle": "Choose when and where you want us to collect your laundry.",
+        "description": "Schedule a pickup through our website, app or call. Select your preferred date and time, and our team will be at your doorstep to collect your clothes at your convenience.",
+        "points": [
+          "Easy online booking",
+          "Flexible time slots",
+          "Pickup from home, office or anywhere"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+          "alt": "Book laundry pickup on phone"
+        },
+        "badge": {
+          "icon": "FiCalendar",
+          "line1": "Pick a Date",
+          "line2": "& Time"
+        },
+        "imagePosition": "right"
+      },
+      {
+        "id": "2",
+        "stepNumber": "02",
+        "icon": "BiBasket",
+        "title": "We Collect",
+        "subtitle": "Our team collects your clothes from your doorstep.",
+        "description": "Our friendly executive will pick up your laundry, carefully inspect the items and provide you a digital receipt. Your clothes are safely transported to our cleaning facility.",
+        "points": [
+          "Hassle-free pickup",
+          "Safe and secure handling",
+          "Real-time pickup updates"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=800&q=80",
+          "alt": "Collecting laundry basket"
+        },
+        "badge": {
+          "icon": "LuShoppingBag",
+          "line1": "We Collect",
+          "line2": "From Your Doorstep"
+        },
+        "imagePosition": "left"
+      },
+      {
+        "id": "3",
+        "stepNumber": "03",
+        "icon": "LuWashingMachine",
+        "title": "Expert Cleaning",
+        "subtitle": "Your clothes are cleaned with care using advanced techniques.",
+        "description": "We use premium detergents, fabric-friendly methods and advanced cleaning technology to remove dirt, stains and odours, keeping your clothes fresh, soft and long-lasting.",
+        "points": [
+          "Advanced cleaning techniques",
+          "Stain & odour removal",
+          "Care for all fabric types"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=800&q=80",
+          "alt": "Freshly washed folded laundry"
+        },
+        "badge": {
+          "icon": "FiShield",
+          "line1": "Premium Cleaning",
+          "line2": "For Fresh Results"
+        },
+        "imagePosition": "right"
+      },
+      {
+        "id": "4",
+        "stepNumber": "04",
+        "icon": "FiTruck",
+        "title": "We Deliver",
+        "subtitle": "We bring back your freshly cleaned and rejuvenated clothes.",
+        "description": "Once your clothes are ready, we carefully pack them and deliver them back to your doorstep — fresh, clean and ready to wear. On-time delivery, every time!",
+        "points": [
+          "Neatly folded & packed",
+          "On-time delivery",
+          "Ready to wear"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=800&q=80",
+          "alt": "Delivery of packed clean laundry"
+        },
+        "badge": {
+          "icon": "FiTruck",
+          "line1": "Fresh Clothes",
+          "line2": "At Your Doorstep"
+        },
+        "imagePosition": "left"
+      }
+    ]
+  },
+  "testimonialsSection": {
+    "tag": "TESTIMONIALS",
+    "titleLine1": "Loved by",
+    "titleLine2": "Our Customers",
+    "description": "Real feedback from happy customers who trust us for clean, fresh and care.",
+    "testimonials": [
+      {
+        "id": "1",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"Excellent service! My clothes come back fresh, neatly folded and always on time. The pickup and delivery facility makes it super convenient.\"",
+        "user": {
+          "name": "Aditi Sharma",
+          "location": "Delhi",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+            "alt": "Aditi Sharma"
+          }
+        },
+        "theme": "light"
+      },
+      {
+        "id": "2",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"I'm really impressed with the quality and care they provide. Even delicate fabrics are handled perfectly. Highly recommended for anyone looking for reliable laundry service.\"",
+        "user": {
+          "name": "Rahul Mehta",
+          "location": "Mumbai",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+            "alt": "Rahul Mehta"
+          }
+        },
+        "theme": "dark"
+      },
+      {
+        "id": "3",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"Affordable, professional and hassle-free service. My clothes always come back fresh and spotless. The staff is polite and supportive. Great experience every time!\"",
+        "user": {
+          "name": "Neha Verma",
+          "location": "Bangalore",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=250&q=80",
+            "alt": "Neha Verma"
+          }
+        },
+        "theme": "light"
+      },
+      {
+        "id": "4",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"The best laundry service I've used so far. Quick turnaround, excellent cleaning and neatly packed clothes. Highly satisfied!\"",
+        "user": {
+          "name": "Karan Singh",
+          "location": "Pune",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+            "alt": "Karan Singh"
+          }
+        },
+        "theme": "light"
+      },
+      {
+        "id": "5",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"Amazing service! They take great care of all types of fabrics. The pickup and delivery is always on time. I love how fresh and clean my clothes feel.\"",
+        "user": {
+          "name": "Priya Nair",
+          "location": "Chennai",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+            "alt": "Priya Nair"
+          }
+        },
+        "theme": "dark"
+      },
+      {
+        "id": "6",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"Very professional and reliable service. My office shirts and formals always come back crisp and fresh. Highly recommended to everyone!\"",
+        "user": {
+          "name": "Aman Gupta",
+          "location": "Hyderabad",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=250&q=80",
+            "alt": "Aman Gupta"
+          }
+        },
+        "theme": "light"
+      },
+      {
+        "id": "7",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"Great quality, affordable prices and super convenient. I no longer have to worry about laundry. They handle everything perfectly!\"",
+        "user": {
+          "name": "Sneha Iyer",
+          "location": "Kolkata",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80",
+            "alt": "Sneha Iyer"
+          }
+        },
+        "theme": "light"
+      },
+      {
+        "id": "8",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"I trust them with all my family's laundry. From everyday wear to delicate fabrics, they always deliver outstanding results. Truly a reliable service!\"",
+        "user": {
+          "name": "Vikram Joshi",
+          "location": "Ahmedabad",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+            "alt": "Vikram Joshi"
+          }
+        },
+        "theme": "dark"
+      },
+      {
+        "id": "9",
+        "quoteIcon": "FaQuoteLeft",
+        "rating": 5,
+        "ratingIcon": "FaStar",
+        "locationIcon": "IoLocationOutline",
+        "comment": "\"Friendly staff, excellent communication and top-notch cleaning. The convenience of pickup and delivery saves so much time. Will definitely continue using their service!\"",
+        "user": {
+          "name": "Meera Kapoor",
+          "location": "Jaipur",
+          "avatar": {
+            "src": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+            "alt": "Meera Kapoor"
+          }
+        },
+        "theme": "light"
+      }
+    ]
+  },
+  "bookingSection": {
+    "tag": "BOOK A PICKUP",
+    "titleLine1": "Schedule Your",
+    "titleLine2": "Laundry Pickup",
+    "descriptionLine1": "Get your laundry picked up from your doorstep at your convenience.",
+    "descriptionLine2": "Clean clothes, hassle-free!",
+    "formCard": {
+      "headerIcon": "LuCalendarCheck",
+      "headerTitle": "Pickup Details",
+      "headerSubtitle": "Fill in the details and we'll take care of the rest.",
+      "fields": [
+        {
+          "id": "fullName",
+          "name": "fullName",
+          "label": "Full Name",
+          "placeholder": "Enter your full name",
+          "type": "text",
+          "required": true,
+          "icon": "FiUser",
+          "colSpan": 1
+        },
+        {
+          "id": "phone",
+          "name": "phone",
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number",
+          "type": "tel",
+          "required": true,
+          "icon": "FiPhone",
+          "colSpan": 1
+        },
+        {
+          "id": "email",
+          "name": "email",
+          "label": "Email Address",
+          "placeholder": "Enter your email address",
+          "type": "email",
+          "required": false,
+          "icon": "FiMail",
+          "colSpan": 1
+        },
+        {
+          "id": "address",
+          "name": "address",
+          "label": "Pickup Address",
+          "placeholder": "Enter your complete address",
+          "type": "textarea",
+          "required": true,
+          "icon": "FiMapPin",
+          "colSpan": 1
+        },
+        {
+          "id": "pickupDate",
+          "name": "pickupDate",
+          "label": "Pickup Date",
+          "placeholder": "Select pickup date",
+          "type": "date",
+          "required": true,
+          "icon": "FiCalendar",
+          "colSpan": 1
+        },
+        {
+          "id": "pickupTime",
+          "name": "pickupTime",
+          "label": "Pickup Time",
+          "placeholder": "Select time",
+          "type": "select",
+          "required": true,
+          "icon": "FiClock",
+          "colSpan": 1,
+          "options": [
+            { "label": "Morning (08:00 AM - 11:00 AM)", "value": "morning" },
+            { "label": "Afternoon (12:00 PM - 03:00 PM)", "value": "afternoon" },
+            { "label": "Evening (04:00 PM - 07:00 PM)", "value": "evening" },
+            { "label": "Night (07:00 PM - 09:00 PM)", "value": "night" }
+          ]
+        },
+        {
+          "id": "serviceType",
+          "name": "serviceType",
+          "label": "Service Type",
+          "placeholder": "Select service type",
+          "type": "select",
+          "required": true,
+          "colSpan": 1,
+          "options": [
+            { "label": "Wash & Fold", "value": "wash-fold" },
+            { "label": "Wash & Steam Iron", "value": "wash-iron" },
+            { "label": "Dry Cleaning", "value": "dry-cleaning" },
+            { "label": "Shoe Cleaning", "value": "shoe-cleaning" }
+          ]
+        },
+        {
+          "id": "bagsCount",
+          "name": "bagsCount",
+          "label": "No. of Bags (Approx.)",
+          "placeholder": "Select bags",
+          "type": "select",
+          "required": false,
+          "colSpan": 1,
+          "options": [
+            { "label": "1 Bag (Up to 5 kg)", "value": "1-bag" },
+            { "label": "2 Bags (Up to 10 kg)", "value": "2-bags" },
+            { "label": "3+ Bags (15+ kg)", "value": "3-plus-bags" }
+          ]
+        },
+        {
+          "id": "instructions",
+          "name": "instructions",
+          "label": "Special Instructions (Optional)",
+          "placeholder": "Any special instructions for pickup?",
+          "type": "textarea",
+          "required": false,
+          "colSpan": 2
+        }
+      ],
+      "termsText": "I agree to the",
+      "termsLinkText": "Terms & Conditions",
+      "termsLinkHref": "#",
+      "submitButton": {
+        "text": "Book a Pickup",
+        "icon": "LuCalendarCheck"
+      }
+    },
+    "banner": {
+      "image": {
+        "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1000&q=80",
+        "alt": "Delivery executive holding laundry clothes package"
+      },
+      "floatingSloganLine1": "Pickup Today",
+      "floatingSloganLine2": "Cleaner",
+      "floatingSloganLine3": "Tomorrow",
+      "features": [
+        {
+          "id": "f1",
+          "icon": "FiCheck",
+          "text": "Free Doorstep Pickup"
+        },
+        {
+          "id": "f2",
+          "icon": "FiCheck",
+          "text": "Flexible Time Slots"
+        },
+        {
+          "id": "f3",
+          "icon": "FiCheck",
+          "text": "Safe & Secure Handling"
+        },
+        {
+          "id": "f4",
+          "icon": "FiCheck",
+          "text": "On-Time Service"
+        }
+      ]
+    },
+    "helpSection": {
+      "icon": "LuHeadphones",
+      "title": "Need Help?",
+      "subtitle": "We're here to assist you with your booking.",
+      "contacts": [
+        {
+          "id": "c1",
+          "icon": "FiPhoneCall",
+          "title": "1 (800) 765-43-21",
+          "subtitle": "Call us anytime",
+          "href": "tel:18007654321"
+        },
+        {
+          "id": "c2",
+          "icon": "FiMail",
+          "title": "info@yourlaundrysite.com",
+          "subtitle": "Drop us an email",
+          "href": "mailto:info@yourlaundrysite.com"
+        }
+      ]
+    }
+  },
+  "certificationsSection": {
+    "tag": "CERTIFICATIONS",
+    "titlePrefix": "Our",
+    "titleHighlight": "Certifications",
+    "description": "Recognized standards that reflect our commitment to quality, safety and professional service.",
+    "items": [
+      {
+        "id": "cert-1",
+        "title": "ISO 9001:2015",
+        "subtitle": "Quality Management System",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=700&q=80",
+          "alt": "ISO 9001:2015 Certification Frame"
+        }
+      },
+      {
+        "id": "cert-2",
+        "title": "ISO 14001:2015",
+        "subtitle": "Environmental Management",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80",
+          "alt": "ISO 14001:2015 Certificate"
+        }
+      },
+      {
+        "id": "cert-3",
+        "title": "OHSAS 18001",
+        "subtitle": "Health & Safety Management",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80",
+          "alt": "OHSAS 18001 Certificate"
+        }
+      },
+      {
+        "id": "cert-4",
+        "title": "HACCP Certification",
+        "subtitle": "Safe & Hygienic Processing",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=700&q=80",
+          "alt": "HACCP Certification Award"
+        }
+      }
+    ]
+  },
+  "awardsSection": {
+    "tag": "AWARDS & RECOGNITION",
+    "titlePrefix": "Our",
+    "titleHighlight": "Awards",
+    "description": "Honored for our dedication, customer satisfaction and excellence in service.",
+    "items": [
+      {
+        "id": "award-1",
+        "title": "Excellence in Customer Service",
+        "subtitle": "For outstanding customer satisfaction",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&w=700&q=80",
+          "alt": "Crystal Excellence Award Trophy"
+        }
+      },
+      {
+        "id": "award-2",
+        "title": "Best Laundry Service Provider",
+        "subtitle": "Recognized for quality and reliability",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=700&q=80",
+          "alt": "Gold Star Trophy Award"
+        }
+      },
+      {
+        "id": "award-3",
+        "title": "Sustainability Champion",
+        "subtitle": "For eco-friendly practices",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80",
+          "alt": "Leaf Eco Award Plaque"
+        }
+      },
+      {
+        "id": "award-4",
+        "title": "Service Excellence Award",
+        "subtitle": "For consistent high standards",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=700&q=80",
+          "alt": "Golden Rim Trophy"
+        }
+      }
+    ]
+  },
+  "gallerySection": {
+    "tag": "GALLERY",
+    "titlePrefix": "Our Work",
+    "titleHighlight": "In Pictures",
+    "description": "Take a look at our cleaning process, happy customers and the fresh results we deliver every day. Quality, care and cleanliness — in every frame.",
+    "mediaTypeTabs": [
+      {
+        "id": "photo",
+        "label": "Photos Gallery",
+        "count": 24,
+        "icon": "FiCamera"
+      },
+      {
+        "id": "video",
+        "label": "Videos Gallery",
+        "count": 8,
+        "icon": "FiPlayCircle"
+      }
+    ],
+    "categories": [
+      { "id": "all", "name": "All" },
+      { "id": "laundry-process", "name": "Laundry Process" },
+      { "id": "dry-cleaning", "name": "Dry Cleaning" },
+      { "id": "ironing", "name": "Ironing" },
+      { "id": "fold-packaging", "name": "Fold & Packaging" },
+      { "id": "stain-removal", "name": "Stain Removal" },
+      { "id": "our-store", "name": "Our Store" },
+      { "id": "happy-customers", "name": "Happy Customers" }
+    ],
+    "items": [
+      {
+        "id": "1",
+        "type": "photo",
+        "categoryId": "laundry-process",
+        "title": "Washing machine loading",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=700&q=80",
+          "alt": "Washing machine load clothes"
+        }
+      },
+      {
+        "id": "2",
+        "type": "photo",
+        "categoryId": "laundry-process",
+        "title": "Fresh folded blue and white towels",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=700&q=80",
+          "alt": "Clean folded towels"
+        }
+      },
+      {
+        "id": "3",
+        "type": "photo",
+        "categoryId": "dry-cleaning",
+        "title": "Hanging shirts and suits",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=700&q=80",
+          "alt": "Shirts on wooden hangers"
+        }
+      },
+      {
+        "id": "4",
+        "type": "photo",
+        "categoryId": "ironing",
+        "title": "Steam ironing garment",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=700&q=80",
+          "alt": "Steam iron press"
+        }
+      },
+      {
+        "id": "5",
+        "type": "photo",
+        "categoryId": "dry-cleaning",
+        "title": "Dry cleaned packed suits",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=80",
+          "alt": "Garments in protective covers"
+        }
+      },
+      {
+        "id": "6",
+        "type": "photo",
+        "categoryId": "fold-packaging",
+        "title": "Neat folding by executive",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=700&q=80",
+          "alt": "Folding clothes carefully"
+        }
+      },
+      {
+        "id": "7",
+        "type": "photo",
+        "categoryId": "stain-removal",
+        "title": "Targeted stain treatment",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=700&q=80",
+          "alt": "Special treatment on fabric stains"
+        }
+      },
+      {
+        "id": "8",
+        "type": "photo",
+        "categoryId": "fold-packaging",
+        "title": "Stacked folded clothes",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=700&q=80",
+          "alt": "Stacked freshly washed fabrics"
+        }
+      },
+      {
+        "id": "9",
+        "type": "photo",
+        "categoryId": "laundry-process",
+        "title": "Premium shoe spa and cleaning",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=700&q=80",
+          "alt": "Shoe cleaning process"
+        }
+      },
+      {
+        "id": "10",
+        "type": "photo",
+        "categoryId": "laundry-process",
+        "title": "Spa rolled and stacked towels",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=700&q=80",
+          "alt": "Clean rolled towels"
+        }
+      },
+      {
+        "id": "11",
+        "type": "photo",
+        "categoryId": "fold-packaging",
+        "title": "Eco friendly laundry tote bag",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1597484662317-9bd7bdda2907?auto=format&fit=crop&w=700&q=80",
+          "alt": "Clean fresh delivery bag"
+        }
+      },
+      {
+        "id": "12",
+        "type": "photo",
+        "categoryId": "our-store",
+        "title": "Store reception and drop-off desk",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80",
+          "alt": "Laundry store front counter"
+        }
+      },
+      {
+        "id": "v1",
+        "type": "video",
+        "categoryId": "laundry-process",
+        "title": "Automated Washing Cycle",
+        "duration": "0:45",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=700&q=80",
+          "alt": "Washing cycle video"
+        }
+      },
+      {
+        "id": "v2",
+        "type": "video",
+        "categoryId": "ironing",
+        "title": "Industrial Steam Ironing Tutorial",
+        "duration": "1:20",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=700&q=80",
+          "alt": "Steam ironing video"
+        }
+      },
+      {
+        "id": "v3",
+        "type": "video",
+        "categoryId": "stain-removal",
+        "title": "Deep Stain Removal Demo",
+        "duration": "0:58",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=700&q=80",
+          "alt": "Stain removal video"
+        }
+      },
+      {
+        "id": "v4",
+        "type": "video",
+        "categoryId": "happy-customers",
+        "title": "Customer Review & Unboxing",
+        "duration": "1:15",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=700&q=80",
+          "alt": "Customer unboxing video"
+        }
+      }
+    ]
+  },
+  "faqSection": {
+    "tag": "FAQ",
+    "titlePrefix": "Frequently Asked",
+    "titleHighlight": "Questions",
+    "description": "Find answers to the most common questions about our laundry and dry cleaning services.",
+    "badges": [
+      {
+        "id": "b1",
+        "icon": "FiClock",
+        "title": "Quick Answers",
+        "subtitle": "Get the information you need"
+      },
+      {
+        "id": "b2",
+        "icon": "FiShield",
+        "title": "Trusted Service",
+        "subtitle": "Reliable & transparent"
+      },
+      {
+        "id": "b3",
+        "icon": "LuHeadphones",
+        "title": "Need More Help?",
+        "subtitle": "Contact our support team"
+      },
+      {
+        "id": "b4",
+        "icon": "LuLeaf",
+        "title": "Clean & Green",
+        "subtitle": "Better for you, better for planet"
+      }
+    ],
+    "leftColumnFaqs": [
+      {
+        "id": "l-1",
+        "question": "Are Your Cleaning Products Eco-Friendly?",
+        "answer": "Yes! We use eco-friendly, non-toxic, and biodegradable cleaning products that are safe for your clothes, your family, and the environment. Our priority is to deliver outstanding cleaning results while keeping our planet clean and green."
+      },
+      {
+        "id": "l-2",
+        "question": "What To Do When The Cleaners Arrive?",
+        "answer": "Simply have your laundry separated into bags if you prefer special handling (e.g., dry clean vs. wash & fold). Our executive will verify the count and provide you an instant digital confirmation."
+      },
+      {
+        "id": "l-3",
+        "question": "How Much Will It Cost To Clean My House?",
+        "answer": "Our home and upholstery cleaning charges are based on the square footage and specific items selected. You can check our transparent pricing table or request a customized estimate."
+      },
+      {
+        "id": "l-4",
+        "question": "Do You Offer Same-Day Service?",
+        "answer": "Yes, we offer express and same-day delivery options for select services and pin codes when booked before 10:00 AM."
+      },
+      {
+        "id": "l-5",
+        "question": "What Types of Fabrics Do You Clean?",
+        "answer": "We cater to cotton, wool, silk, denim, polyester, delicate designer garments, wedding attire, curtains, and heavy bedding."
+      },
+      {
+        "id": "l-6",
+        "question": "Is There a Minimum Order Requirement?",
+        "answer": "There is a nominal minimum order value of ₹199 for free doorstep pickup and drop delivery."
+      },
+      {
+        "id": "l-7",
+        "question": "Is There a Minimum Order Requirement?",
+        "answer": "There is a nominal minimum order value of ₹199 for free doorstep pickup and drop delivery."
+      }
+    ],
+    "rightColumnFaqs": [
+      {
+        "id": "r-1",
+        "question": "How Do I Schedule a Pickup and Delivery?",
+        "answer": "You can schedule directly via our website booking form, mobile application, or by calling our customer care number."
+      },
+      {
+        "id": "r-2",
+        "question": "Do You Offer Stain Removal Services?",
+        "answer": "Yes, we specialize in spot treatment and fabric-safe advanced stain removal techniques for stubborn oil, grease, coffee, and wine stains."
+      },
+      {
+        "id": "r-3",
+        "question": "Can I Track My Order?",
+        "answer": "Yes, live real-time SMS and dashboard tracking are provided from pickup through washing, ironing, and final delivery."
+      },
+      {
+        "id": "r-4",
+        "question": "What Are Your Operating Hours?",
+        "answer": "Our collection and delivery windows run from 8:00 AM to 9:00 PM, 7 days a week including public holidays."
+      },
+      {
+        "id": "r-5",
+        "question": "Do You Clean Household Items Like Curtains and Bedsheets?",
+        "answer": "Absolutely! We clean comforters, quilts, duvets, heavy window curtains, cushion covers, and sofa slipcovers."
+      },
+      {
+        "id": "r-6",
+        "question": "What Payment Methods Do You Accept?",
+        "answer": "We accept UPI, Google Pay, PhonePe, Paytm, all major Credit/Debit Cards, Net Banking, and Cash on Delivery."
+      },
+      {
+        "id": "r-7",
+        "question": "Is My Clothing Insured?",
+        "answer": "Yes, all garments under our care are covered against loss or damage under our transparent garment protection policy."
+      }
+    ]
+  },
+  "contactSection": {
+    "tag": "CONTACT US",
+    "titleLine1": "Get in Touch",
+    "titleLine2": "With Us",
+    "description": "We'd love to hear from you! Whether you have a question, need a quote, or want to schedule a pickup, our team is always ready to help. Reach out to us and we'll get back to you as soon as possible We'd love to hear from you! Whether you have a question, need a quote, or want to schedule a pickup, our team is always ready to help. Reach out to us and we'll get back to you as soon as possible.",
+    "sloganLine1": "Cleaner Clothes",
+    "sloganLine2": "Happier Lives",
+    "socials": [
+      { "id": "1", "name": "Facebook", "icon": "FaFacebookF", "href": "#" },
+      { "id": "2", "name": "Twitter", "icon": "FaTwitter", "href": "#" },
+      { "id": "3", "name": "Instagram", "icon": "FaInstagram", "href": "#" },
+      { "id": "4", "name": "LinkedIn", "icon": "FaLinkedinIn", "href": "#" }
+    ],
+    "form": {
+      "titlePrefix": "Send Us a",
+      "titleHighlight": "Message",
+      "badgeText": "We're Here\nTo Help!",
+      "description": "Fill out the form and our team will get back to you shortly.",
+      "fields": [
+        {
+          "id": "name",
+          "name": "name",
+          "placeholder": "Name",
+          "type": "text",
+          "icon": "FiUser"
+        },
+        {
+          "id": "email",
+          "name": "email",
+          "placeholder": "Email",
+          "type": "email",
+          "icon": "FiMail"
+        },
+        {
+          "id": "phone",
+          "name": "phone",
+          "placeholder": "Phone",
+          "type": "tel",
+          "icon": "FiPhone"
+        },
+        {
+          "id": "subject",
+          "name": "subject",
+          "placeholder": "Subject",
+          "type": "select",
+          "icon": "FiFileText",
+          "options": [
+            "General Inquiry",
+            "Pickup & Delivery Query",
+            "Pricing & Subscription",
+            "Feedback & Complaint"
+          ]
+        },
+        {
+          "id": "message",
+          "name": "message",
+          "placeholder": "Message",
+          "type": "textarea",
+          "icon": "FiEdit2"
+        }
+      ],
+      "submitButtonText": "SUBMIT NOW",
+      "securityText": "Your Information is safe with us.",
+      "securityIcon": "FiShield"
+    },
+    "contactDetails": [
+      {
+        "id": "loc",
+        "icon": "FiMapPin",
+        "title": "Our Location",
+        "line1": "280 Granite Run Drive",
+        "line2": "Suite/Hobart, LA 90010, USA."
+      },
+      {
+        "id": "hours",
+        "icon": "FiClock",
+        "title": "Working Hours",
+        "line1": "Wednesday - Sunday",
+        "line2": "7:00 AM - 5:00 PM"
+      },
+      {
+        "id": "email",
+        "icon": "FiMail",
+        "title": "Email Us",
+        "line1": "support@cleanin.com",
+        "line2": "support@cleanin.com"
+      },
+      {
+        "id": "call",
+        "icon": "FiPhoneCall",
+        "title": "Call Us",
+        "line1": "+880 123 456 789",
+        "line2": "+880 123 456 789"
+      }
+    ],
+    "mapCard": {
+      "icon": "IoLocationSharp",
+      "title": "Find Us on Map",
+      "description": "Visit our store or drop off your laundry. We're located in a convenient and easy-to-reach area.",
+      "buttonText": "GET DIRECTIONS",
+      "buttonLink": "https://maps.google.com"
+    }
+  },
+  "legalPolicies": {
+    "privacyPolicy": {
+      "id": "privacy-policy",
+      "pageTitle": "Privacy Policy",
+      "lastUpdated": "April 25, 2025",
+      "contactNote": "If you have any questions about this Privacy Policy or how we handle your data, please contact us through our",
+      "contactLinkText": "Contact Us page.",
+      "contactLinkHref": "/contact",
+      "sections": [
+        {
+          "id": "sec-1",
+          "orderNumber": 1,
+          "title": "Information We Collect",
+          "content": "We may collect personal information such as your name, phone number, email address, service address and any other details you provide while booking a service, making an enquiry or contacting us. We also collect information automatically through our website, such as your IP address, browser type, device information and pages you visit. This information helps us improve your experience and provide better services."
+        },
+        {
+          "id": "sec-2",
+          "orderNumber": 2,
+          "title": "How We Use Your Information",
+          "content": "The information we collect is used to provide and improve our laundry and dry cleaning services, process your bookings, respond to your enquiries, communicate with you about your orders, offers or updates, and enhance your overall experience with FreshFold. We may also use your information to analyze website usage and improve our services."
+        },
+        {
+          "id": "sec-3",
+          "orderNumber": 3,
+          "title": "Data Security",
+          "content": "We take appropriate security measures to protect your personal information from unauthorized access, misuse or disclosure. Your data is stored securely and accessed only by authorized personnel. We use industry-standard security practices to ensure your information remains safe."
+        },
+        {
+          "id": "sec-4",
+          "orderNumber": 4,
+          "title": "Sharing Your Information",
+          "content": "We do not sell, rent or trade your personal information. We may share your information only with trusted service providers who assist us in operating our website, processing bookings, delivering our services and improving customer support. These partners are bound to keep your information confidential. We may also disclose information if required by law or to protect our rights, property or safety."
+        },
+        {
+          "id": "sec-5",
+          "orderNumber": 5,
+          "title": "Cookies",
+          "content": "Our website may use cookies to enhance your browsing experience, analyze website traffic and personalize content. Cookies help us understand how you use our website and allow us to improve functionality. You can choose to disable cookies through your browser settings, but this may affect certain features of our website."
+        },
+        {
+          "id": "sec-6",
+          "orderNumber": 6,
+          "title": "Your Rights",
+          "content": "You have the right to access, update or request the deletion of your personal information. If you have any concerns or requests regarding your data, please contact us using the details provided at the end of this policy. We will make reasonable efforts to respond to your request in a timely manner."
+        },
+        {
+          "id": "sec-7",
+          "orderNumber": 7,
+          "title": "Third-Party Links",
+          "content": "Our website may contain links to third-party websites for your convenience. We are not responsible for the privacy practices or content of these websites. We encourage you to review their privacy policies before providing any personal information."
+        },
+        {
+          "id": "sec-8",
+          "orderNumber": 8,
+          "title": "Changes to This Policy",
+          "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated effective date. We encourage you to review this page periodically to stay informed."
+        }
+      ]
+    },
+    "refundPolicy": {
+      "id": "refund-policy",
+      "pageTitle": "Refund Policy",
+      "lastUpdated": "April 25, 2025",
+      "contactNote": "If you have any questions regarding our Refund and Cancellation Policy, please contact us through our",
+      "contactLinkText": "Contact Us page.",
+      "contactLinkHref": "/contact",
+       "sections": [
+        {
+          "id": "sec-1",
+          "orderNumber": 1,
+          "title": "Information We Collect",
+          "content": "We may collect personal information such as your name, phone number, email address, service address and any other details you provide while booking a service, making an enquiry or contacting us. We also collect information automatically through our website, such as your IP address, browser type, device information and pages you visit. This information helps us improve your experience and provide better services."
+        },
+        {
+          "id": "sec-2",
+          "orderNumber": 2,
+          "title": "How We Use Your Information",
+          "content": "The information we collect is used to provide and improve our laundry and dry cleaning services, process your bookings, respond to your enquiries, communicate with you about your orders, offers or updates, and enhance your overall experience with FreshFold. We may also use your information to analyze website usage and improve our services."
+        },
+        {
+          "id": "sec-3",
+          "orderNumber": 3,
+          "title": "Data Security",
+          "content": "We take appropriate security measures to protect your personal information from unauthorized access, misuse or disclosure. Your data is stored securely and accessed only by authorized personnel. We use industry-standard security practices to ensure your information remains safe."
+        },
+        {
+          "id": "sec-4",
+          "orderNumber": 4,
+          "title": "Sharing Your Information",
+          "content": "We do not sell, rent or trade your personal information. We may share your information only with trusted service providers who assist us in operating our website, processing bookings, delivering our services and improving customer support. These partners are bound to keep your information confidential. We may also disclose information if required by law or to protect our rights, property or safety."
+        },
+        {
+          "id": "sec-5",
+          "orderNumber": 5,
+          "title": "Cookies",
+          "content": "Our website may use cookies to enhance your browsing experience, analyze website traffic and personalize content. Cookies help us understand how you use our website and allow us to improve functionality. You can choose to disable cookies through your browser settings, but this may affect certain features of our website."
+        },
+        {
+          "id": "sec-6",
+          "orderNumber": 6,
+          "title": "Your Rights",
+          "content": "You have the right to access, update or request the deletion of your personal information. If you have any concerns or requests regarding your data, please contact us using the details provided at the end of this policy. We will make reasonable efforts to respond to your request in a timely manner."
+        },
+        {
+          "id": "sec-7",
+          "orderNumber": 7,
+          "title": "Third-Party Links",
+          "content": "Our website may contain links to third-party websites for your convenience. We are not responsible for the privacy practices or content of these websites. We encourage you to review their privacy policies before providing any personal information."
+        },
+        {
+          "id": "sec-8",
+          "orderNumber": 8,
+          "title": "Changes to This Policy",
+          "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated effective date. We encourage you to review this page periodically to stay informed."
+        }
+      ]
+    },
+    "termsAndConditions": {
+      "id": "terms-and-conditions",
+      "pageTitle": "Terms & Conditions",
+      "lastUpdated": "April 25, 2025",
+      "contactNote": "If you have any questions about these Terms & Conditions, please contact us through our",
+      "contactLinkText": "Contact Us page.",
+      "contactLinkHref": "/contact",
+       "sections": [
+        {
+          "id": "sec-1",
+          "orderNumber": 1,
+          "title": "Information We Collect",
+          "content": "We may collect personal information such as your name, phone number, email address, service address and any other details you provide while booking a service, making an enquiry or contacting us. We also collect information automatically through our website, such as your IP address, browser type, device information and pages you visit. This information helps us improve your experience and provide better services."
+        },
+        {
+          "id": "sec-2",
+          "orderNumber": 2,
+          "title": "How We Use Your Information",
+          "content": "The information we collect is used to provide and improve our laundry and dry cleaning services, process your bookings, respond to your enquiries, communicate with you about your orders, offers or updates, and enhance your overall experience with FreshFold. We may also use your information to analyze website usage and improve our services."
+        },
+        {
+          "id": "sec-3",
+          "orderNumber": 3,
+          "title": "Data Security",
+          "content": "We take appropriate security measures to protect your personal information from unauthorized access, misuse or disclosure. Your data is stored securely and accessed only by authorized personnel. We use industry-standard security practices to ensure your information remains safe."
+        },
+        {
+          "id": "sec-4",
+          "orderNumber": 4,
+          "title": "Sharing Your Information",
+          "content": "We do not sell, rent or trade your personal information. We may share your information only with trusted service providers who assist us in operating our website, processing bookings, delivering our services and improving customer support. These partners are bound to keep your information confidential. We may also disclose information if required by law or to protect our rights, property or safety."
+        },
+        {
+          "id": "sec-5",
+          "orderNumber": 5,
+          "title": "Cookies",
+          "content": "Our website may use cookies to enhance your browsing experience, analyze website traffic and personalize content. Cookies help us understand how you use our website and allow us to improve functionality. You can choose to disable cookies through your browser settings, but this may affect certain features of our website."
+        },
+        {
+          "id": "sec-6",
+          "orderNumber": 6,
+          "title": "Your Rights",
+          "content": "You have the right to access, update or request the deletion of your personal information. If you have any concerns or requests regarding your data, please contact us using the details provided at the end of this policy. We will make reasonable efforts to respond to your request in a timely manner."
+        },
+        {
+          "id": "sec-7",
+          "orderNumber": 7,
+          "title": "Third-Party Links",
+          "content": "Our website may contain links to third-party websites for your convenience. We are not responsible for the privacy practices or content of these websites. We encourage you to review their privacy policies before providing any personal information."
+        },
+        {
+          "id": "sec-8",
+          "orderNumber": 8,
+          "title": "Changes to This Policy",
+          "content": "We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated effective date. We encourage you to review this page periodically to stay informed."
+        }
+      ]
+    }
+  },
+  "subbanners": {
+    "about": {
+      "title": "About Us",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "About Us", "href": "/about" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+       "whychoose": {
+      "title": "Why Choose Us",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Why Choose Us", "href": "/whychoose" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+       "mission": {
+      "title": "Mission & Vision",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Mission & Vision", "href": "/mission" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "team": {
+      "title": "Our Teams",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Teams", "href": "/team" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "services": {
+      "title": "Our Services",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Services", "href": "/services" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "pricing": {
+      "title": "Our Price",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Price", "href": "/pricing" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "works": {
+      "title": "How it Works",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "How it Works", "href": "/works" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "testimonials": {
+      "title": "Our Testimonials",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Testimonials", "href": "/testimonials" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "booking": {
+      "title": "Book A Pickup",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Book A Pickup", "href": "/booking" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "award": {
+      "title": "Award & Certificate",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Award & Certificate", "href": "/award" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+    "gallery": {
+      "title": "Our Gallery",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Our Gallery", "href": "/gallery" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Frequently Asked Questions", "href": "/faq" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Contact Us", "href": "/contact" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+    "terms": {
+      "title": "Terms & Condition",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Terms & Condition", "href": "/terms" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "refund": {
+      "title": "Refund Policy",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Refund Policy", "href": "/refund" }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+     "privacy": {
+      "title": "Privacy Policy",
+      "breadcrumbs": [
+        { "label": "Home", "href": "/" },
+        { "label": "Privacy Policy", "href": "/privacy" }
+      ],
+      "bgImage": "/subbanner.png"
+    }
   }
 }
