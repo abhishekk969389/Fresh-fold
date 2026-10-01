@@ -97,23 +97,23 @@
           },
           {
             "id": "laundry",
-            "label": "Laundry",
-            "href": "/services/laundry"
+            "label": "Laundry Service",
+            "href": "/servicedetails/laundry"
           },
           {
             "id": "dry-cleaning",
             "label": "Dry Cleaning",
-            "href": "/services/dry-cleaning"
+            "href": "/servicedetails/dry-cleaning"
           },
           {
             "id": "ironing",
-            "label": "Ironing",
-            "href": "/services/ironing"
+            "label": "Steam Ironing",
+            "href": "/servicedetails/steam-ironing"
           },
           {
-            "id": "stain-removal",
-            "label": "Stain Removal",
-            "href": "/services/stain-removal"
+            "id": "shoe-cleaning",
+            "label": "Shoe Cleaning",
+            "href": "/servicedetails/shoe-cleaning"
           }
         ]
       },
@@ -1102,7 +1102,7 @@
   "servicesSection": {
     "services": [
       {
-        "id": "laundry-service",
+        "id": "laundry",
         "tag": "LAUNDRY SERVICE",
         "titleLine1": "Fresh Clothes,",
         "titleLine2": "A Brighter You",
@@ -4643,6 +4643,10 @@
             "href": "/"
           },
           {
+            "label": "Service",
+            "href": "/services"
+          },
+          {
             "label": "Service Details",
             "href": "/servicedetails/laundry"
           }
@@ -4708,6 +4712,10 @@
           {
             "label": "Home",
             "href": "/"
+          },
+          {
+            "label": "Service",
+            "href": "/services"
           },
           {
             "label": "Service Details",
@@ -4777,6 +4785,10 @@
             "href": "/"
           },
           {
+            "label": "Service",
+            "href": "/services"
+          },
+          {
             "label": "Service Details",
             "href": "/servicedetails/steam-ironing"
           }
@@ -4842,6 +4854,10 @@
           {
             "label": "Home",
             "href": "/"
+          },
+          {
+            "label": "Service",
+            "href": "/services"
           },
           {
             "label": "Service Details",
@@ -4911,6 +4927,10 @@
             "href": "/"
           },
           {
+            "label": "Service",
+            "href": "/services"
+          },
+          {
             "label": "Service Details",
             "href": "/servicedetails/curtain-cleaning"
           }
@@ -4976,6 +4996,10 @@
           {
             "label": "Home",
             "href": "/"
+          },
+          {
+            "label": "Service",
+            "href": "/services"
           },
           {
             "label": "Service Details",
@@ -5045,6 +5069,10 @@
             "href": "/"
           },
           {
+            "label": "Service",
+            "href": "/services"
+          },
+          {
             "label": "Service Details",
             "href": "/servicedetails/bag-cleaning"
           }
@@ -5110,6 +5138,10 @@
           {
             "label": "Home",
             "href": "/"
+          },
+          {
+            "label": "Service",
+            "href": "/services"
           },
           {
             "label": "Service Details",
