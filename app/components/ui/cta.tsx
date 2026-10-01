@@ -7,11 +7,15 @@ import { FaArrowRight } from "react-icons/fa";
 import { MdLocalLaundryService } from "react-icons/md";
 import { GiSparkles } from "react-icons/gi"; // For little sparkles
 
-export default function CTA() {
+interface CtaProps {
+  className?: string;
+}
+
+export default function CTA({ className }: CtaProps = {}) {
   const ctaData = (data as any).cta as CtaData;
 
   return (
-    <section className="w-full font-sans px-6 xl:px-12 my-8 sm:my-10 md:my-12 lg:my-14">
+    <section className={`w-full px-6 xl:px-12 ${className !== undefined ? className : "my-8 sm:my-10 md:my-12 lg:my-14"}`}>
       <div className="max-w-[1360px] mx-auto bg-[#025974] rounded-[24px] lg:rounded-[32px] p-8 lg:p-12 xl:p-16 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10">
         
         {/* Left Section: Icon & Text */}

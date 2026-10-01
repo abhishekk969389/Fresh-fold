@@ -5,16 +5,24 @@ import { data } from "@/app/data";
 import type { SubbannerData } from "@/app/data";
 
 interface SubbannerProps {
-  pageKey: string;
+  pageKey?: string;
+  customTitle?: string;
+  customBreadcrumbs?: { label: string; href: string }[];
+  customBgImage?: string;
 }
 
-export default function Subbanner({ pageKey }: SubbannerProps) {
+export default function Subbanner({ pageKey, customTitle, customBreadcrumbs, customBgImage }: SubbannerProps) {
   const allSubbanners = (data as any).subbanners as Record<string, SubbannerData>;
-  const bannerData = allSubbanners[pageKey];
+  
+  // Try to get data from pageKey, or provide a default fallback
+  const bannerData = (pageKey && allSubbanners[pageKey]) || { 
+    bgImage: "/banner2.png", // Assuming a generic banner exists
+    title: "", 
+    breadcrumbs: [] 
+  };
 
-  if (!bannerData) {
-    return null; // or a fallback
-  }
+  const titleToDisplay = customTitle || bannerData.title;
+  const breadcrumbsToDisplay = customBreadcrumbs || bannerData.breadcrumbs;
 
   return (
     <div className="relative w-full h-[180px] sm:h-[220px] lg:h-[250px] xl:h-[280px] overflow-hidden">
@@ -22,8 +30,8 @@ export default function Subbanner({ pageKey }: SubbannerProps) {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src={bannerData.bgImage}
-          alt={bannerData.title}
+          src={customBgImage || bannerData.bgImage}
+          alt={titleToDisplay}
           fill
           priority
           className="object-cover object-center"
@@ -96,12 +104,12 @@ export default function Subbanner({ pageKey }: SubbannerProps) {
         
         {/* Breadcrumbs */}
         <div className="flex items-center gap-2 text-[#0b2d4a] font-bold text-[13px] sm:text-[14px] lg:text-[15px] mb-4">
-          {bannerData.breadcrumbs.map((crumb, idx) => (
+          {breadcrumbsToDisplay.map((crumb, idx) => (
             <React.Fragment key={idx}>
               <Link href={crumb.href} className="hover:text-[#0b2d4a]/80 transition-colors">
                 {crumb.label}
               </Link>
-              {idx < bannerData.breadcrumbs.length - 1 && (
+              {idx < breadcrumbsToDisplay.length - 1 && (
                 <span className="text-[#0b2d4a] mx-1">/</span>
               )}
             </React.Fragment>
@@ -110,7 +118,7 @@ export default function Subbanner({ pageKey }: SubbannerProps) {
 
         {/* Title */}
         <h1 className="text-[36px] sm:text-[42px] lg:text-[50px] xl:text-[56px] font-bold text-[#073c47] leading-tight tracking-tight drop-shadow-sm">
-          {bannerData.title}
+          {titleToDisplay}
         </h1>
 
       </div>

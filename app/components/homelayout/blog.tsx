@@ -6,25 +6,32 @@ import Link from "next/link";
 import { data } from "@/app/data";
 import type { BlogData } from "@/app/data";
 import { FaChevronLeft, FaChevronRight, FaArrowRight } from "react-icons/fa";
+import { GoArrowRight } from "react-icons/go";
 
-export default function Blog() {
+interface BlogProps {
+  isPage?: boolean;
+}
+
+export default function Blog({ isPage = false }: BlogProps = {}) {
   const blogData = (data as any).blog as BlogData;
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const displayedPosts = isPage ? blogData.posts : blogData.posts.slice(0, 3);
+  
   const handlePrev = () => {
-    setActiveIndex((prev) => (prev === 0 ? blogData.posts.length - 1 : prev - 1));
+    setActiveIndex((prev) => (prev === 0 ? displayedPosts.length - 1 : prev - 1));
   };
 
   const handleNext = () => {
-    setActiveIndex((prev) => (prev === blogData.posts.length - 1 ? 0 : prev + 1));
+    setActiveIndex((prev) => (prev === displayedPosts.length - 1 ? 0 : prev + 1));
   };
 
   return (
-    <section className="w-full font-sans mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden">
+    <section className="w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14">
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative">
         
         {/* Header Section */}
-        <div className="relative flex flex-col items-center text-center  mb-6">
+        <div className="relative flex flex-col items-center text-center mb-0 sm:mb-2">
           <div className="flex items-center gap-4 mb-2">
             <span className="w-12 h-[2px] bg-[#fbbf24]"></span>
             <span className="text-[#00bcd4] font-bold tracking-widest text-[12px] uppercase">{blogData.tag}</span>
@@ -35,41 +42,53 @@ export default function Blog() {
             {blogData.titleLine1} <span className="text-[#00bcd4]">{blogData.titleLine2}</span>
           </h2>
           
-          <p className="text-[#5a7184] text-[16px] max-w-[700px] leading-relaxed mb-2 lg:mb-0">
+          <p className="text-[#5a7184] text-[16px] max-w-[600px] leading-relaxed mb-2 lg:mb-0">
             {blogData.subtitle}
           </p>
 
           {/* Absolute Button for Desktop (Aligned to the right) */}
-          <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 right-0">
-            <Link 
-              href={blogData.ctaLink}
-              className="bg-[#073c47] text-white px-8 py-4 rounded-full font-bold text-[15px] shadow-lg hover:bg-[#00bcd4] transition-colors flex items-center gap-2"
-            >
-              {blogData.ctaText}
-            </Link>
-          </div>
+          {!isPage && (
+            <div className="hidden lg:block absolute top-1/2 -translate-y-1/2 lg:right-16 xl:right-12 2xl:right-8">
+              <Link 
+                href={blogData.ctaLink}
+                className="bg-[#073c47] text-white px-8 py-3 rounded-full font-bold text-[15px] shadow-lg hover:bg-[#00bcd4] transition-colors flex items-center gap-2"
+              >
+                {blogData.ctaText}
+                 <GoArrowRight className="text-[16px] xl:text-[18px] mr-1" />
+              </Link>
+            </div>
+          )}
         </div>
 
         {/* Carousel Container */}
         <div className="relative w-full group">
           {/* Navigation Arrows */}
-          <button 
-            onClick={handlePrev}
-            className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-0 xl:-left-6 2xl:-left-12 w-12 h-12 xl:w-14 xl:h-14 bg-white rounded-full shadow-[0_5px_20px_rgba(0,0,0,0.12)] items-center justify-center text-[#073c47] hover:bg-[#00bcd4] hover:text-white transition-colors z-20"
-          >
-            <FaChevronLeft className="text-[16px] xl:text-[18px] mr-1" />
-          </button>
-          <button 
-            onClick={handleNext}
-            className="hidden lg:flex absolute top-1/2 -translate-y-1/2 right-0 xl:-right-6 2xl:-right-12 w-12 h-12 xl:w-14 xl:h-14 bg-white rounded-full shadow-[0_5px_20px_rgba(0,0,0,0.12)] items-center justify-center text-[#073c47] hover:bg-[#00bcd4] hover:text-white transition-colors z-20"
-          >
-            <FaChevronRight className="text-[16px] xl:text-[18px] ml-1" />
-          </button>
+          {!isPage && (
+            <>
+              <button 
+                onClick={handlePrev}
+                className="hidden lg:flex absolute top-1/2 -translate-y-1/2 left-0 xl:-left-6 2xl:-left-12 w-12 h-12 xl:w-14 xl:h-14 bg-white rounded-full shadow-[0_5px_20px_rgba(0,0,0,0.12)] items-center justify-center text-[#073c47] hover:bg-[#00bcd4] hover:text-white transition-colors z-20"
+              >
+                <FaChevronLeft className="text-[16px] xl:text-[18px] mr-1" />
+              </button>
+              <button 
+                onClick={handleNext}
+                className="hidden lg:flex absolute top-1/2 -translate-y-1/2 right-0 xl:-right-6 2xl:-right-12 w-12 h-12 xl:w-14 xl:h-14 bg-white rounded-full shadow-[0_5px_20px_rgba(0,0,0,0.12)] items-center justify-center text-[#073c47] hover:bg-[#00bcd4] hover:text-white transition-colors z-20"
+              >
+                <FaChevronRight className="text-[16px] xl:text-[18px] ml-1" />
+              </button>
+            </>
+          )}
 
           {/* Cards Grid/Flex */}
-          <div className="flex lg:grid lg:grid-cols-3 gap-5 xl:gap-6 overflow-x-auto lg:overflow-visible pb-8 pt-4 px-4 lg:px-16 xl:px-12 2xl:px-8 -mx-4 lg:mx-0 snap-x snap-mandatory hide-scrollbar">
-            {blogData.posts.map((post) => (
-              <div 
+          <div className={
+            isPage 
+              ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 pt-4 px-4 sm:px-0 mx-auto w-full"
+              : "flex lg:grid lg:grid-cols-3 gap-5 xl:gap-6 overflow-x-auto lg:overflow-visible pb-8 pt-4 px-4 lg:px-16 xl:px-12 2xl:px-8 -mx-4 lg:mx-0 snap-x snap-mandatory hide-scrollbar"
+          }>
+            {displayedPosts.map((post) => (
+              <Link 
+                href={`/blogdetails/${post.id}`}
                 key={post.id} 
                 className="shrink-0 w-[290px] sm:w-[340px] lg:w-auto snap-center bg-white rounded-[24px] overflow-hidden shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100/50 flex flex-col cursor-pointer hover:shadow-[0_15px_40px_rgba(0,0,0,0.1)] transition-all duration-300"
               >
@@ -99,7 +118,7 @@ export default function Blog() {
                 
                 {/* Body Section */}
                 <div className="px-5 xl:px-7 pt-4 xl:pt-5 pb-5 xl:pb-6 flex-1 flex flex-col bg-white">
-                  <h4 className="text-[17px] xl:text-[19px] font-bold text-[#0b2d4a] leading-snug mb-2.5 hover:text-[#00bcd4] transition-colors">
+                  <h4 className="text-[17px] xl:text-[19px] font-bold text-[#0b2d4a] leading-snug mb-2.5 group-hover:text-[#00bcd4] transition-colors">
                     {post.title}
                   </h4>
                   <p className="text-[#5a7184] text-[13px] xl:text-[14px] leading-relaxed line-clamp-3 mb-4">
@@ -120,28 +139,30 @@ export default function Blog() {
                       </div>
                     </div>
                     
-                    <button className="text-[#00bcd4] font-bold text-[13px] flex items-center gap-1 hover:text-[#073c47] transition-colors whitespace-nowrap">
-                      Read More <FaArrowRight className="transition-transform hover:translate-x-1" />
-                    </button>
+                    <span className="text-[#00bcd4] font-bold text-[13px] flex items-center gap-1 group-hover:text-[#073c47] transition-colors whitespace-nowrap">
+                      Read More <FaArrowRight className="transition-transform group-hover:translate-x-1" />
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
 
         {/* Pagination Dots (Mobile) */}
-        <div className="flex items-center justify-center gap-2">
-          {blogData.posts.map((_, idx) => (
-            <button
-              key={idx}
-              onClick={() => setActiveIndex(idx)}
-              className={`w-2.5 h-2.5 rounded-full transition-colors ${
-                idx === activeIndex ? 'bg-[#00bcd4]' : 'bg-[#e2e8f0] hover:bg-[#cbd5e1]'
-              }`}
-            />
-          ))}
-        </div>
+        {!isPage && (
+          <div className="flex items-center justify-center gap-2 lg:hidden">
+            {displayedPosts.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setActiveIndex(idx)}
+                className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                  idx === activeIndex ? 'bg-[#00bcd4]' : 'bg-[#e2e8f0] hover:bg-[#cbd5e1]'
+                }`}
+              />
+            ))}
+          </div>
+        )}
 
       </div>
     </section>

@@ -67,9 +67,21 @@
         "href": "/about",
         "hasDropdown": true,
         "dropdown": [
-          { "id": "about-us", "label": "About Us", "href": "/about" },
-          { "id": "why-choose-us", "label": "Why Choose Us", "href": "/whychoose" },
-          { "id": "mission-vision", "label": "Mission & Vision", "href": "/mission" }
+          {
+            "id": "about-us",
+            "label": "About Us",
+            "href": "/about"
+          },
+          {
+            "id": "why-choose-us",
+            "label": "Why Choose Us",
+            "href": "/whychoose"
+          },
+          {
+            "id": "mission-vision",
+            "label": "Mission & Vision",
+            "href": "/mission"
+          }
         ]
       },
       {
@@ -78,10 +90,31 @@
         "href": "/services",
         "hasDropdown": true,
         "dropdown": [
-          { "id": "laundry", "label": "Laundry", "href": "/services/laundry" },
-          { "id": "dry-cleaning", "label": "Dry Cleaning", "href": "/services/dry-cleaning" },
-          { "id": "ironing", "label": "Ironing", "href": "/services/ironing" },
-          { "id": "stain-removal", "label": "Stain Removal", "href": "/services/stain-removal" }
+          {
+            "id": "services-main",
+            "label": "Services",
+            "href": "/services"
+          },
+          {
+            "id": "laundry",
+            "label": "Laundry",
+            "href": "/services/laundry"
+          },
+          {
+            "id": "dry-cleaning",
+            "label": "Dry Cleaning",
+            "href": "/services/dry-cleaning"
+          },
+          {
+            "id": "ironing",
+            "label": "Ironing",
+            "href": "/services/ironing"
+          },
+          {
+            "id": "stain-removal",
+            "label": "Stain Removal",
+            "href": "/services/stain-removal"
+          }
         ]
       },
       {
@@ -125,23 +158,69 @@
     "titleLine2": "Happier You",
     "description": "Professional laundry and dry cleaning care for a cleaner, fresher and brighter tomorrow.",
     "features": [
-      { "id": "eco", "icon": "FaLeaf", "label": "Eco-Friendly Cleaning" },
-      { "id": "fabric", "icon": "LuShirt", "label": "Expert Fabric Care" },
-      { "id": "pickup", "icon": "LuTruck", "label": "Free Pickup & Delivery" },
-      { "id": "stain", "icon": "LuShieldCheck", "label": "Stain Removal Experts" }
+      {
+        "id": "eco",
+        "icon": "FaLeaf",
+        "label": "Eco-Friendly Cleaning"
+      },
+      {
+        "id": "fabric",
+        "icon": "LuShirt",
+        "label": "Expert Fabric Care"
+      },
+      {
+        "id": "pickup",
+        "icon": "LuTruck",
+        "label": "Free Pickup & Delivery"
+      },
+      {
+        "id": "stain",
+        "icon": "LuShieldCheck",
+        "label": "Stain Removal Experts"
+      }
     ],
-    "primaryCta": { "label": "Schedule a Pickup", "href": "/booking" },
-    "secondaryCta": { "label": "Watch Our Story", "href": "/about" },
+    "primaryCta": {
+      "label": "Schedule a Pickup",
+      "href": "/booking"
+    },
+    "secondaryCta": {
+      "label": "Watch Our Story",
+      "href": "/about"
+    },
     "highlights": [
-      { "id": "cleaner", "icon": "LuLeaf", "label": "Cleaner Clothes" },
-      { "id": "healthier", "icon": "LuHeart", "label": "Healthier Living" },
-      { "id": "brighter", "icon": "LuSmile", "label": "Brighter Tomorrows" }
+      {
+        "id": "cleaner",
+        "icon": "LuLeaf",
+        "label": "Cleaner Clothes"
+      },
+      {
+        "id": "healthier",
+        "icon": "LuHeart",
+        "label": "Healthier Living"
+      },
+      {
+        "id": "brighter",
+        "icon": "LuSmile",
+        "label": "Brighter Tomorrows"
+      }
     ],
     "tagText": "Care for a Better Tomorrow",
     "bottomFeatures": [
-      { "id": "quality", "icon": "LuSparkles", "label": "Quality Cleaning" },
-      { "id": "safe", "icon": "LuLeaf", "label": "Safe for All Fabrics" },
-      { "id": "trusted", "icon": "LuUsers", "label": "Trusted by Thousands" }
+      {
+        "id": "quality",
+        "icon": "LuSparkles",
+        "label": "Quality Cleaning"
+      },
+      {
+        "id": "safe",
+        "icon": "LuLeaf",
+        "label": "Safe for All Fabrics"
+      },
+      {
+        "id": "trusted",
+        "icon": "LuUsers",
+        "label": "Trusted by Thousands"
+      }
     ],
     "tagline": "Because You Deserve Fresh"
   },
@@ -180,59 +259,141 @@
       }
     ],
     "quickLinks": [
-      { "label": "Home", "href": "/" },
-      { "label": "About Us", "href": "/about" },
-      { "label": "Our Services", "href": "/services" },
-      { "label": "Award & Certificate", "href": "/award" },
-      { "label": "How it Works", "href": "/works" },
-      { "label": "Testimonials", "href": "/testimonials" },
-      { "label": "Contact Us", "href": "/contact" }
+      {
+        "label": "Home",
+        "href": "/"
+      },
+      {
+        "label": "About Us",
+        "href": "/about"
+      },
+      {
+        "label": "Our Services",
+        "href": "/services"
+      },
+      {
+        "label": "Award & Certificate",
+        "href": "/award"
+      },
+      {
+        "label": "How it Works",
+        "href": "/works"
+      },
+      {
+        "label": "Our Blogs",
+        "href": "/blog"
+      },
+      {
+        "label": "Testimonials",
+        "href": "/testimonials"
+      }
     ],
     "ourServices": [
-      { "label": "Wash & Fold", "href": "/services/wash-fold" },
-      { "label": "Dry Cleaning", "href": "/services/dry-cleaning" },
-      { "label": "Steam Ironing", "href": "/services/ironing" },
-      { "label": "Stain Removal", "href": "/services/stain-removal" },
-      { "label": "Premium Care", "href": "/services/premium-care" },
-      { "label": "Pickup & Delivery", "href": "/services/pickup" },
-      { "label": "Corporate Laundry", "href": "/services/corporate" }
+      {
+        "label": "Wash & Fold",
+        "href": "/services/wash-fold"
+      },
+      {
+        "label": "Dry Cleaning",
+        "href": "/services/dry-cleaning"
+      },
+      {
+        "label": "Steam Ironing",
+        "href": "/services/ironing"
+      },
+      {
+        "label": "Stain Removal",
+        "href": "/services/stain-removal"
+      },
+      {
+        "label": "Premium Care",
+        "href": "/services/premium-care"
+      },
+      {
+        "label": "Pickup & Delivery",
+        "href": "/services/pickup"
+      },
+      {
+        "label": "Corporate Laundry",
+        "href": "/services/corporate"
+      }
     ],
     "helpSupport": [
-      { "label": "Our Team", "href": "/team" },
-      { "label": "FAQ", "href": "/faq" },
-      { "label": "Terms & Conditions", "href": "/terms" },
-      { "label": "Privacy Policy", "href": "/privacy" },
-      { "label": "Refund Policy", "href": "/refund" },
-      { "label": "Sitemap", "href": "/sitemap" },
-      { "label": "Careers", "href": "/careers" }
+      {
+        "label": "Our Team",
+        "href": "/team"
+      },
+      {
+        "label": "FAQ",
+        "href": "/faq"
+      },
+      {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Refund Policy",
+        "href": "/refund"
+      },
+      {
+        "label": "Sitemap",
+        "href": "/sitemap"
+      }
     ],
     "contactInfo": [
       {
         "id": "phone",
         "icon": "FiPhone",
-        "lines": ["+112345678920"]
+        "lines": [
+          "+112345678920"
+        ]
       },
       {
         "id": "email",
         "icon": "FiMail",
-        "lines": ["support@freshfold.com"]
+        "lines": [
+          "support@freshfold.com"
+        ]
       },
       {
         "id": "location",
         "icon": "FiMapPin",
-        "lines": ["123 Clean Street,", "New York, NY 10001, USA"]
+        "lines": [
+          "123 Clean Street,",
+          "New York, NY 10001, USA"
+        ]
       },
       {
         "id": "hours",
         "icon": "FiClock",
-        "lines": ["Mon - Sat: 8:00 AM - 8:00 PM", "Sunday: Closed"]
+        "lines": [
+          "Mon - Sat: 8:00 AM - 8:00 PM",
+          "Sunday: Closed"
+        ]
       }
     ],
-    "bottomText": "© 2025 FreshFold. All Rights Reserved.",
+    "bottomText": "© 2026 All Rights Reserved. Powered By Lastow",
     "bottomLinks": [
-      { "label": "Privacy Policy", "href": "/privacy" },
-      { "label": "Terms & Conditions", "href": "/terms" },
-      { "label": "Sitemap", "href": "/sitemap" }
+      {
+        "label": "Privacy Policy",
+        "href": "/privacy"
+      },
+      {
+        "label": "Terms & Conditions",
+        "href": "/terms"
+      },
+      {
+        "label": "ThankYou",
+        "href": "/thankyou"
+      }
     ],
     "sideImage": {
       "src": "/footer.png",
@@ -267,7 +428,11 @@
     },
     "satisfactionRate": "95%",
     "satisfactionText": "Customers Satisfy",
-    "stickerText": ["Clean", "Fresh", "Confident"]
+    "stickerText": [
+      "Clean",
+      "Fresh",
+      "Confident"
+    ]
   },
   "services": {
     "tag": "OUR SERVICES",
@@ -275,14 +440,46 @@
     "titleLine2": "Laundry Services",
     "subtitle": "From everyday laundry to special care, we handle it all with expertise and care.",
     "tabs": [
-      { "id": "laundry", "icon": "MdLocalLaundryService", "label": "Laundry Service" },
-      { "id": "dry-cleaning", "icon": "GiHanger", "label": "Dry Cleaning" },
-      { "id": "steam-ironing", "icon": "MdIron", "label": "Steam Ironing" },
-      { "id": "shoe-cleaning", "icon": "GiRunningShoe", "label": "Shoe Cleaning" },
-      { "id": "curtain-cleaning", "icon": "GiWindow", "label": "Curtain Cleaning" },
-      { "id": "carpet-cleaning", "icon": "GiRedCarpet", "label": "Carpet Cleaning" },
-      { "id": "bag-cleaning", "icon": "GiBriefcase", "label": "Bag Cleaning" },
-      { "id": "special-care", "icon": "GiSparkles", "label": "Special Care" }
+      {
+        "id": "laundry",
+        "icon": "MdLocalLaundryService",
+        "label": "Laundry Service"
+      },
+      {
+        "id": "dry-cleaning",
+        "icon": "GiHanger",
+        "label": "Dry Cleaning"
+      },
+      {
+        "id": "steam-ironing",
+        "icon": "MdIron",
+        "label": "Steam Ironing"
+      },
+      {
+        "id": "shoe-cleaning",
+        "icon": "GiRunningShoe",
+        "label": "Shoe Cleaning"
+      },
+      {
+        "id": "curtain-cleaning",
+        "icon": "GiWindow",
+        "label": "Curtain Cleaning"
+      },
+      {
+        "id": "carpet-cleaning",
+        "icon": "GiRedCarpet",
+        "label": "Carpet Cleaning"
+      },
+      {
+        "id": "bag-cleaning",
+        "icon": "GiBriefcase",
+        "label": "Bag Cleaning"
+      },
+      {
+        "id": "special-care",
+        "icon": "GiSparkles",
+        "label": "Special Care"
+      }
     ],
     "activeService": {
       "tag": "LAUNDRY SERVICE",
@@ -290,10 +487,26 @@
       "titleLine2": "A Brighter You",
       "description": "Our laundry service is designed to give your everyday clothes the care they deserve. We use premium detergents and advanced cleaning techniques to remove dirt, stains, and odours, keeping your clothes fresh, soft, and long-lasting. Whether it's daily wear, work clothes, or delicate fabrics, we ensure professional cleaning with timely pickup and delivery at your doorstep.",
       "features": [
-        { "icon": "FaLeaf", "labelLine1": "Eco-Friendly", "labelLine2": "Products" },
-        { "icon": "FaShieldAlt", "labelLine1": "Safe for", "labelLine2": "All Fabrics" },
-        { "icon": "FaMagic", "labelLine1": "Stain Removal", "labelLine2": "Expertise" },
-        { "icon": "FaClock", "labelLine1": "On-Time", "labelLine2": "Delivery" }
+        {
+          "icon": "FaLeaf",
+          "labelLine1": "Eco-Friendly",
+          "labelLine2": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "labelLine1": "Safe for",
+          "labelLine2": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "labelLine1": "Stain Removal",
+          "labelLine2": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "labelLine1": "On-Time",
+          "labelLine2": "Delivery"
+        }
       ],
       "ctaText": "READ MORE",
       "ctaLink": "/services/laundry",
@@ -301,7 +514,11 @@
         "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=800&auto=format&fit=crop",
         "alt": "Folded clean clothes in a laundry basket"
       },
-      "stickerText": ["Clean", "Fresh", "Confident"],
+      "stickerText": [
+        "Clean",
+        "Fresh",
+        "Confident"
+      ],
       "qualityBadge": {
         "icon": "GiPoloShirt",
         "textLine1": "Quality Cleaning",
@@ -313,33 +530,100 @@
     "tag": "HOW IT WORKS",
     "titleLine1": "Simple Steps for",
     "titleLine2": "Fresh Clothes",
-    "subtitle": "Clean clothes, delivered to your doorstep — it's that easy!",
-    "leftSticker": ["Laundry", "Made Easy"],
-    "rightSticker": ["Clean", "Fresh", "Confident"],
+    "subtitle": "Clean clothes, delivered to your doorstep it's that easy!",
+    "leftSticker": [
+      "Clean Clothes, delivered to",
+      "your doorstpes - it's that easy"
+    ],
+    "rightSticker": [
+      "Clean",
+      "Fresh",
+      "Confident"
+    ],
     "steps": [
       {
         "id": 1,
         "icon": "FaCalendarCheck",
         "title": "Book a Pickup",
-        "description": "Choose when and where you want us to collect your laundry."
+        "description": "Choose when and where you want us to collect your laundry.",
+        "paragraph": "Schedule a pickup through our website, app or call. Select your preferred date and time, and our team will be at your doorstep to collect your clothes at your convenience.",
+        "bullets": [
+          "Easy online booking",
+          "Flexible time slots",
+          "Pickup from home, office or anywhere"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?q=80&w=600&auto=format&fit=crop",
+          "alt": "Hand holding phone for laundry pickup"
+        },
+        "badge": {
+          "textLine1": "Pick a Date",
+          "icon": "FaCalendarAlt",
+          "textLine2": "& Time"
+        }
       },
       {
         "id": 2,
         "icon": "FaShoppingBasket",
         "title": "We Collect",
-        "description": "Our team collects your clothes from your doorstep."
+        "description": "Our team collects your clothes from your doorstep.",
+        "paragraph": "Our friendly executive will pick up your laundry, carefully inspect the items and provide you a digital receipt. Your clothes are safely transported to our cleaning facility.",
+        "bullets": [
+          "Hassle-free pickup",
+          "Safe and secure handling",
+          "Real-time pickup updates"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=600&auto=format&fit=crop",
+          "alt": "Delivery person picking up clothes basket"
+        },
+        "badge": {
+          "textLine1": "We Collect",
+          "icon": "FaShoppingBasket",
+          "textLine2": "From Your Doorstep"
+        }
       },
       {
         "id": 3,
         "icon": "MdLocalLaundryService",
         "title": "Expert Cleaning",
-        "description": "Your clothes are cleaned with care using advanced techniques and premium products."
+        "description": "Your clothes are cleaned with care using advanced techniques.",
+        "paragraph": "We use premium detergents, fabric-friendly methods and advanced cleaning technology to remove dirt, stains and odours, keeping your clothes fresh, soft and long-lasting.",
+        "bullets": [
+          "Advanced cleaning techniques",
+          "Stain & odour removal",
+          "Care for all fabric types"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=600&auto=format&fit=crop",
+          "alt": "Folded clean towels"
+        },
+        "badge": {
+          "textLine1": "Premium Cleaning",
+          "icon": "FaShieldAlt",
+          "textLine2": "For Fresh Results"
+        }
       },
       {
         "id": 4,
         "icon": "FaTruck",
         "title": "We Deliver",
-        "description": "We bring back your freshly cleaned and rejuvenated clothes right to your doorstep."
+        "description": "We bring back your freshly cleaned and rejuvenated clothes right to your doorstep.",
+        "paragraph": "Once your clothes are ready, we carefully pack them and deliver them back to your doorstep - fresh, clean and ready to wear. On-time delivery, every time!",
+        "bullets": [
+          "Neatly folded & packed",
+          "On-time delivery",
+          "Ready to wear"
+        ],
+        "image": {
+          "src": "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=600&auto=format&fit=crop",
+          "alt": "Delivery person handing over clean packed clothes"
+        },
+        "badge": {
+          "textLine1": "Fresh Clothes",
+          "icon": "FaTruck",
+          "textLine2": "At Your Doorstep"
+        }
       }
     ]
   },
@@ -393,7 +677,12 @@
     "centerImage": {
       "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
       "alt": "Laundry Basket",
-      "stickerText": ["Fresh", "Clean", "Happy", "Always"],
+      "stickerText": [
+        "Fresh",
+        "Clean",
+        "Happy",
+        "Always"
+      ],
       "badge": {
         "icon": "FaLeaf",
         "line1": "CLEANER ENVIRONMENT",
@@ -481,48 +770,155 @@
     "titleLine1": "Latest News &",
     "titleLine2": "Helpful Tips",
     "subtitle": "Explore useful tips, care guides and laundry insights to keep your clothes fresh and long-lasting.",
-    "ctaText": "View All Blogs →",
+    "ctaText": "View All Blogs",
     "ctaLink": "/blog",
     "posts": [
       {
-        "id": "b1",
-        "image": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=600&auto=format&fit=crop",
-        "date": { "day": "15", "month": "SEP", "year": "2025" },
-        "category": "CLOTH CARE",
-        "title": "5 Easy Tips to Keep Your Clothes Fresh for Longer",
-        "description": "Discover simple yet effective laundry tips to maintain the freshness, softness and quality of your clothes for a longer time.",
+        "id": "cat-house-cleaning",
+        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "10",
+          "month": "SEP",
+          "year": "2026"
+        },
+        "category": "House Cleaning",
+        "title": "Top House Cleaning Tips for a Spotless Home",
+        "description": "Discover everything you need to know about house cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
-          "name": "Anjali Mehta",
-          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop"
+          "name": "Admin",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
         },
         "readTime": "5 Min Read"
       },
       {
-        "id": "b2",
-        "image": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=600&auto=format&fit=crop",
-        "date": { "day": "12", "month": "SEP", "year": "2025" },
-        "category": "LAUNDRY GUIDE",
-        "title": "How to Choose the Right Wash Cycle for Different Fabrics",
-        "description": "Not all fabrics are the same. Learn which wash cycle works best for your clothes and how to prevent damage while washing.",
-        "author": {
-          "name": "Rohit Verma",
-          "avatar": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&auto=format&fit=crop"
+        "id": "cat-office-cleaning",
+        "image": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "11",
+          "month": "SEP",
+          "year": "2026"
         },
-        "readTime": "4 Min Read"
+        "category": "Office Cleaning",
+        "title": "Why Regular Office Cleaning Boosts Productivity",
+        "description": "Discover everything you need to know about office cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Sarah Smith",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
       },
       {
-        "id": "b3",
-        "image": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=600&auto=format&fit=crop",
-        "date": { "day": "10", "month": "SEP", "year": "2025" },
-        "category": "LAUNDRY TIPS",
-        "title": "Daily Laundry Habits for a Cleaner and Healthier Lifestyle",
-        "description": "A clean wardrobe means a healthier you. Here are some daily laundry habits that make a big difference in your lifestyle.",
-        "author": {
-          "name": "Neha Kapoor",
-          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop"
+        "id": "cat-commercial-cleaning",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "12",
+          "month": "SEP",
+          "year": "2026"
         },
-        "readTime": "6 Min Read"
+        "category": "Commercial Cleaning",
+        "title": "The Benefits of Hiring Commercial Cleaners",
+        "description": "Discover everything you need to know about commercial cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Admin",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
+      },
+      {
+        "id": "cat-residential-cleaning",
+        "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "13",
+          "month": "SEP",
+          "year": "2026"
+        },
+        "category": "Residential Cleaning",
+        "title": "A Complete Guide to Deep Residential Cleaning",
+        "description": "Discover everything you need to know about residential cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Sarah Smith",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
+      },
+      {
+        "id": "cat-window-cleaning",
+        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "14",
+          "month": "SEP",
+          "year": "2026"
+        },
+        "category": "Window Cleaning",
+        "title": "Streak-Free Window Cleaning Techniques",
+        "description": "Discover everything you need to know about window cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Admin",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
+      },
+      {
+        "id": "cat-carpet-cleaning",
+        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "15",
+          "month": "SEP",
+          "year": "2026"
+        },
+        "category": "Carpet Cleaning",
+        "title": "How to Keep Your Carpets Looking Brand New",
+        "description": "Discover everything you need to know about carpet cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Sarah Smith",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
+      },
+      {
+        "id": "cat-floor-cleaning",
+        "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "16",
+          "month": "SEP",
+          "year": "2026"
+        },
+        "category": "Floor Cleaning",
+        "title": "Ultimate Floor Cleaning Strategies for Every Surface",
+        "description": "Discover everything you need to know about floor cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Admin",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
+      },
+      {
+        "id": "cat-car-cleaning",
+        "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+        "date": {
+          "day": "17",
+          "month": "SEP",
+          "year": "2026"
+        },
+        "category": "Car Cleaning",
+        "title": "Professional Car Cleaning Hacks You Should Know",
+        "description": "Discover everything you need to know about car cleaning in this comprehensive guide. We share our expert tips and tricks.",
+        "author": {
+          "name": "Sarah Smith",
+          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+        },
+        "readTime": "5 Min Read"
       }
+    ],
+    "categories": [
+      "House Cleaning",
+      "Office Cleaning",
+      "Commercial Cleaning",
+      "Residential Cleaning",
+      "Window Cleaning",
+      "Carpet Cleaning",
+      "Floor Cleaning",
+      "Car Cleaning"
     ]
   },
   "cta": {
@@ -542,15 +938,36 @@
       "subtitle": "CLEANER CLOTHES HAPPIER LIVES",
       "description": "Our mission is to provide high-quality, reliable and affordable laundry and dry cleaning services that make everyday life easier for our customers. We are committed to delivering fresh, clean and well-cared-for clothes using advanced cleaning techniques, eco-friendly products and a customer-first approach Our mission is to provide high-quality, reliable and affordable laundry and dry cleaning services that make everyday life easier for our customers. We are committed to delivering fresh, clean and well-cared-for clothes using advanced cleaning.",
       "features": [
-        { "id": "f1", "icon": "IoDiamondOutline", "label": "Quality\nCare" },
-        { "id": "f2", "icon": "LuLeaf", "label": "Eco-Friendly\nSolutions" },
-        { "id": "f3", "icon": "FaUsers", "label": "Customer\nFirst" },
-        { "id": "f4", "icon": "FaShieldAlt", "label": "Reliable\nService" }
+        {
+          "id": "f1",
+          "icon": "IoDiamondOutline",
+          "label": "Quality\nCare"
+        },
+        {
+          "id": "f2",
+          "icon": "LuLeaf",
+          "label": "Eco-Friendly\nSolutions"
+        },
+        {
+          "id": "f3",
+          "icon": "FaUsers",
+          "label": "Customer\nFirst"
+        },
+        {
+          "id": "f4",
+          "icon": "FaShieldAlt",
+          "label": "Reliable\nService"
+        }
       ],
       "image": {
         "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=2070&auto=format&fit=crop",
         "alt": "Folded clean towels",
-        "stickerText": ["Fresh", "Clean", "Happy", "Always"],
+        "stickerText": [
+          "Fresh",
+          "Clean",
+          "Happy",
+          "Always"
+        ],
         "badge": {
           "icon": "LuLeaf",
           "line1": "FRESH CARE",
@@ -564,15 +981,36 @@
       "subtitle": "A CLEANER, GREENER AND BRIGHTER TOMORROW",
       "description": "Our vision is to become the most trusted and preferred laundry and dry cleaning brand, known for quality, convenience and sustainability. We aim to set new standards in fabric care while contributing to a cleaner, greener and healthier community for generations to come Our mission is to provide high-quality, reliable and affordable laundry and dry cleaning services that make everyday life easier for our customers. We are committed to delivering fresh, clean and well-cared-for clothes using advanced cleaning techniques.",
       "features": [
-        { "id": "v1", "icon": "FaGlobeAmericas", "label": "A Cleaner\nEnvironment" },
-        { "id": "v2", "icon": "LuLeaf", "label": "Sustainable\nGrowth" },
-        { "id": "v3", "icon": "FaRegHeart", "label": "Happier\nCommunities" },
-        { "id": "v4", "icon": "FaUsers", "label": "A Brighter\nTomorrow" }
+        {
+          "id": "v1",
+          "icon": "FaGlobeAmericas",
+          "label": "A Cleaner\nEnvironment"
+        },
+        {
+          "id": "v2",
+          "icon": "LuLeaf",
+          "label": "Sustainable\nGrowth"
+        },
+        {
+          "id": "v3",
+          "icon": "FaRegHeart",
+          "label": "Happier\nCommunities"
+        },
+        {
+          "id": "v4",
+          "icon": "FaUsers",
+          "label": "A Brighter\nTomorrow"
+        }
       ],
       "image": {
         "src": "https://images.unsplash.com/photo-1574634534894-89d7576c8259?q=80&w=2069&auto=format&fit=crop",
         "alt": "Hanging clean white shirts",
-        "stickerText": ["A", "CLEANER", "BRIGHTER", "TOMORROW"],
+        "stickerText": [
+          "A",
+          "CLEANER",
+          "BRIGHTER",
+          "TOMORROW"
+        ],
         "badge": {
           "icon": "LuLeaf",
           "line1": "SUSTAINABLE",
@@ -680,10 +1118,30 @@
           "line2": "For A Better Tomorrow"
         },
         "features": [
-          { "id": "1", "icon": "LuLeaf", "titleLine1": "Eco-Friendly", "titleLine2": "Products" },
-          { "id": "2", "icon": "FiShield", "titleLine1": "Safe For", "titleLine2": "All Fabrics" },
-          { "id": "3", "icon": "LuWrench", "titleLine1": "Stain Removal", "titleLine2": "Expertise" },
-          { "id": "4", "icon": "FiClock", "titleLine1": "On-Time", "titleLine2": "Delivery" }
+          {
+            "id": "1",
+            "icon": "LuLeaf",
+            "titleLine1": "Eco-Friendly",
+            "titleLine2": "Products"
+          },
+          {
+            "id": "2",
+            "icon": "FiShield",
+            "titleLine1": "Safe For",
+            "titleLine2": "All Fabrics"
+          },
+          {
+            "id": "3",
+            "icon": "LuWrench",
+            "titleLine1": "Stain Removal",
+            "titleLine2": "Expertise"
+          },
+          {
+            "id": "4",
+            "icon": "FiClock",
+            "titleLine1": "On-Time",
+            "titleLine2": "Delivery"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/laundry"
@@ -705,10 +1163,30 @@
           "line2": "What You Wear"
         },
         "features": [
-          { "id": "1", "icon": "LuSparkles", "titleLine1": "Expert", "titleLine2": "Fabric Care" },
-          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
-          { "id": "3", "icon": "LuShirt", "titleLine1": "Colour", "titleLine2": "Protection" },
-          { "id": "4", "icon": "FiUsers", "titleLine1": "Trained", "titleLine2": "Professionals" }
+          {
+            "id": "1",
+            "icon": "LuSparkles",
+            "titleLine1": "Expert",
+            "titleLine2": "Fabric Care"
+          },
+          {
+            "id": "2",
+            "icon": "FiShieldCheck",
+            "titleLine1": "Stain",
+            "titleLine2": "Removal"
+          },
+          {
+            "id": "3",
+            "icon": "LuShirt",
+            "titleLine1": "Colour",
+            "titleLine2": "Protection"
+          },
+          {
+            "id": "4",
+            "icon": "FiUsers",
+            "titleLine1": "Trained",
+            "titleLine2": "Professionals"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/dry-cleaning"
@@ -730,10 +1208,30 @@
           "line2": "Confident Look"
         },
         "features": [
-          { "id": "1", "icon": "LuSparkles", "titleLine1": "Professional", "titleLine2": "Finishing" },
-          { "id": "2", "icon": "FiShield", "titleLine1": "Safe For", "titleLine2": "All Fabrics" },
-          { "id": "3", "icon": "FiClock", "titleLine1": "Saves", "titleLine2": "Your Time" },
-          { "id": "4", "icon": "LuStar", "titleLine1": "Neat &", "titleLine2": "Fresh Look" }
+          {
+            "id": "1",
+            "icon": "LuSparkles",
+            "titleLine1": "Professional",
+            "titleLine2": "Finishing"
+          },
+          {
+            "id": "2",
+            "icon": "FiShield",
+            "titleLine1": "Safe For",
+            "titleLine2": "All Fabrics"
+          },
+          {
+            "id": "3",
+            "icon": "FiClock",
+            "titleLine1": "Saves",
+            "titleLine2": "Your Time"
+          },
+          {
+            "id": "4",
+            "icon": "LuStar",
+            "titleLine1": "Neat &",
+            "titleLine2": "Fresh Look"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/steam-ironing"
@@ -755,10 +1253,30 @@
           "line2": "Happier Steps"
         },
         "features": [
-          { "id": "1", "icon": "LuSparkles", "titleLine1": "Deep", "titleLine2": "Cleaning" },
-          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
-          { "id": "3", "icon": "GiRunningShoe", "titleLine1": "For All", "titleLine2": "Shoe Types" },
-          { "id": "4", "icon": "FiClock", "titleLine1": "Extends", "titleLine2": "Shoe Life" }
+          {
+            "id": "1",
+            "icon": "LuSparkles",
+            "titleLine1": "Deep",
+            "titleLine2": "Cleaning"
+          },
+          {
+            "id": "2",
+            "icon": "FiShieldCheck",
+            "titleLine1": "Stain",
+            "titleLine2": "Removal"
+          },
+          {
+            "id": "3",
+            "icon": "GiRunningShoe",
+            "titleLine1": "For All",
+            "titleLine2": "Shoe Types"
+          },
+          {
+            "id": "4",
+            "icon": "FiClock",
+            "titleLine1": "Extends",
+            "titleLine2": "Shoe Life"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/shoe-cleaning"
@@ -780,10 +1298,30 @@
           "line2": "Brighter Spaces"
         },
         "features": [
-          { "id": "1", "icon": "LuLeaf", "titleLine1": "Dust & Allergen", "titleLine2": "Removal" },
-          { "id": "2", "icon": "FiShield", "titleLine1": "Safe", "titleLine2": "Cleaning" },
-          { "id": "3", "icon": "LuLayers", "titleLine1": "For All Curtain", "titleLine2": "Types" },
-          { "id": "4", "icon": "FiHome", "titleLine1": "Enhances", "titleLine2": "Home Hygiene" }
+          {
+            "id": "1",
+            "icon": "LuLeaf",
+            "titleLine1": "Dust & Allergen",
+            "titleLine2": "Removal"
+          },
+          {
+            "id": "2",
+            "icon": "FiShield",
+            "titleLine1": "Safe",
+            "titleLine2": "Cleaning"
+          },
+          {
+            "id": "3",
+            "icon": "LuLayers",
+            "titleLine1": "For All Curtain",
+            "titleLine2": "Types"
+          },
+          {
+            "id": "4",
+            "icon": "FiHome",
+            "titleLine1": "Enhances",
+            "titleLine2": "Home Hygiene"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/curtain-cleaning"
@@ -805,10 +1343,30 @@
           "line2": "Healthier Homes"
         },
         "features": [
-          { "id": "1", "icon": "LuSparkles", "titleLine1": "Deep", "titleLine2": "Cleaning" },
-          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
-          { "id": "3", "icon": "FiShield", "titleLine1": "Safe &", "titleLine2": "Effective" },
-          { "id": "4", "icon": "FiClock", "titleLine1": "Prolongs", "titleLine2": "Carpet Life" }
+          {
+            "id": "1",
+            "icon": "LuSparkles",
+            "titleLine1": "Deep",
+            "titleLine2": "Cleaning"
+          },
+          {
+            "id": "2",
+            "icon": "FiShieldCheck",
+            "titleLine1": "Stain",
+            "titleLine2": "Removal"
+          },
+          {
+            "id": "3",
+            "icon": "FiShield",
+            "titleLine1": "Safe &",
+            "titleLine2": "Effective"
+          },
+          {
+            "id": "4",
+            "icon": "FiClock",
+            "titleLine1": "Prolongs",
+            "titleLine2": "Carpet Life"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/carpet-cleaning"
@@ -830,10 +1388,30 @@
           "line2": "Every Detail"
         },
         "features": [
-          { "id": "1", "icon": "LuSparkles", "titleLine1": "Gentle", "titleLine2": "Cleaning" },
-          { "id": "2", "icon": "FiShieldCheck", "titleLine1": "Stain", "titleLine2": "Removal" },
-          { "id": "3", "icon": "LuShoppingBag", "titleLine1": "Safe For", "titleLine2": "All Materials" },
-          { "id": "4", "icon": "LuStar", "titleLine1": "Restores", "titleLine2": "Original Look" }
+          {
+            "id": "1",
+            "icon": "LuSparkles",
+            "titleLine1": "Gentle",
+            "titleLine2": "Cleaning"
+          },
+          {
+            "id": "2",
+            "icon": "FiShieldCheck",
+            "titleLine1": "Stain",
+            "titleLine2": "Removal"
+          },
+          {
+            "id": "3",
+            "icon": "LuShoppingBag",
+            "titleLine1": "Safe For",
+            "titleLine2": "All Materials"
+          },
+          {
+            "id": "4",
+            "icon": "LuStar",
+            "titleLine1": "Restores",
+            "titleLine2": "Original Look"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/bag-cleaning"
@@ -855,10 +1433,30 @@
           "line2": "For Special Clothes"
         },
         "features": [
-          { "id": "1", "icon": "LuSparkles", "titleLine1": "Premium", "titleLine2": "Care" },
-          { "id": "2", "icon": "FiShield", "titleLine1": "For Delicate", "titleLine2": "Fabrics" },
-          { "id": "3", "icon": "LuCrown", "titleLine1": "Maintains", "titleLine2": "Quality" },
-          { "id": "4", "icon": "FiUsers", "titleLine1": "Trusted", "titleLine2": "Experts" }
+          {
+            "id": "1",
+            "icon": "LuSparkles",
+            "titleLine1": "Premium",
+            "titleLine2": "Care"
+          },
+          {
+            "id": "2",
+            "icon": "FiShield",
+            "titleLine1": "For Delicate",
+            "titleLine2": "Fabrics"
+          },
+          {
+            "id": "3",
+            "icon": "LuCrown",
+            "titleLine1": "Maintains",
+            "titleLine2": "Quality"
+          },
+          {
+            "id": "4",
+            "icon": "FiUsers",
+            "titleLine1": "Trusted",
+            "titleLine2": "Experts"
+          }
         ],
         "ctaText": "READ MORE",
         "ctaLink": "/services/special-care"
@@ -867,19 +1465,51 @@
   },
   "pricingSection": {
     "categories": [
-      { "id": "laundry", "name": "Laundry Services", "icon": "GiWashingMachine" },
-      { "id": "dry-cleaning", "name": "Dry Cleaning", "icon": "BiHanger" },
-      { "id": "steam-iron", "name": "Steam Iron", "icon": "GiIron" },
-      { "id": "carpet-cleaning", "name": "Carpet Cleaning", "icon": "GiCarpet" },
-      { "id": "shoe-cleaning", "name": "Shoe Cleaning", "icon": "GiRunningShoe" },
-      { "id": "alterations", "name": "Alterations & Repairs", "icon": "LuWrench" },
-      { "id": "special-care", "name": "Special Care", "icon": "LuShirt" },
-      { "id": "bag-cleaning", "name": "Bag Cleaning", "icon": "LuShoppingBag" }
+      {
+        "id": "laundry",
+        "name": "Laundry Services",
+        "icon": "GiWashingMachine"
+      },
+      {
+        "id": "dry-cleaning",
+        "name": "Dry Cleaning",
+        "icon": "BiHanger"
+      },
+      {
+        "id": "steam-iron",
+        "name": "Steam Iron",
+        "icon": "GiIron"
+      },
+      {
+        "id": "carpet-cleaning",
+        "name": "Carpet Cleaning",
+        "icon": "GiCarpet"
+      },
+      {
+        "id": "shoe-cleaning",
+        "name": "Shoe Cleaning",
+        "icon": "GiRunningShoe"
+      },
+      {
+        "id": "alterations",
+        "name": "Alterations & Repairs",
+        "icon": "LuWrench"
+      },
+      {
+        "id": "special-care",
+        "name": "Special Care",
+        "icon": "LuShirt"
+      },
+      {
+        "id": "bag-cleaning",
+        "name": "Bag Cleaning",
+        "icon": "LuShoppingBag"
+      }
     ],
     "tag": "LAUNDRY SERVICES",
     "titleLine1": "Simple & Affordable",
     "titleLine2": "Laundry Pricing",
-    "description": "Fresh, clean and neatly folded clothes — delivered to your doorstep. Choose from our flexible pricing options designed for your everyday needs.",
+    "description": "Fresh, clean and neatly folded clothes ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â delivered to your doorstep. Choose from our flexible pricing options designed for your everyday needs.",
     "image": {
       "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
       "alt": "Clean Towels and Laundry Detergent"
@@ -916,24 +1546,90 @@
       }
     ],
     "pricingTable": [
-      { "id": "1", "item": "Shirt (Wash & Fold)", "regularPrice": 40, "premiumPrice": 60, "notes": "Per piece" },
-      { "id": "2", "item": "T-Shirt", "regularPrice": 35, "premiumPrice": 50, "notes": "Per piece" },
-      { "id": "3", "item": "Jeans", "regularPrice": 80, "premiumPrice": 120, "notes": "Per piece" },
-      { "id": "4", "item": "Trousers", "regularPrice": 70, "premiumPrice": 110, "notes": "Per piece" },
-      { "id": "5", "item": "Kurta / Kurti", "regularPrice": 60, "premiumPrice": 90, "notes": "Per piece" },
-      { "id": "6", "item": "Saree (Normal)", "regularPrice": 100, "premiumPrice": 150, "notes": "Silk/Designer extra" },
-      { "id": "7", "item": "Bedsheet (Single)", "regularPrice": 80, "premiumPrice": 120, "notes": "Per piece" },
-      { "id": "8", "item": "Bedsheet (Double)", "regularPrice": 120, "premiumPrice": 180, "notes": "Per piece" },
-      { "id": "9", "item": "Pillow Cover", "regularPrice": 30, "premiumPrice": 50, "notes": "Per piece" },
-      { "id": "10", "item": "Blanket (Single)", "regularPrice": 150, "premiumPrice": 220, "notes": "Per piece" },
-      { "id": "11", "item": "Blanket (Double)", "regularPrice": 220, "premiumPrice": 300, "notes": "Per piece" }
+      {
+        "id": "1",
+        "item": "Shirt (Wash & Fold)",
+        "regularPrice": 40,
+        "premiumPrice": 60,
+        "notes": "Per piece"
+      },
+      {
+        "id": "2",
+        "item": "T-Shirt",
+        "regularPrice": 35,
+        "premiumPrice": 50,
+        "notes": "Per piece"
+      },
+      {
+        "id": "3",
+        "item": "Jeans",
+        "regularPrice": 80,
+        "premiumPrice": 120,
+        "notes": "Per piece"
+      },
+      {
+        "id": "4",
+        "item": "Trousers",
+        "regularPrice": 70,
+        "premiumPrice": 110,
+        "notes": "Per piece"
+      },
+      {
+        "id": "5",
+        "item": "Kurta / Kurti",
+        "regularPrice": 60,
+        "premiumPrice": 90,
+        "notes": "Per piece"
+      },
+      {
+        "id": "6",
+        "item": "Saree (Normal)",
+        "regularPrice": 100,
+        "premiumPrice": 150,
+        "notes": "Silk/Designer extra"
+      },
+      {
+        "id": "7",
+        "item": "Bedsheet (Single)",
+        "regularPrice": 80,
+        "premiumPrice": 120,
+        "notes": "Per piece"
+      },
+      {
+        "id": "8",
+        "item": "Bedsheet (Double)",
+        "regularPrice": 120,
+        "premiumPrice": 180,
+        "notes": "Per piece"
+      },
+      {
+        "id": "9",
+        "item": "Pillow Cover",
+        "regularPrice": 30,
+        "premiumPrice": 50,
+        "notes": "Per piece"
+      },
+      {
+        "id": "10",
+        "item": "Blanket (Single)",
+        "regularPrice": 150,
+        "premiumPrice": 220,
+        "notes": "Per piece"
+      },
+      {
+        "id": "11",
+        "item": "Blanket (Double)",
+        "regularPrice": 220,
+        "premiumPrice": 300,
+        "notes": "Per piece"
+      }
     ]
   },
   "howItWorksSection": {
     "tag": "HOW IT WORKS",
     "titleLine1": "Simple Steps for",
     "titleLine2": "Fresh Clothes",
-    "description": "Clean clothes, delivered to your doorstep — it's that easy!",
+    "description": "Clean clothes, delivered to your doorstep ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â it's that easy!",
     "signatureText": "Clean\nFresh\nConfident!",
     "steps": [
       {
@@ -1011,7 +1707,7 @@
         "icon": "FiTruck",
         "title": "We Deliver",
         "subtitle": "We bring back your freshly cleaned and rejuvenated clothes.",
-        "description": "Once your clothes are ready, we carefully pack them and deliver them back to your doorstep — fresh, clean and ready to wear. On-time delivery, every time!",
+        "description": "Once your clothes are ready, we carefully pack them and deliver them back to your doorstep ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â fresh, clean and ready to wear. On-time delivery, every time!",
         "points": [
           "Neatly folded & packed",
           "On-time delivery",
@@ -1262,10 +1958,22 @@
           "icon": "FiClock",
           "colSpan": 1,
           "options": [
-            { "label": "Morning (08:00 AM - 11:00 AM)", "value": "morning" },
-            { "label": "Afternoon (12:00 PM - 03:00 PM)", "value": "afternoon" },
-            { "label": "Evening (04:00 PM - 07:00 PM)", "value": "evening" },
-            { "label": "Night (07:00 PM - 09:00 PM)", "value": "night" }
+            {
+              "label": "Morning (08:00 AM - 11:00 AM)",
+              "value": "morning"
+            },
+            {
+              "label": "Afternoon (12:00 PM - 03:00 PM)",
+              "value": "afternoon"
+            },
+            {
+              "label": "Evening (04:00 PM - 07:00 PM)",
+              "value": "evening"
+            },
+            {
+              "label": "Night (07:00 PM - 09:00 PM)",
+              "value": "night"
+            }
           ]
         },
         {
@@ -1277,10 +1985,22 @@
           "required": true,
           "colSpan": 1,
           "options": [
-            { "label": "Wash & Fold", "value": "wash-fold" },
-            { "label": "Wash & Steam Iron", "value": "wash-iron" },
-            { "label": "Dry Cleaning", "value": "dry-cleaning" },
-            { "label": "Shoe Cleaning", "value": "shoe-cleaning" }
+            {
+              "label": "Wash & Fold",
+              "value": "wash-fold"
+            },
+            {
+              "label": "Wash & Steam Iron",
+              "value": "wash-iron"
+            },
+            {
+              "label": "Dry Cleaning",
+              "value": "dry-cleaning"
+            },
+            {
+              "label": "Shoe Cleaning",
+              "value": "shoe-cleaning"
+            }
           ]
         },
         {
@@ -1292,9 +2012,18 @@
           "required": false,
           "colSpan": 1,
           "options": [
-            { "label": "1 Bag (Up to 5 kg)", "value": "1-bag" },
-            { "label": "2 Bags (Up to 10 kg)", "value": "2-bags" },
-            { "label": "3+ Bags (15+ kg)", "value": "3-plus-bags" }
+            {
+              "label": "1 Bag (Up to 5 kg)",
+              "value": "1-bag"
+            },
+            {
+              "label": "2 Bags (Up to 10 kg)",
+              "value": "2-bags"
+            },
+            {
+              "label": "3+ Bags (15+ kg)",
+              "value": "3-plus-bags"
+            }
           ]
         },
         {
@@ -1460,7 +2189,7 @@
     "tag": "GALLERY",
     "titlePrefix": "Our Work",
     "titleHighlight": "In Pictures",
-    "description": "Take a look at our cleaning process, happy customers and the fresh results we deliver every day. Quality, care and cleanliness — in every frame.",
+    "description": "Take a look at our cleaning process, happy customers and the fresh results we deliver every day. Quality, care and cleanliness ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â in every frame.",
     "mediaTypeTabs": [
       {
         "id": "photo",
@@ -1476,14 +2205,38 @@
       }
     ],
     "categories": [
-      { "id": "all", "name": "All" },
-      { "id": "laundry-process", "name": "Laundry Process" },
-      { "id": "dry-cleaning", "name": "Dry Cleaning" },
-      { "id": "ironing", "name": "Ironing" },
-      { "id": "fold-packaging", "name": "Fold & Packaging" },
-      { "id": "stain-removal", "name": "Stain Removal" },
-      { "id": "our-store", "name": "Our Store" },
-      { "id": "happy-customers", "name": "Happy Customers" }
+      {
+        "id": "all",
+        "name": "All"
+      },
+      {
+        "id": "laundry-process",
+        "name": "Laundry Process"
+      },
+      {
+        "id": "dry-cleaning",
+        "name": "Dry Cleaning"
+      },
+      {
+        "id": "ironing",
+        "name": "Ironing"
+      },
+      {
+        "id": "fold-packaging",
+        "name": "Fold & Packaging"
+      },
+      {
+        "id": "stain-removal",
+        "name": "Stain Removal"
+      },
+      {
+        "id": "our-store",
+        "name": "Our Store"
+      },
+      {
+        "id": "happy-customers",
+        "name": "Happy Customers"
+      }
     ],
     "items": [
       {
@@ -1712,12 +2465,12 @@
       {
         "id": "l-6",
         "question": "Is There a Minimum Order Requirement?",
-        "answer": "There is a nominal minimum order value of ₹199 for free doorstep pickup and drop delivery."
+        "answer": "There is a nominal minimum order value of ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹199 for free doorstep pickup and drop delivery."
       },
       {
         "id": "l-7",
         "question": "Is There a Minimum Order Requirement?",
-        "answer": "There is a nominal minimum order value of ₹199 for free doorstep pickup and drop delivery."
+        "answer": "There is a nominal minimum order value of ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¹199 for free doorstep pickup and drop delivery."
       }
     ],
     "rightColumnFaqs": [
@@ -1766,10 +2519,30 @@
     "sloganLine1": "Cleaner Clothes",
     "sloganLine2": "Happier Lives",
     "socials": [
-      { "id": "1", "name": "Facebook", "icon": "FaFacebookF", "href": "#" },
-      { "id": "2", "name": "Twitter", "icon": "FaTwitter", "href": "#" },
-      { "id": "3", "name": "Instagram", "icon": "FaInstagram", "href": "#" },
-      { "id": "4", "name": "LinkedIn", "icon": "FaLinkedinIn", "href": "#" }
+      {
+        "id": "1",
+        "name": "Facebook",
+        "icon": "FaFacebookF",
+        "href": "#"
+      },
+      {
+        "id": "2",
+        "name": "Twitter",
+        "icon": "FaTwitter",
+        "href": "#"
+      },
+      {
+        "id": "3",
+        "name": "Instagram",
+        "icon": "FaInstagram",
+        "href": "#"
+      },
+      {
+        "id": "4",
+        "name": "LinkedIn",
+        "icon": "FaLinkedinIn",
+        "href": "#"
+      }
     ],
     "form": {
       "titlePrefix": "Send Us a",
@@ -1927,7 +2700,7 @@
       "contactNote": "If you have any questions regarding our Refund and Cancellation Policy, please contact us through our",
       "contactLinkText": "Contact Us page.",
       "contactLinkHref": "/contact",
-       "sections": [
+      "sections": [
         {
           "id": "sec-1",
           "orderNumber": 1,
@@ -1985,7 +2758,7 @@
       "contactNote": "If you have any questions about these Terms & Conditions, please contact us through our",
       "contactLinkText": "Contact Us page.",
       "contactLinkHref": "/contact",
-       "sections": [
+      "sections": [
         {
           "id": "sec-1",
           "orderNumber": 1,
@@ -2041,130 +2814,2309 @@
     "about": {
       "title": "About Us",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "About Us", "href": "/about" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "About Us",
+          "href": "/about"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-       "whychoose": {
+    "whychoose": {
       "title": "Why Choose Us",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Why Choose Us", "href": "/whychoose" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Why Choose Us",
+          "href": "/whychoose"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-       "mission": {
+    "mission": {
       "title": "Mission & Vision",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Mission & Vision", "href": "/mission" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Mission & Vision",
+          "href": "/mission"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "team": {
+    "team": {
       "title": "Our Teams",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Teams", "href": "/team" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Teams",
+          "href": "/team"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "services": {
+    "services": {
       "title": "Our Services",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Services", "href": "/services" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Services",
+          "href": "/services"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "pricing": {
+    "pricing": {
       "title": "Our Price",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Price", "href": "/pricing" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Price",
+          "href": "/pricing"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "works": {
+    "works": {
       "title": "How it Works",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "How it Works", "href": "/works" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "How it Works",
+          "href": "/works"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "testimonials": {
+    "testimonials": {
       "title": "Our Testimonials",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Testimonials", "href": "/testimonials" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Testimonials",
+          "href": "/testimonials"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "booking": {
+    "booking": {
       "title": "Book A Pickup",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Book A Pickup", "href": "/booking" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Book A Pickup",
+          "href": "/booking"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "award": {
+    "award": {
       "title": "Award & Certificate",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Award & Certificate", "href": "/award" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Award & Certificate",
+          "href": "/award"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
     "gallery": {
       "title": "Our Gallery",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Our Gallery", "href": "/gallery" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Gallery",
+          "href": "/gallery"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
     "faq": {
       "title": "Frequently Asked Questions",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Frequently Asked Questions", "href": "/faq" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Frequently Asked Questions",
+          "href": "/faq"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
     "contact": {
       "title": "Contact Us",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Contact Us", "href": "/contact" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
     "terms": {
       "title": "Terms & Condition",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Terms & Condition", "href": "/terms" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Terms & Condition",
+          "href": "/terms"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "refund": {
+    "refund": {
       "title": "Refund Policy",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Refund Policy", "href": "/refund" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refund"
+        }
       ],
       "bgImage": "/subbanner.png"
     },
-     "privacy": {
+    "privacy": {
       "title": "Privacy Policy",
       "breadcrumbs": [
-        { "label": "Home", "href": "/" },
-        { "label": "Privacy Policy", "href": "/privacy" }
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy"
+        }
       ],
       "bgImage": "/subbanner.png"
+    },
+    "sitemap": {
+      "title": "sitemap",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Sitemap",
+          "href": "/sitemap"
+        }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+    "blog": {
+      "title": "Our Blogs",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Blogs",
+          "href": "/blog"
+        }
+      ],
+      "bgImage": "/subbanner.png"
+    },
+    "teamDetailssub": {
+      "title": "Team Details",
+      "breadcrumbs": [
+        {
+          "label": "Home",
+          "href": "/"
+        },
+        {
+          "label": "Our Teams",
+          "href": "/team"
+        },
+        {
+          "label": "Team Details",
+          "href": "/teamdetails"
+        }
+      ],
+      "bgImage": "/subbanner.png"
+    }
+  },
+  "sitemap": {
+    "header": {
+      "eyebrow": "SITEMAP",
+      "titleStart": "Explore Our",
+      "titleHighlight": "Website",
+      "subtitle": "Quickly find the information you need. Navigate through all our pages below."
+    },
+    "sections": [
+      {
+        "id": "company",
+        "icon": "FiHome",
+        "title": "Company",
+        "theme": "blue",
+        "links": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "About Me",
+            "href": "/about"
+          },
+          {
+            "label": "Why Choose Us",
+            "href": "/whychoose"
+          },
+          {
+            "label": "Mission & Vision",
+            "href": "/mission"
+          }
+        ]
+      },
+      {
+        "id": "team",
+        "icon": "FiUsers",
+        "title": "Our Team",
+        "theme": "teal",
+        "links": [
+          {
+            "label": "Our Team",
+            "href": "/team"
+          },
+          {
+            "label": "Team Details",
+            "href": "/team"
+          }
+        ]
+      },
+      {
+        "id": "services",
+        "icon": "FiSettings",
+        "title": "Services",
+        "theme": "yellow",
+        "links": [
+          {
+            "label": "Our Services",
+            "href": "/services"
+          },
+          {
+            "label": "Service Details",
+            "href": "/services"
+          }
+        ]
+      },
+      {
+        "id": "pricing",
+        "icon": "FiTag",
+        "title": "Pricing",
+        "theme": "red",
+        "links": [
+          {
+            "label": "Pricing / Price List",
+            "href": "/pricing"
+          }
+        ]
+      },
+      {
+        "id": "process",
+        "icon": "FiSettings",
+        "title": "Process",
+        "theme": "purple",
+        "links": [
+          {
+            "label": "How It Works",
+            "href": "/works"
+          },
+          {
+            "label": "Book a Pickup",
+            "href": "/booking"
+          }
+        ]
+      },
+      {
+        "id": "trust",
+        "icon": "FiAward",
+        "title": "Trust & Recognition",
+        "theme": "green",
+        "links": [
+          {
+            "label": "Testimonials",
+            "href": "/testimonials"
+          },
+          {
+            "label": "Certifications & Award",
+            "href": "/award"
+          }
+        ]
+      },
+      {
+        "id": "media",
+        "icon": "FiImage",
+        "title": "Media",
+        "theme": "blue",
+        "links": [
+          {
+            "label": "Gallery",
+            "href": "/gallery"
+          }
+        ]
+      },
+      {
+        "id": "blog",
+        "icon": "FiFileText",
+        "title": "Blog",
+        "theme": "red",
+        "links": [
+          {
+            "label": "Blog",
+            "href": "/blog"
+          },
+          {
+            "label": "Blog Details",
+            "href": "/blog"
+          }
+        ]
+      },
+      {
+        "id": "support",
+        "icon": "FiHelpCircle",
+        "title": "Support",
+        "theme": "yellow",
+        "links": [
+          {
+            "label": "FAQ",
+            "href": "/faq"
+          },
+          {
+            "label": "Contact Us",
+            "href": "/contact"
+          }
+        ]
+      },
+      {
+        "id": "policies",
+        "icon": "FiShield",
+        "title": "Policies",
+        "theme": "purple",
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy"
+          },
+          {
+            "label": "Terms & Conditions",
+            "href": "/terms"
+          },
+          {
+            "label": "Cancellation / Refund Policy",
+            "href": "/refund"
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "icon": "FiGitMerge",
+        "title": "Other Pages",
+        "theme": "teal",
+        "links": [
+          {
+            "label": "Sitemap",
+            "href": "/sitemap"
+          },
+          {
+            "label": "404 Page",
+            "href": "/404"
+          }
+        ]
+      }
+    ],
+    "promoCard": {
+      "titleLine1": "Clean",
+      "titleLine2": "Fresh",
+      "titleLine3": "Confident",
+      "image": {
+        "src": "/sitemap.png",
+        "alt": "Sitemap Illustration"
+      }
+    }
+  },
+  "teamDetails": {
+    "rohit-sharma": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+          "alt": "Rohit Sharma"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Rohit Sharma",
+        "role": "Operations Manager",
+        "bio": "Rohit Sharma is our dedicated Operations Manager at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Rohit makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "rohit@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Rohit",
+          "paragraphs": [
+            "Rohit brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Rohit continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Rohit ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Rohit's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Rohit Sharma",
+          "role": "Operations Manager"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Operations Manager",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Operations Manager",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "pooja-verma": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+          "alt": "Pooja Verma"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Pooja Verma",
+        "role": "Laundry Specialist",
+        "bio": "Pooja Verma is our dedicated Laundry Specialist at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Pooja makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "pooja@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Pooja",
+          "paragraphs": [
+            "Pooja brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Pooja continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Pooja ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Pooja's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Pooja Verma",
+          "role": "Laundry Specialist"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Laundry Specialist",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Laundry Specialist",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "amit-kumar": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+          "alt": "Amit Kumar"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Amit Kumar",
+        "role": "Dry-Cleaning Expert",
+        "bio": "Amit Kumar is our dedicated Dry-Cleaning Expert at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Amit makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "amit@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Amit",
+          "paragraphs": [
+            "Amit brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Amit continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Amit ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Amit's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Amit Kumar",
+          "role": "Dry-Cleaning Expert"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Dry-Cleaning Expert",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Dry-Cleaning Expert",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "neha-singh": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+          "alt": "Neha Singh"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Neha Singh",
+        "role": "Customer Support",
+        "bio": "Neha Singh is our dedicated Customer Support at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Neha makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "neha@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Neha",
+          "paragraphs": [
+            "Neha brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Neha continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Neha ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Neha's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Neha Singh",
+          "role": "Customer Support"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Customer Support",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Customer Support",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "vikram-patel": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+          "alt": "Vikram Patel"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Vikram Patel",
+        "role": "Pickup & Delivery Executive",
+        "bio": "Vikram Patel is our dedicated Pickup & Delivery Executive at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Vikram makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "vikram@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Vikram",
+          "paragraphs": [
+            "Vikram brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Vikram continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Vikram ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Vikram's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Vikram Patel",
+          "role": "Pickup & Delivery Executive"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Pickup & Delivery Executive",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Pickup & Delivery Executive",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "suresh-yadav": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+          "alt": "Suresh Yadav"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Suresh Yadav",
+        "role": "Fabric Care Specialist",
+        "bio": "Suresh Yadav is our dedicated Fabric Care Specialist at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Suresh makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "suresh@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Suresh",
+          "paragraphs": [
+            "Suresh brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Suresh continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Suresh ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Suresh's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Suresh Yadav",
+          "role": "Fabric Care Specialist"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Fabric Care Specialist",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Fabric Care Specialist",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "anjali-mehta": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+          "alt": "Anjali Mehta"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Anjali Mehta",
+        "role": "Quality Control",
+        "bio": "Anjali Mehta is our dedicated Quality Control at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Anjali makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "anjali@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Anjali",
+          "paragraphs": [
+            "Anjali brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Anjali continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Anjali ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Anjali's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Anjali Mehta",
+          "role": "Quality Control"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Quality Control",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Quality Control",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    },
+    "karan-malhotra": {
+      "subheading": "TEAM MEMBER",
+      "titleLine1": "Meet Our",
+      "titleLine2": "Team Member",
+      "description": "Passionate people. Professional service. Cleaner tomorrow.",
+      "member": {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+          "alt": "Karan Malhotra"
+        },
+        "imageQuote": "Clean clothes create a brighter, more confident you.",
+        "name": "Karan Malhotra",
+        "role": "Service Coordinator",
+        "bio": "Karan Malhotra is our dedicated Service Coordinator at FreshFold, ensuring smooth service delivery, high quality standards and complete customer satisfaction. With a strong passion for excellence, Karan makes sure every garment is handled with care and delivered on time.",
+        "stats": [
+          {
+            "label": "Experience",
+            "value": "5+ Years"
+          },
+          {
+            "label": "Location",
+            "value": "Noida, India"
+          },
+          {
+            "label": "Email",
+            "value": "karan@freshfold.com"
+          }
+        ],
+        "skills": [
+          {
+            "name": "Service Excellence",
+            "percentage": 95
+          },
+          {
+            "name": "Team Leadership",
+            "percentage": 90
+          },
+          {
+            "name": "Customer Support",
+            "percentage": 85
+          },
+          {
+            "name": "Process Improvement",
+            "percentage": 80
+          }
+        ],
+        "about": {
+          "title": "About Karan",
+          "paragraphs": [
+            "Karan brings years of experience in fabric care and customer service to FreshFold. With a firm belief in maintaining high standards, Karan continuously works to improve our processes to give customers the best laundry experience.",
+            "Their dedication, problem-solving mindset and people-first approach play a key role in our success. Karan ensures that every service runs efficiently so our customers can enjoy fresh, clean and perfectly cared-for clothes."
+          ],
+          "image": {
+            "src": "/teamdetail1.png",
+            "alt": "Towels decoration"
+          }
+        },
+        "message": {
+          "title": "Karan's Message",
+          "quote": "At FreshFold, our goal is simple - to make your life easier with reliable, high-quality laundry and dry cleaning services. We are committed to delivering freshness, care and convenience in every order.",
+          "name": "Karan Malhotra",
+          "role": "Service Coordinator"
+        },
+        "experience": {
+          "title": "Work Experience",
+          "items": [
+            {
+              "period": "2022 - Present",
+              "role": "Service Coordinator",
+              "company": "FreshFold Laundry & Dry Cleaning",
+              "description": "Managing daily operations, leading the team and ensuring customer satisfaction."
+            },
+            {
+              "period": "2019 - 2022",
+              "role": "Assistant Service Coordinator",
+              "company": "CleanPro Services",
+              "description": "Supported operations, improved workflow and handled customer queries."
+            },
+            {
+              "period": "2017 - 2019",
+              "role": "Service Supervisor",
+              "company": "QuickWash Laundry",
+              "description": "Supervised service quality and coordinated with the team."
+            },
+            {
+              "period": "2015 - 2017",
+              "role": "Support Executive",
+              "company": "BrightClean Solutions",
+              "description": "Handled enquiries and ensured smooth service experience."
+            }
+          ],
+          "image": {
+            "src": "/teamdet.png",
+            "alt": "Washing machine and towels"
+          },
+          "imageOverlayText": "People<br/>Behind<br/>a Cleaner<br/>Tomorrow"
+        },
+        "skillsTitle": "Core Skills"
+      }
+    }
+  },
+  "blogDetails": {
+    "cat-house-cleaning": {
+      "id": "cat-house-cleaning",
+      "author": "Admin",
+      "commentsCount": "7 Comments",
+      "content1": [
+        "Welcome to our definitive guide on house cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make house cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in House Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of house cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in House Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in House Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For House Cleaning",
+        "description": "Follow these essential tips to master house cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why House Cleaning Matters",
+        "content": [
+          "Ignoring house cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper house cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-house-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-office-cleaning": {
+      "id": "cat-office-cleaning",
+      "author": "Sarah Smith",
+      "commentsCount": "1 Comments",
+      "content1": [
+        "Welcome to our definitive guide on office cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make office cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Office Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of office cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Office Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Office Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Office Cleaning",
+        "description": "Follow these essential tips to master office cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Office Cleaning Matters",
+        "content": [
+          "Ignoring office cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper office cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-office-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-commercial-cleaning": {
+      "id": "cat-commercial-cleaning",
+      "author": "Admin",
+      "commentsCount": "5 Comments",
+      "content1": [
+        "Welcome to our definitive guide on commercial cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make commercial cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Commercial Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of commercial cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Commercial Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Commercial Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Commercial Cleaning",
+        "description": "Follow these essential tips to master commercial cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Commercial Cleaning Matters",
+        "content": [
+          "Ignoring commercial cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper commercial cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-commercial-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-residential-cleaning": {
+      "id": "cat-residential-cleaning",
+      "author": "Sarah Smith",
+      "commentsCount": "8 Comments",
+      "content1": [
+        "Welcome to our definitive guide on residential cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make residential cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Residential Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of residential cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Residential Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Residential Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Residential Cleaning",
+        "description": "Follow these essential tips to master residential cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Residential Cleaning Matters",
+        "content": [
+          "Ignoring residential cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper residential cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-residential-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-window-cleaning": {
+      "id": "cat-window-cleaning",
+      "author": "Admin",
+      "commentsCount": "2 Comments",
+      "content1": [
+        "Welcome to our definitive guide on window cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make window cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Window Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of window cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Window Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Window Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Window Cleaning",
+        "description": "Follow these essential tips to master window cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Window Cleaning Matters",
+        "content": [
+          "Ignoring window cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper window cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-window-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-carpet-cleaning": {
+      "id": "cat-carpet-cleaning",
+      "author": "Sarah Smith",
+      "commentsCount": "1 Comments",
+      "content1": [
+        "Welcome to our definitive guide on carpet cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make carpet cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Carpet Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of carpet cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Carpet Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Carpet Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Carpet Cleaning",
+        "description": "Follow these essential tips to master carpet cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Carpet Cleaning Matters",
+        "content": [
+          "Ignoring carpet cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper carpet cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-carpet-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-floor-cleaning": {
+      "id": "cat-floor-cleaning",
+      "author": "Admin",
+      "commentsCount": "2 Comments",
+      "content1": [
+        "Welcome to our definitive guide on floor cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make floor cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Floor Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of floor cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Floor Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Floor Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Floor Cleaning",
+        "description": "Follow these essential tips to master floor cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Floor Cleaning Matters",
+        "content": [
+          "Ignoring floor cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper floor cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-floor-cleaning"
+          }
+        ]
+      }
+    },
+    "cat-car-cleaning": {
+      "id": "cat-car-cleaning",
+      "author": "Sarah Smith",
+      "commentsCount": "3 Comments",
+      "content1": [
+        "Welcome to our definitive guide on car cleaning. Whether you are a professional or just looking to improve your space, these insights will help you achieve the best results.",
+        "Over the years, we've gathered the most effective strategies and tools to make car cleaning efficient and hassle-free. Let's dive into the details."
+      ],
+      "expertise": {
+        "title": "Expertise in Car Cleaning",
+        "content": [
+          "Our team has spent countless hours perfecting the art of car cleaning. Using the right equipment and environmentally friendly products is the key to our success.",
+          "We believe that a clean environment contributes significantly to overall well-being and productivity. That's why we take our methods so seriously."
+        ],
+        "images": [
+          {
+            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Car Cleaning Image 1"
+          },
+          {
+            "src": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=600",
+            "alt": "Expertise in Car Cleaning Image 2"
+          }
+        ]
+      },
+      "tips": {
+        "title": "Top Tips For Car Cleaning",
+        "description": "Follow these essential tips to master car cleaning:",
+        "list": [
+          "Always start from top to bottom.",
+          "Use microfiber cloths for dusting and wiping.",
+          "Don't mix chemical cleaning products.",
+          "Let your products sit for a few minutes before wiping.",
+          "Maintain a regular schedule to prevent buildup."
+        ]
+      },
+      "why": {
+        "title": "Why Car Cleaning Matters",
+        "content": [
+          "Ignoring car cleaning can lead to a buildup of dirt, allergens, and bacteria. Maintaining cleanliness is crucial for health and safety.",
+          "By investing time or resources into proper car cleaning, you ensure a pristine environment that welcomes guests and protects your health."
+        ]
+      },
+      "subbanner": {
+        "title": "Blogs Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Our Blogs",
+            "href": "/blog"
+          },
+          {
+            "label": "Blogs Details",
+            "href": "/blogdetails/cat-car-cleaning"
+          }
+        ]
+      }
+    }
+  },
+  "serviceDetails": {
+    "laundry": {
+      "id": "laundry",
+      "tag": "LAUNDRY SERVICE SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our laundry service service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=800",
+        "alt": "Laundry Service Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Laundry Service Delivered to Your Home",
+        "description": "Get the very best in laundry service from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/laundry"
+          }
+        ]
+      }
+    },
+    "dry-cleaning": {
+      "id": "dry-cleaning",
+      "tag": "DRY CLEANING SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our dry cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1520696954213-90d6e61f28b7?auto=format&fit=crop&q=80&w=800",
+        "alt": "Dry Cleaning Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Dry Cleaning Delivered to Your Home",
+        "description": "Get the very best in dry cleaning from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/dry-cleaning"
+          }
+        ]
+      }
+    },
+    "steam-ironing": {
+      "id": "steam-ironing",
+      "tag": "STEAM IRONING SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our steam ironing service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800",
+        "alt": "Steam Ironing Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Steam Ironing Delivered to Your Home",
+        "description": "Get the very best in steam ironing from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/steam-ironing"
+          }
+        ]
+      }
+    },
+    "shoe-cleaning": {
+      "id": "shoe-cleaning",
+      "tag": "SHOE CLEANING SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our shoe cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&q=80&w=800",
+        "alt": "Shoe Cleaning Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Shoe Cleaning Delivered to Your Home",
+        "description": "Get the very best in shoe cleaning from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/shoe-cleaning"
+          }
+        ]
+      }
+    },
+    "curtain-cleaning": {
+      "id": "curtain-cleaning",
+      "tag": "CURTAIN CLEANING SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our curtain cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+        "alt": "Curtain Cleaning Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Curtain Cleaning Delivered to Your Home",
+        "description": "Get the very best in curtain cleaning from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/curtain-cleaning"
+          }
+        ]
+      }
+    },
+    "carpet-cleaning": {
+      "id": "carpet-cleaning",
+      "tag": "CARPET CLEANING SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our carpet cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1558384462-8e3b3334208a?auto=format&fit=crop&q=80&w=800",
+        "alt": "Carpet Cleaning Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Carpet Cleaning Delivered to Your Home",
+        "description": "Get the very best in carpet cleaning from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/carpet-cleaning"
+          }
+        ]
+      }
+    },
+    "bag-cleaning": {
+      "id": "bag-cleaning",
+      "tag": "BAG CLEANING SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our bag cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80&w=800",
+        "alt": "Bag Cleaning Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Bag Cleaning Delivered to Your Home",
+        "description": "Get the very best in bag cleaning from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/bag-cleaning"
+          }
+        ]
+      }
+    },
+    "special-care": {
+      "id": "special-care",
+      "tag": "SPECIAL CARE SERVICE",
+      "title": "Fresh Clothes, A Brighter You",
+      "description": "Our special care service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1583847268964-b28ce8f31586?auto=format&fit=crop&q=80&w=800",
+        "alt": "Special Care Main Image"
+      },
+      "badge": {
+        "icon": "GiPoloShirt",
+        "textLine1": "Quality Cleaning",
+        "textLine2": "For A Better Tomorrow"
+      },
+      "features": [
+        {
+          "icon": "FaLeaf",
+          "label": "Eco-Friendly",
+          "subLabel": "Products"
+        },
+        {
+          "icon": "FaShieldAlt",
+          "label": "Safe for",
+          "subLabel": "All Fabrics"
+        },
+        {
+          "icon": "FaMagic",
+          "label": "Stain Removal",
+          "subLabel": "Expertise"
+        },
+        {
+          "icon": "FaClock",
+          "label": "On-Time",
+          "subLabel": "Delivery"
+        }
+      ],
+      "about": {
+        "title": "Special Care Delivered to Your Home",
+        "description": "Get the very best in special care from the experts. We offer one-day or same-day service with a 100% satisfaction guarantee to customers, combining the excellence of premium care with ultimate convenience.",
+        "list": [
+          "Salons & Spas",
+          "Restaurants and Caterers",
+          "Religious Organizations",
+          "Daycare centers",
+          "Assisted Living / Nursing Homes",
+          "Hotels & Motels",
+          "Nail Salons",
+          "Athletic Facilities / Gyms"
+        ],
+        "circularText": "More Time For What You Love",
+        "circularIcon": "MdLocalLaundryService"
+      },
+      "subbanner": {
+        "title": "Service Details",
+        "bgImage": "/subbanner.png",
+        "breadcrumbs": [
+          {
+            "label": "Home",
+            "href": "/"
+          },
+          {
+            "label": "Service Details",
+            "href": "/servicedetails/special-care"
+          }
+        ]
+      }
     }
   }
 }

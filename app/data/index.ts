@@ -98,7 +98,64 @@ export interface AppData {
   blog: BlogData;
   cta: CtaData;
   missionVision: MissionVisionData;
+  teamDetails: Record<string, TeamDetailsData>;
   subbanners: Record<string, SubbannerData>;
+  sitemap: SitemapData;
+  blogDetails: Record<string, BlogDetailsData>;
+  serviceDetails: Record<string, ServiceDetailsData>;
+}
+
+// ─── Team Details Types ────────────────────────────────────────────────────────
+
+export interface TeamMemberSkill {
+  name: string;
+  percentage: number;
+}
+
+export interface TeamMemberStat {
+  label: string;
+  value: string;
+}
+
+export interface TeamMemberExperience {
+  period: string;
+  role: string;
+  company: string;
+  description: string;
+}
+
+export interface TeamDetailsData {
+  subheading: string;
+  titleLine1: string;
+  titleLine2: string;
+  description: string;
+  member: {
+    image: { src: string; alt: string };
+    imageQuote: string;
+    name: string;
+    role: string;
+    bio: string;
+    stats: TeamMemberStat[];
+    skillsTitle?: string;
+    skills: TeamMemberSkill[];
+    about: {
+      title: string;
+      paragraphs: string[];
+      image?: { src: string; alt: string };
+    };
+    message: {
+      title: string;
+      quote: string;
+      name: string;
+      role: string;
+    };
+    experience: {
+      title: string;
+      items: TeamMemberExperience[];
+      image: { src: string; alt: string };
+      imageOverlayText: string;
+    };
+  };
 }
 
 // ─── Footer Types ──────────────────────────────────────────────────────────────
@@ -195,6 +252,17 @@ export interface WorksStep {
   icon: string;
   title: string;
   description: string;
+  paragraph?: string;
+  bullets?: string[];
+  image?: {
+    src: string;
+    alt: string;
+  };
+  badge?: {
+    icon: string;
+    textLine1: string;
+    textLine2?: string;
+  };
 }
 
 export interface WorksData {
@@ -279,6 +347,37 @@ export interface CountingData {
   stats: CountingStat[];
 }
 
+
+export interface ServiceDetailsData {
+  id: string;
+  tag: string;
+  title: string;
+  description: string;
+  image: { src: string; alt: string };
+  badge: {
+    icon: string;
+    textLine1: string;
+    textLine2: string;
+  };
+  features: {
+    icon: string;
+    label: string;
+    subLabel: string;
+  }[];
+  about: {
+    title: string;
+    description: string;
+    list: string[];
+    circularText: string;
+    circularIcon: string;
+  };
+  subbanner: {
+    title: string;
+    bgImage: string;
+    breadcrumbs: { label: string; href: string }[];
+  };
+}
+
 // ─── Blog Types ────────────────────────────────────────────────────────────────
 
 export interface BlogPost {
@@ -299,7 +398,30 @@ export interface BlogData {
   subtitle: string;
   ctaText: string;
   ctaLink: string;
+  categories: string[];
   posts: BlogPost[];
+}
+
+export interface BlogDetailsData {
+  id: string;
+  subbanner: SubbannerData;
+  author: string;
+  commentsCount: string;
+  content1: string[];
+  expertise: {
+    title: string;
+    content: string[];
+    images: { src: string; alt: string }[];
+  };
+  tips: {
+    title: string;
+    description: string;
+    list: string[];
+  };
+  why: {
+    title: string;
+    content: string[];
+  };
 }
 
 // ─── CTA Types ─────────────────────────────────────────────────────────────────
@@ -418,6 +540,7 @@ export interface ServicesSectionData {
 
 export interface AppData {
   servicesSection: ServicesSectionData;
+  blogDetails: Record<string, BlogDetailsData>;
 }
 
 
@@ -766,3 +889,43 @@ export interface AppLegalData {
 }
 
 export const data: AppData = rawData as AppData;
+
+// ─── Sitemap Types ─────────────────────────────────────────────────────────────
+
+export interface SitemapLink {
+  label: string;
+  href: string;
+}
+
+export interface SitemapSection {
+  id: string;
+  icon: string;
+  title: string;
+  theme: "blue" | "teal" | "yellow" | "red" | "purple" | "green" | "gray" | "slate" | string;
+  links: SitemapLink[];
+}
+
+export interface SitemapPromoCard {
+  titleLine1: string;
+  titleLine2: string;
+  titleLine3: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+}
+
+export interface SitemapHeader {
+  eyebrow: string;
+  titleStart: string;
+  titleHighlight: string;
+  subtitle: string;
+}
+
+export interface SitemapData {
+  header: SitemapHeader;
+  sections: SitemapSection[];
+  promoCard: SitemapPromoCard;
+}
+
+export const sitemapData: SitemapData = data.sitemap;

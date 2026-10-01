@@ -127,10 +127,10 @@ export default function Services() {
 
             <div>
               <Link 
-                href={activeService.ctaLink}
+                href={`/servicedetails/${activeTabId}`}
                 className="inline-flex items-center justify-center gap-3 bg-gold text-[#0b2d4a] font-bold text-[15px] px-8 py-3.5 rounded-full shadow-[0_4px_14px_rgba(255,190,48,0.4)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(255,190,48,0.5)] transition-all"
               >
-                {activeService.ctaText}
+                View Details
                 <LuArrowRight className="text-[18px]" />
               </Link>
             </div>
@@ -169,7 +169,6 @@ export default function Services() {
                </div>
             </div>
           </div>
-
         </div>
       </div>
     </section>

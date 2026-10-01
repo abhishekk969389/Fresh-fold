@@ -22,7 +22,7 @@ export default function Counting() {
   const countingData = (data as any).counting as CountingData;
 
   return (
-    <section className="relative w-full font-sans mt-8 sm:mt-10 md:mt-12 lg:mt-14 pb-10 xl:pb-14 z-10">
+    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 pb-10 xl:pb-14 z-10">
       
       {/* Dark background starts exactly at 1/3 of image height */}
       <div className="absolute left-0 w-full bg-[#113a45] -z-10

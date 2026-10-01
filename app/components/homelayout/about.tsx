@@ -10,7 +10,7 @@ const aboutData = (data as any).about as AboutData;
 
 export default function About() {
   return (
-    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden font-sans">
+    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden">
       
       {/* Decorative dots top right */}
       <div className="absolute top-0 right-0 w-64 h-64 bg-[#f0f9fa] rounded-bl-full opacity-70 -z-0 pointer-events-none hidden lg:block"></div>

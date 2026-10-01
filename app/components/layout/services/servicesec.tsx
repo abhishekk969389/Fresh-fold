@@ -149,7 +149,7 @@ export default function ServicesList() {
 
                   {/* Read More Yellow Button */}
                   <Link
-                    href={service.ctaLink}
+                    href={`/servicedetails/${service.id}`}
                     className="shrink-0 bg-[#fbbf24] hover:bg-[#f59e0b] text-[#083c48] px-6 py-3 rounded-full font-extrabold text-[13px] tracking-wide flex items-center gap-2 shadow-sm transition-all duration-300 self-start sm:self-center"
                   >
                     {service.ctaText}

@@ -34,7 +34,7 @@ export default function CertificationsSection() {
                 </h2>
 
 
-                 <p className="text-[#5a7184] text-[16px] sm:text-[17px] max-w-xl mx-auto mb-6">
+                 <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6">
                     {section.description}
                 </p>
 

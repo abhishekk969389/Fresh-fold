@@ -3,6 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import { FiClock, FiPhone, FiMapPin, FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
@@ -64,6 +65,7 @@ function SocialButton({ social }: { social: SocialLink }) {
 function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLLIElement>(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     function handleOutside(e: MouseEvent) {
@@ -75,11 +77,18 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
     return () => document.removeEventListener("mousedown", handleOutside);
   }, []);
 
-  const desktopClasses = `relative flex items-center gap-1 px-2.5 xl:px-3 py-2.5 text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] font-bold text-teal-dark transition-colors whitespace-nowrap group`;
-  const mobileClasses = `flex items-center justify-between w-full px-3.5 py-3 text-[15px] font-semibold text-teal-dark rounded-md transition-colors hover:bg-teal-light hover:text-teal-dark`;
+  const isDropdownLink = link.hasDropdown;
+  
+  const isExactMatch = pathname === link.href;
+  const isDropdownMatch = link.hasDropdown && link.dropdown?.some(item => pathname === item.href || pathname.startsWith(item.href + '/'));
+  const isStartsWithMatch = link.href !== '/' && pathname.startsWith(link.href + '/');
+  const isActive = isExactMatch || isDropdownMatch || isStartsWithMatch;
+
+  const desktopClasses = `relative flex items-center gap-1 px-2.5 xl:px-3 py-2.5 text-[12px] md:text-[14px] lg:text-[15px] xl:text-[16px] font-bold text-teal-dark transition-colors whitespace-nowrap group ${isDropdownLink ? 'cursor-default' : ''}`;
+  const mobileClasses = `flex items-center justify-between w-full px-3.5 py-3 text-[15px] font-semibold text-teal-dark rounded-md transition-colors hover:bg-teal-light hover:text-teal-dark ${isDropdownLink ? 'cursor-default' : ''}`;
   
   const underline = (
-    <span className={`absolute bottom-0.5 left-2 right-2 xl:left-3 xl:right-3 h-[2.5px] bg-teal-dark origin-center transition-transform duration-200 ${link.id === 'home' ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
+    <span className={`absolute bottom-0.5 left-2 right-2 xl:left-3 xl:right-3 h-[2.5px] bg-teal-dark origin-center transition-transform duration-200 ${isActive ? 'scale-x-100' : 'scale-x-0 group-hover:scale-x-100'}`} />
   );
 
   if (!link.hasDropdown) {
@@ -99,8 +108,10 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
         href={link.href}
         className={mobile ? mobileClasses : desktopClasses}
         onClick={(e) => {
-          if (mobile) {
+          if (link.hasDropdown) {
             e.preventDefault();
+          }
+          if (mobile) {
             setOpen((v) => !v);
           }
         }}

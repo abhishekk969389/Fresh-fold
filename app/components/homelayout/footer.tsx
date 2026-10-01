@@ -34,7 +34,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="relative bg-[#033342] text-white pt-10 sm:pt-12 md:pt-14 lg:pt-16 overflow-hidden font-sans shrink-0">
+    <footer className="relative bg-[#033342] text-white pt-10 sm:pt-12 md:pt-14 lg:pt-16 overflow-hidden shrink-0">
       {/* Side Image bound to 1920px max width like the banner */}
       <div className="absolute inset-0 max-w-[1920px] mx-auto pointer-events-none z-0">
         <div className="absolute right-0 bottom-0 hidden lg:block opacity-95">

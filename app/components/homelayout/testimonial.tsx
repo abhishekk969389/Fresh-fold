@@ -19,7 +19,7 @@ export default function Testimonial() {
   };
 
   return (
-    <section className="w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 font-sans overflow-hidden">
+    <section className="w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14  overflow-hidden">
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12">
         
         {/* Top Header */}

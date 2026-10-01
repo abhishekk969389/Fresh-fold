@@ -36,7 +36,7 @@ export default function MissionSec() {
   const mvData = (data as any).missionVision as MissionVisionData;
 
   return (
-    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 bg-[#f4f9fb] font-sans overflow-hidden">
+    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 bg-[#f4f9fb] overflow-hidden">
       
       {/* Background Dots Pattern */}
       <div className="absolute top-20 right-10 grid grid-cols-4 gap-3 opacity-20 pointer-events-none">

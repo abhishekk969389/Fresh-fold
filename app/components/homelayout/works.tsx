@@ -21,7 +21,7 @@ export default function Works() {
   const worksData = (data as any).works as WorksData;
 
   return (
-    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden font-sans bg-[#f4fcfc]">
+    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden bg-[#f4fcfc]">
       
       {/* Background Decor Left */}
       <div className="absolute top-[15%] left-[-2%] lg:left-[2%] opacity-40 z-0 hidden md:block">

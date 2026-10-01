@@ -29,7 +29,7 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
   const isLight = theme === 'light';
 
   return (
-    <section className={`relative w-full overflow-hidden font-sans ${isLight ? 'bg-transparent mt-8 sm:mt-10 md:mt-12 lg:mt-14 mb-10' : 'mt-8 sm:mt-10 md:mt-12 lg:mt-14 py-8 sm:py-10 md:py-12 lg:py-14 bg-[#06242c]'}`}>
+    <section className={`relative w-full overflow-hidden ${isLight ? 'bg-transparent mt-8 sm:mt-10 md:mt-12 lg:mt-14 mb-10' : 'mt-8 sm:mt-10 md:mt-12 lg:mt-14 py-8 sm:py-10 md:py-12 lg:py-14 bg-[#06242c]'}`}>
       
       {/* Background Decor */}
       {isLight ? (
