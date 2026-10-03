@@ -133,7 +133,7 @@ export default function Blog({ isPage = false }: BlogProps = {}) {
               className={
               isPage
                 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 pt-4 px-4 sm:px-0 mx-auto w-full"
-                : "flex gap-5 xl:gap-6 overflow-x-auto pb-8 pt-4 lg:px-0 snap-x snap-mandatory hide-scrollbar scroll-smooth"
+                : "flex gap-5 xl:gap-6 overflow-x-auto pt-4 lg:px-0 snap-x snap-mandatory hide-scrollbar scroll-smooth"
             }>
             {displayedPosts.map((post, idx) => (
               <motion.div
@@ -209,7 +209,7 @@ export default function Blog({ isPage = false }: BlogProps = {}) {
 
         {/* Pagination Dots */}
         {!isPage && (
-          <div className="hidden md:flex items-center justify-center gap-2">
+          <div className="flex lg:mt-6 items-center justify-center gap-2">
             {displayedPosts.map((_, idx) => (
               <button
                 key={idx}

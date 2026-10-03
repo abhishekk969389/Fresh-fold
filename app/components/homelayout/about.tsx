@@ -41,7 +41,7 @@ export default function About() {
             <div className="relative w-full max-w-[500px] xl:max-w-[550px] mx-auto lg:ml-0 aspect-[4/4.5] sm:aspect-[4/4.5] lg:aspect-[4/4.5]">
               
               {/* Dotted pattern behind top-right */}
-              <div className="absolute top-10 right-[-10px] sm:right-[-40px] w-24 h-48 bg-[radial-gradient(#c2e8e5_3px,transparent_3px)] [background-size:16px_16px] -z-10"></div>
+              <div className="absolute top-10 right-[0px] sm:right-[-40px] w-24 h-48 bg-[radial-gradient(#c2e8e5_3px,transparent_3px)] [background-size:16px_16px] -z-10"></div>
 
               {/* Main Image */}
               <div className="absolute top-[5%] left-[15%] right-[0%] bottom-[10%] bg-gray-100 overflow-hidden z-0 rounded-md">
@@ -97,9 +97,9 @@ export default function About() {
               </div>
 
               {/* Small Image Overlay */}
-              <div className="absolute bottom-[2%] right-[-5%] sm:right-[-10%] w-[55%] aspect-[1.1/1] z-20">
+              <div className="absolute bottom-[2%] right-[2%] sm:right-[-10%] w-[48%] sm:w-[55%] aspect-[1.1/1] z-20">
                 {/* Dark teal triangle behind bottom-right corner */}
-                <div className="absolute -bottom-3 -right-3 w-16 h-16 bg-[#0b434f]" style={{ clipPath: "polygon(100% 0, 100% 100%, 0 100%)" }}></div>
+                <div className="absolute -bottom-2 -right-2 sm:-bottom-3 sm:-right-3 w-12 h-12 sm:w-16 sm:h-16 bg-[#0b434f]" style={{ clipPath: "polygon(100% 0, 100% 100%, 0 100%)" }}></div>
                 
                 {/* Image with white border */}
                 <div className="relative w-full h-full bg-white p-[6px] shadow-xl">
@@ -115,9 +115,9 @@ export default function About() {
                     <div className="absolute inset-0 flex items-center justify-center">
                       <button 
                         onClick={() => setIsVideoOpen(true)}
-                        className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center text-[#14808f] shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-transform z-10 cursor-pointer"
+                        className="w-[50px] h-[50px] sm:w-[70px] sm:h-[70px] bg-white rounded-full flex items-center justify-center text-[#14808f] shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-transform z-10 cursor-pointer"
                       >
-                        <FaPlay className="text-[24px] ml-1" />
+                        <FaPlay className="text-[16px] sm:text-[24px] ml-1" />
                       </button>
                     </div>
                   </div>

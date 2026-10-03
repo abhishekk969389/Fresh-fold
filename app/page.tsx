@@ -11,8 +11,8 @@ import About from "./components/homelayout/about";
 export default function Home() {
   return (
     <>
-      <Banner /> 
-      <About/>
+      <Banner />
+      <About />
       <Services />
       <Works />
       <WhyChoose />
