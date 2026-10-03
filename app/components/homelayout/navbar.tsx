@@ -62,7 +62,7 @@ function SocialButton({ social }: { social: SocialLink }) {
   );
 }
 
-function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) {
+function NavItem({ link, mobile = false, onClose }: { link: NavLink; mobile?: boolean; onClose?: () => void }) {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLLIElement>(null);
   const pathname = usePathname();
@@ -94,7 +94,13 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
   if (!link.hasDropdown) {
     return (
       <li ref={ref}>
-        <Link href={link.href} className={mobile ? mobileClasses : desktopClasses}>
+        <Link 
+          href={link.href} 
+          className={mobile ? mobileClasses : desktopClasses}
+          onClick={() => {
+            if (mobile && onClose) onClose();
+          }}
+        >
           {link.label}
           {!mobile && underline}
         </Link>
@@ -135,7 +141,10 @@ function NavItem({ link, mobile = false }: { link: NavLink; mobile?: boolean }) 
                   ? "block px-5 py-3 text-[14.5px] font-medium text-teal-dark border-b border-teal-light/50 last:border-none transition-all hover:bg-teal-light/80 hover:pl-6" 
                   : "block px-5 py-3 text-[14.5px] font-medium text-teal-dark border-b border-teal-light last:border-none transition-all hover:bg-teal-light hover:pl-[26px]"
                 }
-                onClick={() => setOpen(false)}
+                onClick={() => {
+                  setOpen(false);
+                  if (mobile && onClose) onClose();
+                }}
               >
                 {item.label}
               </Link>
@@ -303,7 +312,7 @@ export default function Navbar() {
         <div className={`overflow-hidden transition-[max-height,padding] duration-300 ease-out bg-white border-t border-teal-light px-4 ${mobileOpen ? "max-h-[600px] py-4" : "max-h-0 py-0 border-transparent"}`}>
           <ul className="flex flex-col gap-1 mb-4 list-none">
             {navLinks.map((link) => (
-              <NavItem key={link.id} link={link} mobile />
+              <NavItem key={link.id} link={link} mobile onClose={() => setMobileOpen(false)} />
             ))}
           </ul>
           <Link

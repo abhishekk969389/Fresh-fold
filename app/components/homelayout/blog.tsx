@@ -133,7 +133,7 @@ export default function Blog({ isPage = false }: BlogProps = {}) {
               className={
               isPage
                 ? "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 pt-4 px-4 sm:px-0 mx-auto w-full"
-                : "flex gap-5 xl:gap-6 overflow-x-auto pb-8 pt-4 px-4 lg:px-0 -mx-4 lg:mx-0 snap-x snap-mandatory hide-scrollbar scroll-smooth"
+                : "flex gap-5 xl:gap-6 overflow-x-auto pb-8 pt-4 lg:px-0 snap-x snap-mandatory hide-scrollbar scroll-smooth"
             }>
             {displayedPosts.map((post, idx) => (
               <motion.div
@@ -142,7 +142,7 @@ export default function Blog({ isPage = false }: BlogProps = {}) {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: isPage ? idx * 0.15 : (idx < 3 ? idx * 0.15 : 0) }}
-                className={`shrink-0 w-[290px] sm:w-[340px] ${!isPage ? 'lg:w-[calc((100%-2.5rem)/3)] xl:w-[calc((100%-3rem)/3)]' : 'lg:w-auto'} snap-center flex flex-col h-full`}
+                className={`shrink-0 w-full sm:w-[340px] ${!isPage ? 'lg:w-[calc((100%-2.5rem)/3)] xl:w-[calc((100%-3rem)/3)]' : 'lg:w-auto'} snap-center flex flex-col h-full`}
               >
                 <Link
                   href={`/blogdetails/${post.id}`}
@@ -209,7 +209,7 @@ export default function Blog({ isPage = false }: BlogProps = {}) {
 
         {/* Pagination Dots */}
         {!isPage && (
-          <div className="flex items-center justify-center gap-2">
+          <div className="hidden md:flex items-center justify-center gap-2">
             {displayedPosts.map((_, idx) => (
               <button
                 key={idx}

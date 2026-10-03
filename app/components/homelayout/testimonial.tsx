@@ -96,15 +96,23 @@ export default function Testimonial() {
 
           {/* Right Cards Grid/Carousel */}
           <div className="lg:col-span-9 w-full relative">
-            <div className="flex lg:grid lg:grid-cols-3 gap-4 sm:gap-6 xl:gap-8 w-full overflow-x-auto lg:overflow-visible pb-4 lg:pb-0 pt-2 lg:pt-4 hide-scrollbar snap-x snap-mandatory px-2 sm:px-4 lg:px-0 items-stretch lg:items-center">
+            <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 xl:gap-8 w-full pb-4 lg:pb-0 pt-2 lg:pt-4 px-2 sm:px-4 lg:px-0 items-center justify-center lg:justify-start">
               
               {testimonialData.reviews.map((review, idx) => {
                 const isActive = idx === activeIndex;
+                const nextIdx = (activeIndex + 1) % testimonialData.reviews.length;
+                const isTabletVisible = isActive || idx === nextIdx;
+                
+                const displayClass = isActive ? 'flex' : (isTabletVisible ? 'hidden md:flex' : 'hidden lg:flex');
+                
+                let orderClass = 'order-3 lg:order-none';
+                if (isActive) orderClass = 'order-1 lg:order-none';
+                else if (idx === nextIdx) orderClass = 'order-2 lg:order-none';
                 
                 return (
                   <div 
                     key={review.id} 
-                    className={`shrink-0 w-[85vw] max-w-[300px] sm:w-[340px] md:w-[360px] lg:w-auto rounded-[20px] sm:rounded-[24px] overflow-hidden snap-center transition-all duration-500 cursor-pointer flex flex-col shadow-md sm:shadow-lg ${
+                    className={`${displayClass} ${orderClass} flex-col shrink-0 w-full max-w-[340px] sm:max-w-[400px] md:max-w-none lg:w-auto rounded-[20px] sm:rounded-[24px] overflow-hidden transition-all duration-500 cursor-pointer shadow-md sm:shadow-lg mx-auto lg:mx-0 ${
                       isActive 
                         ? 'lg:scale-[1.05] z-20 shadow-[0_15px_35px_rgba(7,60,71,0.2)] lg:shadow-[0_20px_40px_rgba(7,60,71,0.25)] ring-2 ring-[#00bcd4]/30 lg:ring-0' 
                         : 'opacity-85 sm:opacity-80 hover:opacity-100 z-10'
@@ -182,7 +190,7 @@ export default function Testimonial() {
           </div>
 
           {/* Dots */}
-          <div className="lg:col-span-9 flex items-center justify-center gap-2 sm:gap-3">
+          <div className="lg:col-span-9 hidden md:flex items-center justify-center gap-2 sm:gap-3">
             {testimonialData.reviews.map((_, idx) => (
               <button
                 key={idx}

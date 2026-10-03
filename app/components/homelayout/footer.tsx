@@ -178,14 +178,18 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="relative z-10 bg-[#033342] py-3 border-t border-white/10">
-        <div className="max-w-[1360px] mx-auto px-6 xl:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-[14px] text-white/70">{footerData.bottomText}</p>
+      <div className="relative z-10 bg-[#033342] py-4 border-t border-white/10">
+        <div className="max-w-[1360px] mx-auto px-4 sm:px-6 xl:px-12 flex flex-col md:flex-row items-center justify-between gap-4 md:gap-4">
+          <p className="text-[13px] sm:text-[14px] text-white/70 text-center md:text-left mb-2 md:mb-0">
+            {footerData.bottomText}
+          </p>
 
-          <div className="flex items-center gap-4 text-[14px] text-white/70">
+          <div className="flex flex-wrap items-center justify-center md:justify-end gap-3 sm:gap-4 text-[13px] sm:text-[14px] text-white/70">
             {footerData.bottomLinks.map((link, idx) => (
               <React.Fragment key={idx}>
-                <Link href={link.href} className="hover:text-gold transition-colors">{link.label}</Link>
+                <Link href={link.href} className="hover:text-gold transition-colors text-center">
+                  {link.label}
+                </Link>
                 {idx < footerData.bottomLinks.length - 1 && <span className="text-white/30">|</span>}
               </React.Fragment>
             ))}
@@ -193,9 +197,9 @@ export default function Footer() {
             <button
               onClick={scrollToTop}
               aria-label="Scroll to top"
-              className="ml-6 flex items-center justify-center w-10 h-10 rounded-full bg-white/10 text-white hover:bg-[#00bcd4] hover:text-white transition-colors"
+              className="ml-2 sm:ml-4 md:ml-6 flex items-center justify-center w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-white/10 text-white hover:bg-[#00bcd4] hover:text-white transition-colors shrink-0"
             >
-              <FiArrowUp className="text-[20px]" />
+              <FiArrowUp className="text-[18px] sm:text-[20px]" />
             </button>
           </div>
         </div>
