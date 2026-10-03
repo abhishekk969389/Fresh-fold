@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { data } from "@/app/data";
 import type { CtaData } from "@/app/data";
@@ -19,7 +22,13 @@ export default function CTA({ className }: CtaProps = {}) {
       <div className="max-w-[1360px] mx-auto bg-[#025974] rounded-[24px] lg:rounded-[32px] p-8 lg:p-12 xl:p-16 relative overflow-hidden flex flex-col lg:flex-row items-center justify-between gap-10">
         
         {/* Left Section: Icon & Text */}
-        <div className="flex flex-col md:flex-row items-center md:items-start lg:items-center text-center md:text-left gap-6 lg:gap-8 z-10 w-full lg:w-auto">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col md:flex-row items-center md:items-start lg:items-center text-center md:text-left gap-6 lg:gap-8 z-10 w-full lg:w-auto"
+        >
           
           {/* Main Icon in Circle */}
           <div className="relative shrink-0 w-24 h-24 lg:w-28 lg:h-28 bg-white/10 rounded-full flex items-center justify-center">
@@ -39,10 +48,16 @@ export default function CTA({ className }: CtaProps = {}) {
               {ctaData.description}
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Section: Arrow & Button */}
-        <div className="relative shrink-0 flex items-center justify-center w-full lg:w-auto mt-4 lg:mt-0 z-10">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="relative shrink-0 flex items-center justify-center w-full lg:w-auto mt-4 lg:mt-0 z-10"
+        >
           
           {/* Curved Arrow SVG (Desktop only) */}
           <div className="hidden lg:block absolute right-[100%] top-1/2 -translate-y-1/2 mr-6 pointer-events-none text-white opacity-80">
@@ -60,7 +75,7 @@ export default function CTA({ className }: CtaProps = {}) {
             <span>{ctaData.buttonText}</span>
             <FaArrowRight className="text-[14px] transition-transform duration-300 group-hover:translate-x-1" />
           </Link>
-        </div>
+        </motion.div>
      
       </div>
     </section>

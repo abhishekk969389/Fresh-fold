@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 
 import * as FiIcons from "react-icons/fi";
 import * as LuIcons from "react-icons/lu";
@@ -95,25 +96,49 @@ export default function FaqSection() {
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10 text-center">
 
                 {/* Header Section */}
-                <div className="flex items-center justify-center gap-4 mb-2">
+                <motion.div 
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="flex items-center justify-center gap-4 mb-2"
+                >
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
                     <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">{section.tag}</span>
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
-                </div>
+                </motion.div>
 
-                <h2 className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-1 tracking-tight">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-1 tracking-tight"
+                >
                     <span className="text-[#0b2d4a]">{section.titlePrefix} </span>
                     <span className="text-[#0092a3]">{section.titleHighlight}</span>
                     <div className="w-14 h-1 bg-yellow-400 mx-auto rounded-full mt-2"></div>
-                </h2>
+                </motion.h2>
 
 
-                  <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6">
+                <motion.p 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6"
+                >
                     {section.description}
-                </p>
+                </motion.p>
 
         {/* 4 Feature Badges Row (Screenshot exact design) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-14">
+        <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mb-12 sm:mb-14"
+        >
           {section.badges.map((badge: FaqHighlightBadge) => (
             <div
               key={badge.id}
@@ -135,10 +160,16 @@ export default function FaqSection() {
               </div>
             </div>
           ))}
-        </div>
+        </motion.div>
 
         {/* 2-Columns FAQ Accordion List */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start">
+        <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6 items-start"
+        >
           {/* Left Column */}
           <div className="space-y-3.5">
             {section.leftColumnFaqs.map((faq: FaqItem) =>
@@ -152,7 +183,7 @@ export default function FaqSection() {
               renderAccordionItem(faq)
             )}
           </div>
-        </div>
+        </motion.div>
 
       </div>
     </section>

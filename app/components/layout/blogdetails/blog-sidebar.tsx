@@ -1,8 +1,11 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaArrowRight } from 'react-icons/fa';
 import { GoArrowRight } from "react-icons/go";
+import { motion } from "framer-motion";
 import type { BlogData, BlogPost } from '@/app/data';
 import { FaCalendarAlt } from 'react-icons/fa';
 
@@ -13,7 +16,13 @@ interface Props {
 
 export default function BlogSidebar({ blogData, currentCategory }: Props) {
   return (
-    <aside className="w-full lg:w-[400px] shrink-0 flex flex-col gap-10">
+    <motion.aside 
+      initial={{ opacity: 0, x: 30 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="w-full lg:w-[400px] shrink-0 flex flex-col gap-10"
+    >
       
       {/* Categories */}
       <div className="bg-gray-200/80 rounded-2xl p-6 md:p-8">
@@ -73,6 +82,6 @@ export default function BlogSidebar({ blogData, currentCategory }: Props) {
         </div>
       </div>
       
-    </aside>
+    </motion.aside>
   );
 }

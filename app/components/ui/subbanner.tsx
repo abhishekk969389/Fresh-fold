@@ -1,4 +1,7 @@
+"use client";
+
 import React from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { data } from "@/app/data";
@@ -103,7 +106,12 @@ export default function Subbanner({ pageKey, customTitle, customBreadcrumbs, cus
       <div className="relative z-30 w-full max-w-[1360px] mx-auto h-full px-6 xl:px-12 flex flex-col justify-center">
         
         {/* Breadcrumbs */}
-        <div className="flex items-center gap-2 text-[#0b2d4a] font-bold text-[13px] sm:text-[14px] lg:text-[15px] mb-4">
+        <motion.div 
+          initial={{ opacity: 0, y: 15 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center gap-2 text-[#0b2d4a] font-bold text-[13px] sm:text-[14px] lg:text-[15px] mb-4"
+        >
           {breadcrumbsToDisplay.map((crumb, idx) => (
             <React.Fragment key={idx}>
               <Link href={crumb.href} className="hover:text-[#0b2d4a]/80 transition-colors">
@@ -114,12 +122,17 @@ export default function Subbanner({ pageKey, customTitle, customBreadcrumbs, cus
               )}
             </React.Fragment>
           ))}
-        </div>
+        </motion.div>
 
         {/* Title */}
-        <h1 className="text-[36px] sm:text-[42px] lg:text-[50px] xl:text-[56px] font-bold text-[#073c47] leading-tight tracking-tight drop-shadow-sm">
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="text-[36px] sm:text-[42px] lg:text-[50px] xl:text-[56px] font-bold text-[#073c47] leading-tight tracking-tight drop-shadow-sm"
+        >
           {titleToDisplay}
-        </h1>
+        </motion.h1>
 
       </div>
     </div>

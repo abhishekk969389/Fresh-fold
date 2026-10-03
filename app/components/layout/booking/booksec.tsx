@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { IconType } from "react-icons";
 
 import * as FiIcons from "react-icons/fi";
@@ -50,27 +51,51 @@ export default function BookingSection() {
             <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10 text-center">
 
                 {/* Header Section */}
-                <div className="flex items-center justify-center gap-4 mb-2">
+                <motion.div 
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="flex items-center justify-center gap-4 mb-2"
+                >
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
                     <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">{section.tag}</span>
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
-                </div>
+                </motion.div>
 
-                <h2 className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-3 tracking-tight">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-3 tracking-tight"
+                >
                     <span className="text-[#0b2d4a]">{section.titleLine1} </span>
                     <span className="text-[#0092a3]">{section.titleLine2}</span>
-                </h2>
+                </motion.h2>
 
 
-                <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6">
+                <motion.p 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6"
+                >
                     {section.descriptionLine1} {section.descriptionLine2}
-                </p>
+                </motion.p>
 
                 {/* Main Content Grid: items-stretch keeps both sides equal height */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
 
                     {/* Left Column: Form Card */}
-                    <div className="lg:col-span-7 bg-white rounded-[32px] p-6 sm:p-10 shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <motion.div 
+                        initial={{ opacity: 0, x: -40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="lg:col-span-7 bg-white rounded-[32px] p-6 sm:p-10 shadow-sm border border-gray-100 flex flex-col justify-between"
+                    >
                         <div>
                             {/* Form Top Title with Icon */}
                             <div className="flex items-center gap-4 mb-8 text-left">
@@ -218,10 +243,16 @@ export default function BookingSection() {
                                 </button>
                             </form>
                         </div>
-                    </div>
+                    </motion.div>
 
                     {/* Right Column: Exactly Stretches to Match Form Height */}
-                    <div className="lg:col-span-5 flex flex-col justify-between gap-6">
+                    <motion.div 
+                        initial={{ opacity: 0, x: 40 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.6 }}
+                        className="lg:col-span-5 flex flex-col justify-between gap-6"
+                    >
 
                         {/* Banner Image Container: flex-1 ensures it fills all remaining vertical space */}
                         <div className="relative w-full flex-1 min-h-[380px] rounded-[32px] overflow-hidden shadow-sm">
@@ -314,7 +345,7 @@ export default function BookingSection() {
                             </div>
                         </div>
 
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

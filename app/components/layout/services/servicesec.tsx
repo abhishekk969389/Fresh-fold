@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { data, ServiceItem, ServiceFeature } from "@/app/data";
 import { IconType } from "react-icons";
 
@@ -40,12 +41,16 @@ export default function ServicesList() {
   return (
     <section className="w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 space-y-10 md:space-y-12">
-        {services.map((service) => {
+        {services.map((service, index: number) => {
           const isImageLeft = service.imagePosition === "left";
 
           return (
-            <div
+            <motion.div
               key={service.id}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: index * 0.1 }}
               className={`flex flex-col lg:flex-row items-stretch gap-6 lg:gap-8 bg-white p-4 sm:p-6 rounded-[28px] shadow-[0_10px_30px_rgba(0,0,0,0.03)] border border-cyan-50/50 ${
                 isImageLeft ? "" : "lg:flex-row-reverse"
               }`}
@@ -157,7 +162,7 @@ export default function ServicesList() {
                   </Link>
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
       </div>

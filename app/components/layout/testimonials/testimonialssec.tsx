@@ -1,8 +1,9 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 
 import * as FaIcons from "react-icons/fa";
 import * as IoIcons from "react-icons/io5";
@@ -13,6 +14,7 @@ import {
   TestimonialsSectionData,
 } from "@/app/data";
 import rawData from "@/app/data/data.json";
+import Pagination from "@/app/components/ui/pagination";
 
 const iconMap: Record<string, IconType> = {
   ...FaIcons,
@@ -32,34 +34,64 @@ const DynamicIcon: React.FC<DynamicIconProps> = ({ name, className }) => {
 export default function TestimonialsSection() {
   const data: AppTestimonialsData = rawData as AppTestimonialsData;
   const section: TestimonialsSectionData = data.testimonialsSection;
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 6;
+
+  const totalPages = Math.ceil(section.testimonials.length / itemsPerPage);
+  const currentTestimonials = section.testimonials.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
   return (
     <section className="w-full  mt-8 sm:mt-10 md:mt-12 lg:mt-14 mb-8 sm:mb-10 md:mb-12 lg:mb-14">
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10 text-center">
         
         {/* Header Section */}
-       <div className="flex items-center justify-center gap-4 mb-2">
+       <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex items-center justify-center gap-4 mb-2"
+        >
           <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
           <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">{section.tag}</span>
           <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
-        </div>
+        </motion.div>
         
-        <h2 className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-3 tracking-tight">
+        <motion.h2 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-3 tracking-tight"
+        >
           <span className="text-[#0b2d4a]">{section.titleLine1} </span>
           <span className="text-[#0092a3]">{section.titleLine2}</span>
-        </h2>
+        </motion.h2>
         
         
-        <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6">
+        <motion.p 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6"
+        >
           {section.description}
-        </p>
+        </motion.p>
 
         {/* Testimonials Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 text-left">
-          {section.testimonials.map((item: TestimonialItem) => {
+          {currentTestimonials.map((item: TestimonialItem, index: number) => {
             return (
-              <div
+              <motion.div
                 key={item.id}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="group rounded-[28px] overflow-hidden flex flex-col justify-between shadow-sm transition-all duration-300 hover:shadow-lg cursor-pointer bg-white text-[#083c48] border border-gray-100/80 hover:bg-[#084b59] hover:text-white hover:border-[#084b59]"
               >
                 {/* Upper Body: Quote Icon, Star Ratings, and Text */}
@@ -115,10 +147,21 @@ export default function TestimonialsSection() {
                     </span>
                   </div>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <div className="mt-6">
+            <Pagination 
+              currentPage={currentPage}
+              totalPages={totalPages}
+              onPageChange={setCurrentPage}
+            />
+          </div>
+        )}
 
       </div>
     </section>

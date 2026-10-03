@@ -1,14 +1,26 @@
-import React from "react";
+"use client";
+
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import Link from "next/link";
 import { data } from "@/app/data";
 import type { AboutData } from "@/app/data";
 import { FaCheckCircle, FaPlay } from "react-icons/fa";
+import { FiX } from "react-icons/fi";
 import { LuArrowRight } from "react-icons/lu";
+import { motion } from "framer-motion";
 
 const aboutData = (data as any).about as AboutData;
 
 export default function About() {
+  const [isVideoOpen, setIsVideoOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden">
       
@@ -19,7 +31,13 @@ export default function About() {
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-10 xl:gap-20 items-center">
           
           {/* Left Side: Images */}
-          <div className="w-full lg:w-1/2 relative lg:pr-10 xl:pr-16">
+          <motion.div 
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7 }}
+            className="w-full lg:w-1/2 relative lg:pr-10 xl:pr-16"
+          >
             <div className="relative w-full max-w-[500px] xl:max-w-[550px] mx-auto lg:ml-0 aspect-[4/4.5] sm:aspect-[4/4.5] lg:aspect-[4/4.5]">
               
               {/* Dotted pattern behind top-right */}
@@ -95,7 +113,10 @@ export default function About() {
                     
                     {/* Play Button */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <button className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center text-[#14808f] shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-transform z-10">
+                      <button 
+                        onClick={() => setIsVideoOpen(true)}
+                        className="w-[70px] h-[70px] bg-white rounded-full flex items-center justify-center text-[#14808f] shadow-[0_4px_20px_rgba(0,0,0,0.15)] hover:scale-105 transition-transform z-10 cursor-pointer"
+                      >
                         <FaPlay className="text-[24px] ml-1" />
                       </button>
                     </div>
@@ -104,10 +125,16 @@ export default function About() {
               </div>
 
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Side: Content */}
-          <div className="w-full lg:w-1/2 flex flex-col relative z-10">
+          <motion.div 
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, amount: 0.2 }}
+            transition={{ duration: 0.7 }}
+            className="w-full lg:w-1/2 flex flex-col relative z-10"
+          >
             
             {/* Tag */}
             <div className="flex items-center gap-4 mb-2">
@@ -157,10 +184,31 @@ export default function About() {
               </Link>
             </div>
 
-          </div>
-
+          </motion.div>
         </div>
       </div>
+
+      {/* Video Modal via Portal */}
+      {isMounted && isVideoOpen && createPortal(
+        <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#292726] bg-opacity-95" onClick={() => setIsVideoOpen(false)}>
+          <button
+            onClick={() => setIsVideoOpen(false)}
+            className="absolute top-6 right-6 w-10 h-10 bg-[#1c1c1c] text-white flex items-center justify-center rounded-md hover:bg-black transition-colors"
+          >
+            <FiX className="text-xl" />
+          </button>
+          <div className="relative w-full max-w-4xl aspect-video px-4 sm:px-0" onClick={(e) => e.stopPropagation()}>
+            <iframe
+              src={aboutData.videoUrl}
+              title="Video"
+              className="w-full h-full rounded-xl shadow-2xl border-4 border-white/10"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>,
+        document.body
+      )}
     </section>
   );
 }

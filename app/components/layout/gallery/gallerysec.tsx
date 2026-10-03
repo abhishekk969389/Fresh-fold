@@ -1,8 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import Image from "next/image";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 
 import * as FiIcons from "react-icons/fi";
 import * as LuIcons from "react-icons/lu";
@@ -43,6 +45,29 @@ export default function GallerySection() {
     // State 2: Category filter chips
     const [activeCategory, setActiveCategory] = useState<string>("all");
 
+    // State 3: Lightbox Modal
+    const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
+
+    const handleOpen = (index: number) => setSelectedIndex(index);
+    const handleClose = () => setSelectedIndex(null);
+    const handleNext = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (selectedIndex !== null) {
+            setSelectedIndex((selectedIndex + 1) % filteredItems.length);
+        }
+    };
+    const handlePrev = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (selectedIndex !== null) {
+            setSelectedIndex((selectedIndex - 1 + filteredItems.length) % filteredItems.length);
+        }
+    };
+
     // Filtering Logic
     const filteredItems: GalleryMediaItem[] = section.items.filter((item: GalleryMediaItem) => {
         const matchesType = item.type === activeMediaType;
@@ -56,25 +81,49 @@ export default function GallerySection() {
             <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10 text-center">
 
                 {/* Header Section */}
-                <div className="flex items-center justify-center gap-4 mb-2">
+                <motion.div 
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5 }}
+                    className="flex items-center justify-center gap-4 mb-2"
+                >
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
                     <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">{section.tag}</span>
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
-                </div>
+                </motion.div>
 
-                <h2 className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-1 tracking-tight">
+                <motion.h2 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.1 }}
+                    className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold leading-[0.9] mb-1 tracking-tight"
+                >
                     <span className="text-[#0b2d4a]">{section.titlePrefix} </span>
                     <span className="text-[#0092a3]">{section.titleHighlight}</span>
                     <div className="w-14 h-1 bg-yellow-400 mx-auto rounded-full mt-2"></div>
-                </h2>
+                </motion.h2>
 
 
-                  <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6">
+                <motion.p 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6"
+                >
                     {section.description}
-                </p>
+                </motion.p>
 
                 {/* Top Media Type Toggle Buttons (Photos Gallery vs Videos Gallery) */}
-                <div className="flex items-center justify-center gap-3 mb-8">
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                    className="flex items-center justify-center gap-3 mb-8"
+                >
                     {section.mediaTypeTabs.map((tab: GalleryMediaTypeTab) => {
                         const isActive = activeMediaType === tab.id;
                         return (
@@ -97,10 +146,16 @@ export default function GallerySection() {
                             </button>
                         );
                     })}
-                </div>
+                </motion.div>
 
                 {/* Category Filter Chips Bar */}
-                <div className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none no-scrollbar">
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.4 }}
+                    className="flex items-center justify-start sm:justify-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none no-scrollbar"
+                >
                     {section.categories.map((cat: GalleryCategoryTab) => {
                         const isActive = activeCategory === cat.id;
                         return (
@@ -117,7 +172,7 @@ export default function GallerySection() {
                             </button>
                         );
                     })}
-                </div>
+                </motion.div>
 
                 {/* Media Grid: 4 Columns */}
                 {filteredItems.length === 0 ? (
@@ -126,9 +181,14 @@ export default function GallerySection() {
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5">
-                        {filteredItems.map((item: GalleryMediaItem) => (
-                            <div
+                        {filteredItems.map((item: GalleryMediaItem, index: number) => (
+                            <motion.div
                                 key={item.id}
+                                onClick={() => handleOpen(index)}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="group relative h-[180px] sm:h-[190px] rounded-2xl overflow-hidden shadow-xs hover:shadow-md transition-all duration-300 bg-gray-50 border border-gray-100 cursor-pointer"
                             >
                                 <Image
@@ -161,12 +221,65 @@ export default function GallerySection() {
                                         )}
                                     </>
                                 )}
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
                 )}
 
             </div>
+
+            {/* Lightbox Modal via Portal */}
+            {isMounted && selectedIndex !== null && createPortal(
+                <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#292726] bg-opacity-95" onClick={handleClose}>
+                    {/* Close Button */}
+                    <button
+                        onClick={handleClose}
+                        className="absolute top-6 right-6 w-10 h-10 bg-[#1c1c1c] text-white flex items-center justify-center rounded-md hover:bg-black transition-colors"
+                    >
+                        <FiIcons.FiX className="text-xl" />
+                    </button>
+
+                    {/* Prev Arrow */}
+                    <button
+                        onClick={handlePrev}
+                        className="absolute left-6 w-12 h-12 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-black transition-colors"
+                    >
+                        <FiIcons.FiChevronLeft className="text-2xl" />
+                    </button>
+
+                    {/* Next Arrow */}
+                    <button
+                        onClick={handleNext}
+                        className="absolute right-6 w-12 h-12 bg-[#1c1c1c] text-white flex items-center justify-center rounded-full hover:bg-black transition-colors"
+                    >
+                        <FiIcons.FiChevronRight className="text-2xl" />
+                    </button>
+
+                    {/* Image Content */}
+                    <div className="relative w-full max-w-4xl h-[70vh]" onClick={(e) => e.stopPropagation()}>
+                        <Image
+                            src={filteredItems[selectedIndex].image.src}
+                            alt={filteredItems[selectedIndex].image.alt || filteredItems[selectedIndex].title}
+                            fill
+                            className="object-contain"
+                        />
+                        {/* Play overlay for videos inside lightbox */}
+                        {filteredItems[selectedIndex].type === "video" && (
+                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                <div className="w-16 h-16 rounded-full bg-black/60 text-white flex items-center justify-center">
+                                    <FiIcons.FiPlay className="text-3xl ml-1" />
+                                </div>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Title Pill */}
+                    <div className="absolute bottom-10 px-6 py-2.5 bg-[#4a3f38] text-white text-[13.5px] font-bold rounded-full shadow-md pointer-events-none">
+                        {filteredItems[selectedIndex].title}
+                    </div>
+                </div>,
+                document.body
+            )}
         </section>
     );
 }

@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
+import { motion } from "framer-motion";
 import { Great_Vibes } from 'next/font/google';
 import type { ServiceDetailsData } from '@/app/data';
 import { FaLeaf, FaShieldAlt, FaMagic, FaClock, FaCheckCircle } from "react-icons/fa";
@@ -31,7 +34,13 @@ export default function ServiceContent({ details }: { details: ServiceDetailsDat
       <div className="w-full flex flex-col lg:flex-row bg-[#e4eff1] rounded-3xl mb-14 relative overflow-hidden">
 
         {/* Left Content */}
-        <div className="w-full lg:w-[52%] p-6 sm:p-8 xl:p-10 flex flex-col justify-center">
+        <motion.div 
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="w-full lg:w-[52%] p-6 sm:p-8 xl:p-10 flex flex-col justify-center"
+        >
           <div className="flex items-center gap-4 mb-4">
             <span className="w-6 h-px bg-[#00bcd4]"></span>
             <span className="text-[#00bcd4] font-bold tracking-widest text-[13px] uppercase">{details.tag}</span>
@@ -65,10 +74,16 @@ export default function ServiceContent({ details }: { details: ServiceDetailsDat
               </React.Fragment>
             ))}
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-[48%] h-[350px] sm:h-[450px] lg:h-auto relative shrink-0 bg-[#0092a3]">
+        <motion.div 
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="w-full lg:w-[48%] h-[350px] sm:h-[450px] lg:h-auto relative shrink-0 bg-[#0092a3]"
+        >
           <Image
             src={details.image.src}
             alt={details.image.alt}
@@ -86,7 +101,7 @@ export default function ServiceContent({ details }: { details: ServiceDetailsDat
               <span className="text-[#5a7184] font-medium text-[11px] lg:text-[13px]">{details.badge.textLine2}</span>
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
 
       {/* About Section */}
@@ -95,16 +110,34 @@ export default function ServiceContent({ details }: { details: ServiceDetailsDat
         <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">ABOUT OUR SERVICE</span>
       </div>
 
-      <h3 className="text-[28px] sm:text-[32px] font-extrabold text-[#0b2d4a] leading-[1.2] mb-4 max-w-[600px]">
+      <motion.h3 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="text-[28px] sm:text-[32px] font-extrabold text-[#0b2d4a] leading-[1.2] mb-4 max-w-[600px]"
+      >
         {details.about.title}
-      </h3>
+      </motion.h3>
 
-      <p className="text-[#5a7184] text-[16px] leading-[1.8] mb-8 max-w-[800px]">
+      <motion.p 
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="text-[#5a7184] text-[16px] leading-[1.8] mb-8 max-w-[800px]"
+      >
         {details.about.description}
-      </p>
+      </motion.p>
 
       {/* Checklist and Circular Badge side by side */}
-      <div className="flex flex-col md:flex-row justify-between items-start gap-10">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, delay: 0.2 }}
+        className="flex flex-col md:flex-row justify-between items-start gap-10"
+      >
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 w-full md:w-[70%]">
           {details.about.list.map((item, idx) => (
             <div key={idx} className="flex items-center gap-3">
@@ -137,7 +170,7 @@ export default function ServiceContent({ details }: { details: ServiceDetailsDat
 
           </div>
         </div>
-      </div>
+      </motion.div>
 
     </article>
   );

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { data } from "@/app/data";
 import type { MissionVisionData } from "@/app/data";
 import { 
@@ -61,13 +62,19 @@ export default function MissionSec() {
         <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
           
           {/* Left Text */}
-          <div className="flex-1 w-full flex flex-col">
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex-1 w-full flex flex-col"
+          >
             <div className="flex items-center gap-4 ">
               <span className="w-8 h-[2px] bg-[#fbbf24]"></span>
               <span className="text-[#073c47] font-bold tracking-widest text-[18px] uppercase">{mvData.mission.tag}</span>
             </div>
             
-            <h2 className="text-[42px] sm:text-[52px] lg:text-[64px] font-extrabold text-[#073c47] leading-[0.9] mb-2">
+            <h2 className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold  text-[#073c47] leading-[0.9] mb-2">
               {mvData.mission.title}
             </h2>
             
@@ -92,10 +99,16 @@ export default function MissionSec() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
           
           {/* Right Image */}
-          <div className="flex-1 w-full relative">
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex-1 w-full relative"
+          >
             <div className="relative w-full h-[400px] sm:h-[450px] lg:h-[500px] rounded-[32px] overflow-hidden shadow-2xl">
               <Image 
                 src={mvData.mission.image.src} 
@@ -123,7 +136,7 @@ export default function MissionSec() {
             
             {/* Soft blob behind image */}
             <div className="absolute top-[-5%] left-[-5%] w-[40%] h-[40%] bg-[#d9f1f6] rounded-full blur-3xl -z-10"></div>
-          </div>
+          </motion.div>
           
         </div>
 
@@ -131,7 +144,13 @@ export default function MissionSec() {
         <div className="flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-16 border-t border-[#073c47]/5">
           
           {/* Left Image */}
-          <div className="flex-1 w-full relative">
+          <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex-1 w-full relative"
+          >
             <div className="relative w-full h-[400px] sm:h-[450px] lg:h-[500px] rounded-[32px] overflow-hidden shadow-2xl">
               <Image 
                 src={mvData.vision.image.src} 
@@ -160,16 +179,22 @@ export default function MissionSec() {
             
             {/* Soft blob behind image */}
             <div className="absolute bottom-[-5%] right-[-5%] w-[40%] h-[40%] bg-[#d9f1f6] rounded-full blur-3xl -z-10"></div>
-          </div>
+          </motion.div>
           
           {/* Right Text */}
-          <div className="flex-1 w-full flex flex-col">
+          <motion.div 
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex-1 w-full flex flex-col"
+          >
             <div className="flex items-center gap-4 ">
               <span className="w-8 h-[2px] bg-[#fbbf24]"></span>
               <span className="text-[#073c47] font-bold tracking-widest text-[18px] uppercase">{mvData.vision.tag}</span>
             </div>
             
-            <h2 className="text-[42px] sm:text-[52px] lg:text-[64px] font-extrabold text-[#073c47] leading-[0.9] mb-2">
+            <h2 className="text-[36px] sm:text-[44px] xl:text-[48px] font-extrabold  text-[#073c47] leading-[0.9] mb-2">
               {mvData.vision.title}
             </h2>
             
@@ -194,7 +219,7 @@ export default function MissionSec() {
                 </div>
               ))}
             </div>
-          </div>
+          </motion.div>
 
         </div>
 

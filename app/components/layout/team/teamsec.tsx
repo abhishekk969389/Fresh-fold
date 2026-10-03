@@ -1,17 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { data } from "@/app/data";
 import type { TeamData } from "@/app/data";
+import Pagination from "@/app/components/ui/pagination";
 
 export default function Team() {
     const teamData = (data as any).team as TeamData;
+    const [currentPage, setCurrentPage] = useState(1);
+    const itemsPerPage = 4; // Showing 4 items per page
 
     const generateSlug = (name: string) => {
         return name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)+/g, '');
     };
+
+    // Calculate pagination data
+    const totalPages = Math.ceil(teamData.members.length / itemsPerPage);
+    const currentMembers = teamData.members.slice(
+        (currentPage - 1) * itemsPerPage,
+        currentPage * itemsPerPage
+    );
 
     return (
         <section className="w-full  mt-8 sm:mt-10 md:mt-12 lg:mt-14 mb-8 sm:mb-10 md:mb-12 lg:mb-14 ">
@@ -36,10 +47,16 @@ export default function Team() {
 
                 {/* Team Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 xl:gap-8">
-                    {teamData.members.map((member) => (
-                        <Link
-                            href={`/team/${generateSlug(member.name)}`}
+                    {currentMembers.map((member, index: number) => (
+                        <motion.div
                             key={member.id}
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: index * 0.1 }}
+                        >
+                            <Link
+                                href={`/team/${generateSlug(member.name)}`}
                             className="bg-[#f2f8fc] rounded-[24px] overflow-hidden flex flex-col items-center text-center shadow-sm hover:shadow-lg transition-shadow duration-300 group block cursor-pointer"
                         >
                             {/* Full-width Image Container (No padding/spacing) */}
@@ -66,9 +83,20 @@ export default function Team() {
                                 </p>
                             </div>
                         </Link>
+                    </motion.div>
                     ))}
                 </div>
 
+                {/* Pagination */}
+                {totalPages > 1 && (
+                    <div className="mt-6">
+                        <Pagination 
+                            currentPage={currentPage}
+                            totalPages={totalPages}
+                            onPageChange={setCurrentPage}
+                        />
+                    </div>
+                )}
             </div>
         </section>
     );

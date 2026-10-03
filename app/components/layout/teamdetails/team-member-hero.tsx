@@ -1,7 +1,10 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import type { TeamDetailsData } from '@/app/data';
 import { FaQuoteLeft } from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 interface Props {
   data: TeamDetailsData;
@@ -14,7 +17,13 @@ export default function TeamMemberHero({ data }: Props) {
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10">
         
         {/* Header Section */}
-        <div className="text-center mb-6">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center mb-6"
+        >
           <div className="flex items-center justify-center gap-4 mb-2">
             <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
             <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">{data.subheading}</span>
@@ -29,11 +38,17 @@ export default function TeamMemberHero({ data }: Props) {
           <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto">
             {data.description}
           </p>
-        </div>
+        </motion.div>
 
         <div className="flex flex-col lg:flex-row gap-10 xl:gap-16 items-stretch">
           {/* Left side Image */}
-          <div className="w-full lg:w-[45%] relative rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(11,45,74,0.1)] min-h-[500px] lg:min-h-[auto]">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-[45%] relative rounded-2xl overflow-hidden shadow-[0_10px_30px_rgba(11,45,74,0.1)] min-h-[500px] lg:min-h-[auto]"
+          >
             <Image
               src={member.image.src}
               alt={member.image.alt}
@@ -48,10 +63,16 @@ export default function TeamMemberHero({ data }: Props) {
               </p>
               <div className="w-12 h-1 bg-[#fbbf24] mt-5"></div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right side Info */}
-          <div className="w-full lg:w-[55%] flex flex-col">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="w-full lg:w-[55%] flex flex-col"
+          >
             <h3 className="text-[36px] md:text-[42px] font-extrabold text-[#0b2d4a] mb-2">{member.name}</h3>
             <div className="w-12 h-[3px] bg-[#fbbf24] mb-4"></div>
             <h4 className="text-[20px] md:text-[24px] font-bold text-[#00bcd4] mb-6">{member.role}</h4>
@@ -90,7 +111,7 @@ export default function TeamMemberHero({ data }: Props) {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

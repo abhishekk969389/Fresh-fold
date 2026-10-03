@@ -1,6 +1,9 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import { FaUser, FaCommentAlt, FaRegCheckCircle } from 'react-icons/fa';
+import { motion } from "framer-motion";
 import type { BlogPost, BlogDetailsData } from '@/app/data';
 
 interface Props {
@@ -10,7 +13,13 @@ interface Props {
 
 export default function BlogContent({ post, details }: Props) {
   return (
-    <article className="w-full lg:flex-1">
+    <motion.article 
+      initial={{ opacity: 0, y: 30 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.6 }}
+      className="w-full lg:flex-1"
+    >
       
       {/* Hero Image */}
       <div className="relative w-full h-[300px] sm:h-[400px] lg:h-[500px] rounded-[24px] overflow-hidden mb-8">
@@ -92,6 +101,6 @@ export default function BlogContent({ post, details }: Props) {
         ))}
       </div>
 
-    </article>
+    </motion.article>
   );
 }

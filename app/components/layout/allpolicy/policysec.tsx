@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { PolicyDocument, PolicySectionItem } from "@/app/data";
+import { motion } from "framer-motion";
 
 interface PolicyLayoutProps {
     policy: PolicyDocument;
@@ -14,9 +15,13 @@ export default function PolicyLayout({ policy }: PolicyLayoutProps) {
 
                 {/* Sections List */}
                 <div className="space-y-4">
-                    {policy.sections.map((sec: PolicySectionItem) => (
-                        <div
+                    {policy.sections.map((sec: PolicySectionItem, idx: number) => (
+                        <motion.div
                             key={sec.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.5, delay: Math.min(idx * 0.1, 0.5) }}
                             className="pb-4 border-b border-[#e6f4f8] last:border-b-0"
                         >
                             {/* Numbered Heading */}
@@ -28,7 +33,7 @@ export default function PolicyLayout({ policy }: PolicyLayoutProps) {
                             <p className="text-left text-[13.5px] sm:text-[14px] md:text-[18px] text-[#5a7184] leading-[1.65] mt-1.5 font-normal">
                                 {sec.content}
                             </p>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 

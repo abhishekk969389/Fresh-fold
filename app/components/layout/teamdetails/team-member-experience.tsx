@@ -1,6 +1,9 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
 import type { TeamDetailsData } from '@/app/data';
+import { motion } from "framer-motion";
 import { Great_Vibes } from 'next/font/google';
 
 const greatVibes = Great_Vibes({ weight: '400', subsets: ['latin'] });
@@ -16,7 +19,13 @@ export default function TeamMemberExperience({ data }: Props) {
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 flex flex-col lg:flex-row gap-10 xl:gap-20">
         
         {/* Left Side: Timeline */}
-        <div className="w-full lg:w-[60%] flex flex-col relative z-10">
+        <motion.div 
+          initial={{ opacity: 0, x: -30 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="w-full lg:w-[60%] flex flex-col relative z-10"
+        >
           <h3 className="text-[32px] md:text-[38px] font-extrabold text-[#0b2d4a] mb-2">{member.experience.title}</h3>
           <div className="w-12 h-[3px] bg-[#fbbf24] mb-12"></div>
           
@@ -26,7 +35,14 @@ export default function TeamMemberExperience({ data }: Props) {
             
             <div className="flex flex-col gap-12">
               {member.experience.items.map((item, idx) => (
-                <div key={idx} className="relative flex flex-col md:flex-row gap-6 md:gap-10 items-start">
+                <motion.div 
+                  key={idx} 
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  className="relative flex flex-col md:flex-row gap-6 md:gap-10 items-start"
+                >
                   {/* Dot */}
                   <div className="absolute -left-[35px] top-2 w-[18px] h-[18px] rounded-full bg-[#00bcd4] z-10"></div>
                   
@@ -43,17 +59,23 @@ export default function TeamMemberExperience({ data }: Props) {
                       {item.description}
                     </p>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Side Spacer for Desktop */}
         <div className="hidden lg:block lg:w-[40%]"></div>
 
         {/* Mobile Image */}
-        <div className="w-full relative mt-20 lg:hidden flex items-center justify-end pt-20">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="w-full relative mt-20 lg:hidden flex items-center justify-end pt-20"
+        >
           {/* Floating Cursive Text */}
           <div className="absolute top-8 right-2 z-20 transform -rotate-[15deg] flex flex-col items-center">
             <p 
@@ -69,11 +91,16 @@ export default function TeamMemberExperience({ data }: Props) {
             height={500}
             className="object-contain object-right relative z-10 w-full h-auto"
           />
-        </div>
+        </motion.div>
       </div>
 
-      {/* Desktop Image attached to right edge */}
-      <div className="hidden lg:flex absolute top-0 right-0 bottom-0 w-[45%] xl:w-[40%] items-center justify-end pointer-events-none">
+      <motion.div 
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="hidden lg:flex absolute top-0 right-0 bottom-0 w-[45%] xl:w-[40%] items-center justify-end pointer-events-none"
+      >
         {/* Floating Cursive Text */}
         <div className="absolute top-32 right-10 z-20 transform -rotate-[15deg] flex flex-col items-center pointer-events-auto">
           <p 
@@ -89,7 +116,7 @@ export default function TeamMemberExperience({ data }: Props) {
           height={800}
           className="object-contain object-right w-full h-auto pointer-events-auto"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

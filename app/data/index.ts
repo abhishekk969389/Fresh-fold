@@ -68,6 +68,7 @@ export interface BannerIconItem {
 export interface BannerLink {
   label: string;
   href: string;
+  videoUrl?: string;
 }
 
 export interface BannerData {
@@ -202,6 +203,7 @@ export interface AboutData {
   satisfactionRate: string;
   satisfactionText: string;
   stickerText: string[];
+  videoUrl?: string;
 }
 
 // ─── Services Types ────────────────────────────────────────────────────────────
@@ -344,6 +346,7 @@ export interface CountingStat {
 
 export interface CountingData {
   videoImage: string;
+  videoUrl?: string;
   stats: CountingStat[];
 }
 

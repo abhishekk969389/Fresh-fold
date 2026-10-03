@@ -1,5 +1,8 @@
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { motion } from "framer-motion";
 import { GoArrowRight } from "react-icons/go";
 import type { ServicesTab, FooterContactItem } from '@/app/data';
 import { MdLocalLaundryService, MdIron, MdLocationOn, MdAccessTime, MdEmail, MdPhone } from "react-icons/md";
@@ -39,7 +42,13 @@ export default function ServiceSidebar({ servicesTabs, currentService, contactIn
     <aside className="w-full lg:w-[340px] xl:w-[360px] shrink-0 flex flex-col gap-8">
       
       {/* Our Services */}
-      <div className="flex flex-col border border-gray-100 rounded-2xl overflow-hidden shadow-sm bg-white">
+      <motion.div 
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="flex flex-col border border-gray-100 rounded-2xl overflow-hidden shadow-sm bg-white"
+      >
         <div className="bg-[#073c47] py-5 px-7">
           <h3 className="text-[20px] font-extrabold text-white">Our Services</h3>
         </div>
@@ -74,10 +83,16 @@ export default function ServiceSidebar({ servicesTabs, currentService, contactIn
             })}
           </ul>
         </div>
-      </div>
+      </motion.div>
 
       {/* Contact Information */}
-      <div className="bg-[#e4eff1] rounded-2xl p-7 xl:p-8 flex flex-col">
+      <motion.div 
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className="bg-[#e4eff1] rounded-2xl p-7 xl:p-8 flex flex-col"
+      >
         <h3 className="text-[20px] font-extrabold text-[#0b2d4a] mb-6">Contact Information</h3>
         
         <ul className="flex flex-col gap-6 mb-8">
@@ -119,7 +134,7 @@ export default function ServiceSidebar({ servicesTabs, currentService, contactIn
           <span>Schedule a Pickup</span>
           <GoArrowRight className="text-[20px]" />
         </Link>
-      </div>
+      </motion.div>
 
     </aside>
   );

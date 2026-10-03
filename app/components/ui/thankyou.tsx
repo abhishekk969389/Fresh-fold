@@ -1,10 +1,18 @@
+"use client";
+
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { FiCheckCircle, FiArrowRight } from 'react-icons/fi';
 
 export default function ThankYouSec() {
   return (
     <section className="min-h-[60vh] flex items-center justify-center bg-[#063c4a] px-6">
-      <div className="max-w-2xl w-full bg-transparent p-10 md:p-16 text-center">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="max-w-2xl w-full bg-transparent p-10 md:p-16 text-center"
+      >
         <div className="flex justify-center mb-8">
           <div className="w-24 h-24 bg-[#00bcd4]/10 rounded-full flex items-center justify-center relative">
             <div className="absolute inset-0 bg-[#00bcd4]/20 rounded-full animate-ping opacity-30"></div>
@@ -35,7 +43,7 @@ export default function ThankYouSec() {
             Our Services
           </Link>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

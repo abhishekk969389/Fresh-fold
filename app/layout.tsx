@@ -26,9 +26,12 @@ export default function RootLayout({
     
       <body className={`${plusJakartaSans.className} h-auto min-h-screen flex flex-col font-sans antialiased text-[#0b2d4a]`}>
         <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
-
+        <SmoothScroll>
+          <div className="pt-[126px] flex flex-col min-h-screen">
+            <main className="flex-1">{children}</main>
+            <Footer />
+          </div>
+        </SmoothScroll>
       </body>
     </html>
   );

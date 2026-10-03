@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { data } from "@/app/data";
+import { motion } from "framer-motion";
 import type { WorksData } from "@/app/data";
 import { FaCheckCircle, FaCalendarAlt, FaShoppingBasket, FaShieldAlt, FaTruck } from "react-icons/fa";
 
@@ -31,7 +32,13 @@ export default function WorksSec() {
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10">
         
         {/* Header */}
-        <div className="text-center max-w-[700px] mx-auto mb-8">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-center max-w-[700px] mx-auto mb-8"
+        >
             <div className="flex items-center justify-center gap-4 mb-2">
                     <span className="w-10 h-[1.5px] bg-[#00bcd4]"></span>
                     <span className="text-[#00bcd4] font-bold tracking-widest text-[14px] uppercase">{worksData.tag}</span>
@@ -48,7 +55,7 @@ export default function WorksSec() {
                  <p className="text-[#5a7184] text-[15px] sm:text-[16px] max-w-2xl mx-auto mb-6">
                     {worksData.leftSticker}
                 </p>
-                </div>
+        </motion.div>
 
         {/* Steps */}
         <div className="flex flex-col gap-16 relative">
@@ -57,8 +64,12 @@ export default function WorksSec() {
             const BadgeIcon = step.badge?.icon ? iconMap[step.badge.icon] : null;
 
             return (
-              <div 
+              <motion.div 
                 key={step.id} 
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: index * 0.1 }}
                 className={`flex flex-col ${isEven ? 'lg:flex-row-reverse' : 'lg:flex-row'} items-center gap-10 lg:gap-20`}
               >
                 
@@ -149,7 +160,7 @@ export default function WorksSec() {
                   </div>
                 </div>
 
-              </div>
+              </motion.div>
             );
           })}
         </div>

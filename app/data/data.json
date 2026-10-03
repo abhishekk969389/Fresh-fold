@@ -31,25 +31,25 @@
         {
           "id": "facebook",
           "icon": "FaFacebookF",
-          "href": "https://facebook.com",
+          "href": "/freshly-washed-towels-stacked-wooden-floor.jpg",
           "label": "Facebook"
         },
         {
           "id": "twitter",
           "icon": "FaTwitter",
-          "href": "https://twitter.com",
+          "href": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
           "label": "Twitter"
         },
         {
           "id": "linkedin",
           "icon": "FaLinkedinIn",
-          "href": "https://linkedin.com",
+          "href": "/laundromat-worker.jpg",
           "label": "LinkedIn"
         },
         {
           "id": "instagram",
           "icon": "FaInstagram",
-          "href": "https://instagram.com",
+          "href": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
           "label": "Instagram"
         }
       ]
@@ -185,7 +185,8 @@
     },
     "secondaryCta": {
       "label": "Watch Our Story",
-      "href": "/about"
+      "href": "/about",
+      "videoUrl": "/laundry-basket-with-colorful-towels-background.jpg"
     },
     "highlights": [
       {
@@ -226,7 +227,7 @@
   },
   "footer": {
     "logo": {
-      "src": "/logo-main.png",
+      "src": "/footer-logo.png",
       "alt": "FreshFold Laundry & Dry Cleaning",
       "width": 160,
       "height": 64
@@ -236,25 +237,25 @@
       {
         "id": "facebook",
         "icon": "FaFacebookF",
-        "href": "https://facebook.com",
+        "href": "/man-is-organizing-cleaning-house-stack-clean-terry-towels-hand-concept.jpg",
         "label": "Facebook"
       },
       {
         "id": "instagram",
         "icon": "FaInstagram",
-        "href": "https://instagram.com",
+        "href": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
         "label": "Instagram"
       },
       {
         "id": "linkedin",
         "icon": "FaLinkedinIn",
-        "href": "https://linkedin.com",
+        "href": "/person-inside-laundromat-with-washing-machines.jpg",
         "label": "LinkedIn"
       },
       {
         "id": "youtube",
         "icon": "FaYoutube",
-        "href": "https://youtube.com",
+        "href": "/stack-colorful-folded-clothes-blue-background-cozy-vibrant-knitwear-fabrics.jpg",
         "label": "YouTube"
       }
     ],
@@ -290,32 +291,32 @@
     ],
     "ourServices": [
       {
-        "label": "Wash & Fold",
-        "href": "/services/wash-fold"
+        "label": "Laundry Service",
+        "href": "/servicedetails/laundry"
       },
       {
         "label": "Dry Cleaning",
-        "href": "/services/dry-cleaning"
+        "href": "/servicedetails/dry-cleaning"
       },
       {
         "label": "Steam Ironing",
-        "href": "/services/ironing"
+        "href": "/servicedetails/steam-ironing"
       },
       {
-        "label": "Stain Removal",
-        "href": "/services/stain-removal"
+        "label": "Shoe Cleaning",
+        "href": "/servicedetails/shoe-cleaning"
       },
       {
-        "label": "Premium Care",
-        "href": "/services/premium-care"
+        "label": "Curtain Cleaning",
+        "href": "/servicedetails/curtain-cleaning"
       },
       {
-        "label": "Pickup & Delivery",
-        "href": "/services/pickup"
+        "label": "Carpet Cleaning",
+        "href": "/servicedetails/carpet-cleaning"
       },
       {
-        "label": "Corporate Laundry",
-        "href": "/services/corporate"
+        "label": "Bag Cleaning",
+        "href": "/servicedetails/bag-cleaning"
       }
     ],
     "helpSupport": [
@@ -418,11 +419,11 @@
     "ctaLink": "/about",
     "images": {
       "main": {
-        "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+        "src": "/stack-laundry-are-stacked-top-each-other-laundry-room.jpg",
         "alt": "Professional laundry worker holding fresh towels"
       },
       "small": {
-        "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=400&auto=format&fit=crop",
+        "src": "/towels-neatly-stacked-stylish-organized-laundry-room-maximum-efficiency-aesthetics.jpg",
         "alt": "Person ironing clothes"
       }
     },
@@ -432,7 +433,8 @@
       "Clean",
       "Fresh",
       "Confident"
-    ]
+    ],
+    "videoUrl": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg"
   },
   "services": {
     "tag": "OUR SERVICES",
@@ -511,7 +513,7 @@
       "ctaText": "READ MORE",
       "ctaLink": "/services/laundry",
       "image": {
-        "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=800&auto=format&fit=crop",
+        "src": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
         "alt": "Folded clean clothes in a laundry basket"
       },
       "stickerText": [
@@ -553,7 +555,7 @@
           "Pickup from home, office or anywhere"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?q=80&w=600&auto=format&fit=crop",
+          "src": "/freshly-washed-towels-stacked-wooden-floor.jpg",
           "alt": "Hand holding phone for laundry pickup"
         },
         "badge": {
@@ -574,7 +576,7 @@
           "Real-time pickup updates"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=600&auto=format&fit=crop",
+          "src": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
           "alt": "Delivery person picking up clothes basket"
         },
         "badge": {
@@ -595,7 +597,7 @@
           "Care for all fabric types"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=600&auto=format&fit=crop",
+          "src": "/laundromat-worker.jpg",
           "alt": "Folded clean towels"
         },
         "badge": {
@@ -616,7 +618,7 @@
           "Ready to wear"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1615529182904-14819c35db37?q=80&w=600&auto=format&fit=crop",
+          "src": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
           "alt": "Delivery person handing over clean packed clothes"
         },
         "badge": {
@@ -675,7 +677,7 @@
       }
     ],
     "centerImage": {
-      "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+      "src": "/laundry-basket-with-colorful-towels-background.jpg",
       "alt": "Laundry Basket",
       "stickerText": [
         "Fresh",
@@ -701,10 +703,10 @@
       "titleLine2": "Drives Us Forward",
       "description": "We are proud to be a part of your daily life. Here's what our customers have to say about their experience with our laundry services.",
       "avatars": [
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=100&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=100&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=100&auto=format&fit=crop",
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop"
+        "/teams/team1.jpg",
+        "/teams/team2.jpg",
+        "/teams/team3.jpg",
+        "/teams/team4.jpg"
       ],
       "happyCustomersText": "Happy Customers",
       "happyCustomersCount": "500+"
@@ -714,7 +716,7 @@
         "id": "t1",
         "name": "Aditi Sharma",
         "location": "Delhi",
-        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=200&auto=format&fit=crop",
+        "image": "/teams/team5.jpg",
         "text": "Excellent service! My clothes come back fresh, neatly folded and always on time. The pickup and delivery facility makes it super convenient.",
         "rating": 5
       },
@@ -722,7 +724,7 @@
         "id": "t2",
         "name": "Rahul Mehta",
         "location": "Mumbai",
-        "image": "https://images.unsplash.com/photo-1599566150163-29194dcaad36?q=80&w=200&auto=format&fit=crop",
+        "image": "/teams/team6.jpg",
         "text": "I'm really impressed with the quality and care they provide. Even delicate fabrics are handled perfectly. Highly recommended for anyone looking for reliable laundry service.",
         "rating": 5
       },
@@ -730,14 +732,15 @@
         "id": "t3",
         "name": "Neha Verma",
         "location": "Bangalore",
-        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop",
+        "image": "/teams/team7.jpg",
         "text": "Affordable, professional and hassle-free service. My clothes always come back fresh and spotless. The staff is polite and supportive. Great experience every time!",
         "rating": 5
       }
     ]
   },
   "counting": {
-    "videoImage": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=1200&auto=format&fit=crop",
+    "videoImage": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
+    "videoUrl": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
     "stats": [
       {
         "id": "c1",
@@ -775,7 +778,7 @@
     "posts": [
       {
         "id": "cat-house-cleaning",
-        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+        "image": "/person-inside-laundromat-with-washing-machines.jpg",
         "date": {
           "day": "10",
           "month": "SEP",
@@ -786,13 +789,13 @@
         "description": "Discover everything you need to know about house cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Admin",
-          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team8.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-office-cleaning",
-        "image": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=600",
+        "image": "/stack-colorful-folded-clothes-blue-background-cozy-vibrant-knitwear-fabrics.jpg",
         "date": {
           "day": "11",
           "month": "SEP",
@@ -803,13 +806,13 @@
         "description": "Discover everything you need to know about office cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Sarah Smith",
-          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team1.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-commercial-cleaning",
-        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+        "image": "/stack-laundry-are-stacked-top-each-other-laundry-room.jpg",
         "date": {
           "day": "12",
           "month": "SEP",
@@ -820,13 +823,13 @@
         "description": "Discover everything you need to know about commercial cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Admin",
-          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team2.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-residential-cleaning",
-        "image": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=600",
+        "image": "/towels-neatly-stacked-stylish-organized-laundry-room-maximum-efficiency-aesthetics.jpg",
         "date": {
           "day": "13",
           "month": "SEP",
@@ -837,13 +840,13 @@
         "description": "Discover everything you need to know about residential cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Sarah Smith",
-          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team3.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-window-cleaning",
-        "image": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+        "image": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg",
         "date": {
           "day": "14",
           "month": "SEP",
@@ -854,13 +857,13 @@
         "description": "Discover everything you need to know about window cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Admin",
-          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team4.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-carpet-cleaning",
-        "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+        "image": "/young-latin-woman-holding-laundry-basket-screaming-proud-celebrating-victory-success-very-excited-with-raised-arms.jpg",
         "date": {
           "day": "15",
           "month": "SEP",
@@ -871,13 +874,13 @@
         "description": "Discover everything you need to know about carpet cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Sarah Smith",
-          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team5.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-floor-cleaning",
-        "image": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600",
+        "image": "/freshly-washed-towels-stacked-wooden-floor.jpg",
         "date": {
           "day": "16",
           "month": "SEP",
@@ -888,13 +891,13 @@
         "description": "Discover everything you need to know about floor cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Admin",
-          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team6.jpg"
         },
         "readTime": "5 Min Read"
       },
       {
         "id": "cat-car-cleaning",
-        "image": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+        "image": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
         "date": {
           "day": "17",
           "month": "SEP",
@@ -905,7 +908,7 @@
         "description": "Discover everything you need to know about car cleaning in this comprehensive guide. We share our expert tips and tricks.",
         "author": {
           "name": "Sarah Smith",
-          "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150"
+          "avatar": "/teams/team7.jpg"
         },
         "readTime": "5 Min Read"
       }
@@ -960,7 +963,7 @@
         }
       ],
       "image": {
-        "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?q=80&w=2070&auto=format&fit=crop",
+        "src": "/laundromat-worker.jpg",
         "alt": "Folded clean towels",
         "stickerText": [
           "Fresh",
@@ -1003,7 +1006,7 @@
         }
       ],
       "image": {
-        "src": "https://images.unsplash.com/photo-1574634534894-89d7576c8259?q=80&w=2069&auto=format&fit=crop",
+        "src": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
         "alt": "Hanging clean white shirts",
         "stickerText": [
           "A",
@@ -1030,7 +1033,7 @@
         "name": "Rohit Sharma",
         "role": "Operations Manager",
         "image": {
-          "src": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team8.jpg",
           "alt": "Rohit Sharma - Operations Manager"
         }
       },
@@ -1039,7 +1042,7 @@
         "name": "Pooja Verma",
         "role": "Laundry Specialist",
         "image": {
-          "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team1.jpg",
           "alt": "Pooja Verma - Laundry Specialist"
         }
       },
@@ -1048,7 +1051,7 @@
         "name": "Amit Kumar",
         "role": "Dry-Cleaning Expert",
         "image": {
-          "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team2.jpg",
           "alt": "Amit Kumar - Dry-Cleaning Expert"
         }
       },
@@ -1057,7 +1060,7 @@
         "name": "Neha Singh",
         "role": "Customer Support",
         "image": {
-          "src": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team3.jpg",
           "alt": "Neha Singh - Customer Support"
         }
       },
@@ -1066,7 +1069,7 @@
         "name": "Vikram Patel",
         "role": "Pickup & Delivery Executive",
         "image": {
-          "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team4.jpg",
           "alt": "Vikram Patel - Pickup & Delivery Executive"
         }
       },
@@ -1075,7 +1078,7 @@
         "name": "Suresh Yadav",
         "role": "Fabric Care Specialist",
         "image": {
-          "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team5.jpg",
           "alt": "Suresh Yadav - Fabric Care Specialist"
         }
       },
@@ -1084,7 +1087,7 @@
         "name": "Anjali Mehta",
         "role": "Quality Control",
         "image": {
-          "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team6.jpg",
           "alt": "Anjali Mehta - Quality Control"
         }
       },
@@ -1093,7 +1096,7 @@
         "name": "Karan Malhotra",
         "role": "Service Coordinator",
         "image": {
-          "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team7.jpg",
           "alt": "Karan Malhotra - Service Coordinator"
         }
       }
@@ -1109,7 +1112,7 @@
         "description": "Our laundry service is designed to give your everyday clothes the care they deserve. We use premium detergents and advanced cleaning techniques to remove dirt, stains, and odours, keeping your clothes fresh, soft, and long-lasting.",
         "imagePosition": "left",
         "image": {
-          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+          "src": "/laundry-basket-with-colorful-towels-background.jpg",
           "alt": "Laundry Service Basket"
         },
         "badge": {
@@ -1154,7 +1157,7 @@
         "description": "Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments. Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
         "imagePosition": "right",
         "image": {
-          "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?q=80&w=800&auto=format&fit=crop",
+          "src": "/man-is-organizing-cleaning-house-stack-clean-terry-towels-hand-concept.jpg",
           "alt": "Dry Cleaning Clothes Hangers"
         },
         "badge": {
@@ -1199,7 +1202,7 @@
         "description": "Get perfectly pressed clothes with our professional steam ironing service. We remove wrinkles and give your clothes a neat, fresh and polished look Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments..",
         "imagePosition": "left",
         "image": {
-          "src": "https://images.unsplash.com/photo-1489274495757-95c7c837b101?q=80&w=800&auto=format&fit=crop",
+          "src": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
           "alt": "Steam Ironing Service"
         },
         "badge": {
@@ -1244,7 +1247,7 @@
         "description": "We deep-clean your shoes to remove dirt, stains and odours, making them look fresh and new again. Suitable for all types of shoes, from casuals to premium footwear Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments..",
         "imagePosition": "right",
         "image": {
-          "src": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=800&auto=format&fit=crop",
+          "src": "/person-inside-laundromat-with-washing-machines.jpg",
           "alt": "Sneakers Shoe Cleaning"
         },
         "badge": {
@@ -1289,7 +1292,7 @@
         "description": "We remove dust, stains and allergens with our expert curtain-cleaning service. Keep your home fresh, clean and allergen-free Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments..",
         "imagePosition": "left",
         "image": {
-          "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=800&auto=format&fit=crop",
+          "src": "/stack-colorful-folded-clothes-blue-background-cozy-vibrant-knitwear-fabrics.jpg",
           "alt": "Curtain Cleaning Service"
         },
         "badge": {
@@ -1334,7 +1337,7 @@
         "description": "Our carpet cleaning service removes deep-seated dirt, stains and odours, giving you a cleaner, fresher and healthier living space Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
         "imagePosition": "right",
         "image": {
-          "src": "https://images.unsplash.com/photo-1558317374-067fb5f30001?q=80&w=800&auto=format&fit=crop",
+          "src": "/stack-laundry-are-stacked-top-each-other-laundry-room.jpg",
           "alt": "Carpet Cleaning Service"
         },
         "badge": {
@@ -1379,7 +1382,7 @@
         "description": "We specialize in cleaning handbags, backpacks and leather bags with the right care and techniques to keep them looking new. Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
         "imagePosition": "left",
         "image": {
-          "src": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format&fit=crop",
+          "src": "/towels-neatly-stacked-stylish-organized-laundry-room-maximum-efficiency-aesthetics.jpg",
           "alt": "Leather Handbag Cleaning"
         },
         "badge": {
@@ -1424,7 +1427,7 @@
         "description": "From wool and silk to linen and designer wear, we provide specialized cleaning to maintain the quality, texture and beauty of your most valued garments. Our dry cleaning service is perfect for delicate and premium fabrics. We use advanced, fabric-safe cleaning solutions to maintain the quality, colour, and texture of your garments.",
         "imagePosition": "right",
         "image": {
-          "src": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?q=80&w=800&auto=format&fit=crop",
+          "src": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg",
           "alt": "Special Care Folded Clothes"
         },
         "badge": {
@@ -1509,9 +1512,9 @@
     "tag": "LAUNDRY SERVICES",
     "titleLine1": "Simple & Affordable",
     "titleLine2": "Laundry Pricing",
-    "description": "Fresh, clean and neatly folded clothes ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â delivered to your doorstep. Choose from our flexible pricing options designed for your everyday needs.",
+    "description": "Fresh, clean and neatly folded clothes delivered to your doorstep. Choose from our flexible pricing options designed for your everyday needs.",
     "image": {
-      "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?q=80&w=800&auto=format&fit=crop",
+      "src": "/young-latin-woman-holding-laundry-basket-screaming-proud-celebrating-victory-success-very-excited-with-raised-arms.jpg",
       "alt": "Clean Towels and Laundry Detergent"
     },
     "badge": {
@@ -1629,7 +1632,7 @@
     "tag": "HOW IT WORKS",
     "titleLine1": "Simple Steps for",
     "titleLine2": "Fresh Clothes",
-    "description": "Clean clothes, delivered to your doorstep ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â it's that easy!",
+    "description": "Clean clothes, delivered to your doorstepit's that easy!",
     "signatureText": "Clean\nFresh\nConfident!",
     "steps": [
       {
@@ -1645,7 +1648,7 @@
           "Pickup from home, office or anywhere"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=800&q=80",
+          "src": "/freshly-washed-towels-stacked-wooden-floor.jpg",
           "alt": "Book laundry pickup on phone"
         },
         "badge": {
@@ -1668,7 +1671,7 @@
           "Real-time pickup updates"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=800&q=80",
+          "src": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
           "alt": "Collecting laundry basket"
         },
         "badge": {
@@ -1691,7 +1694,7 @@
           "Care for all fabric types"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=800&q=80",
+          "src": "/laundromat-worker.jpg",
           "alt": "Freshly washed folded laundry"
         },
         "badge": {
@@ -1707,14 +1710,14 @@
         "icon": "FiTruck",
         "title": "We Deliver",
         "subtitle": "We bring back your freshly cleaned and rejuvenated clothes.",
-        "description": "Once your clothes are ready, we carefully pack them and deliver them back to your doorstep ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â fresh, clean and ready to wear. On-time delivery, every time!",
+        "description": "Once your clothes are ready, we carefully pack them and deliver them back to your doorstep fresh, clean and ready to wear. On-time delivery, every time!",
         "points": [
           "Neatly folded & packed",
           "On-time delivery",
           "Ready to wear"
         ],
         "image": {
-          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=800&q=80",
+          "src": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
           "alt": "Delivery of packed clean laundry"
         },
         "badge": {
@@ -1743,7 +1746,7 @@
           "name": "Aditi Sharma",
           "location": "Delhi",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team8.jpg",
             "alt": "Aditi Sharma"
           }
         },
@@ -1760,7 +1763,7 @@
           "name": "Rahul Mehta",
           "location": "Mumbai",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team1.jpg",
             "alt": "Rahul Mehta"
           }
         },
@@ -1777,7 +1780,7 @@
           "name": "Neha Verma",
           "location": "Bangalore",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team2.jpg",
             "alt": "Neha Verma"
           }
         },
@@ -1794,7 +1797,7 @@
           "name": "Karan Singh",
           "location": "Pune",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team3.jpg",
             "alt": "Karan Singh"
           }
         },
@@ -1811,7 +1814,7 @@
           "name": "Priya Nair",
           "location": "Chennai",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team4.jpg",
             "alt": "Priya Nair"
           }
         },
@@ -1828,7 +1831,7 @@
           "name": "Aman Gupta",
           "location": "Hyderabad",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team5.jpg",
             "alt": "Aman Gupta"
           }
         },
@@ -1845,7 +1848,7 @@
           "name": "Sneha Iyer",
           "location": "Kolkata",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team6.jpg",
             "alt": "Sneha Iyer"
           }
         },
@@ -1862,7 +1865,7 @@
           "name": "Vikram Joshi",
           "location": "Ahmedabad",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team7.jpg",
             "alt": "Vikram Joshi"
           }
         },
@@ -1879,7 +1882,7 @@
           "name": "Meera Kapoor",
           "location": "Jaipur",
           "avatar": {
-            "src": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=250&q=80",
+            "src": "/teams/team8.jpg",
             "alt": "Meera Kapoor"
           }
         },
@@ -2046,7 +2049,7 @@
     },
     "banner": {
       "image": {
-        "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1000&q=80",
+        "src": "/laundry-basket-with-colorful-towels-background.jpg",
         "alt": "Delivery executive holding laundry clothes package"
       },
       "floatingSloganLine1": "Pickup Today",
@@ -2108,7 +2111,7 @@
         "title": "ISO 9001:2015",
         "subtitle": "Quality Management System",
         "image": {
-          "src": "https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?auto=format&fit=crop&w=700&q=80",
+          "src": "/certificate/c1.png",
           "alt": "ISO 9001:2015 Certification Frame"
         }
       },
@@ -2117,7 +2120,7 @@
         "title": "ISO 14001:2015",
         "subtitle": "Environmental Management",
         "image": {
-          "src": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=700&q=80",
+          "src": "/certificate/c2.png",
           "alt": "ISO 14001:2015 Certificate"
         }
       },
@@ -2126,7 +2129,7 @@
         "title": "OHSAS 18001",
         "subtitle": "Health & Safety Management",
         "image": {
-          "src": "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80",
+          "src": "/certificate/c3.png",
           "alt": "OHSAS 18001 Certificate"
         }
       },
@@ -2135,8 +2138,44 @@
         "title": "HACCP Certification",
         "subtitle": "Safe & Hygienic Processing",
         "image": {
-          "src": "https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&w=700&q=80",
+          "src": "/certificate/c4.png",
           "alt": "HACCP Certification Award"
+        }
+      },
+      {
+        "id": "cert-5",
+        "title": "ISO 27001:2013",
+        "subtitle": "Information Security Management",
+        "image": {
+          "src": "/certificate/c1.png",
+          "alt": "ISO 27001:2013 Certification Frame"
+        }
+      },
+      {
+        "id": "cert-6",
+        "title": "ISO 22000:2018",
+        "subtitle": "Food Safety Management",
+        "image": {
+          "src": "/certificate/c2.png",
+          "alt": "ISO 22000:2018 Certificate"
+        }
+      },
+      {
+        "id": "cert-7",
+        "title": "ISO 50001",
+        "subtitle": "Energy Management System",
+        "image": {
+          "src": "/certificate/c3.png",
+          "alt": "ISO 50001 Certificate"
+        }
+      },
+      {
+        "id": "cert-8",
+        "title": "CE Marking",
+        "subtitle": "European Conformity",
+        "image": {
+          "src": "/certificate/c4.png",
+          "alt": "CE Marking Award"
         }
       }
     ]
@@ -2152,7 +2191,7 @@
         "title": "Excellence in Customer Service",
         "subtitle": "For outstanding customer satisfaction",
         "image": {
-          "src": "https://images.unsplash.com/photo-1578269174936-2709b6aeb913?auto=format&fit=crop&w=700&q=80",
+          "src": "/award/awd1.png",
           "alt": "Crystal Excellence Award Trophy"
         }
       },
@@ -2161,7 +2200,7 @@
         "title": "Best Laundry Service Provider",
         "subtitle": "Recognized for quality and reliability",
         "image": {
-          "src": "https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?auto=format&fit=crop&w=700&q=80",
+          "src": "/award/awd2.png",
           "alt": "Gold Star Trophy Award"
         }
       },
@@ -2170,7 +2209,7 @@
         "title": "Sustainability Champion",
         "subtitle": "For eco-friendly practices",
         "image": {
-          "src": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=700&q=80",
+          "src": "/award/awd3.png",
           "alt": "Leaf Eco Award Plaque"
         }
       },
@@ -2179,8 +2218,44 @@
         "title": "Service Excellence Award",
         "subtitle": "For consistent high standards",
         "image": {
-          "src": "https://images.unsplash.com/photo-1628155930542-3c7a64e2c833?auto=format&fit=crop&w=700&q=80",
+          "src": "/award/awd1.png",
           "alt": "Golden Rim Trophy"
+        }
+      },
+      {
+        "id": "award-5",
+        "title": "Innovation in Service",
+        "subtitle": "For pioneering modern solutions",
+        "image": {
+          "src": "/award/awd2.png",
+          "alt": "Innovation Award Trophy"
+        }
+      },
+      {
+        "id": "award-6",
+        "title": "Best Regional Service",
+        "subtitle": "Recognized locally",
+        "image": {
+          "src": "/award/awd3.png",
+          "alt": "Regional Star Award"
+        }
+      },
+      {
+        "id": "award-7",
+        "title": "Top Employer Award",
+        "subtitle": "For an excellent workplace",
+        "image": {
+          "src": "/award/awd1.png",
+          "alt": "Top Employer Plaque"
+        }
+      },
+      {
+        "id": "award-8",
+        "title": "Quality Assured Business",
+        "subtitle": "Consistently meeting expectations",
+        "image": {
+          "src": "/award/awd2.png",
+          "alt": "Quality Badge"
         }
       }
     ]
@@ -2189,7 +2264,7 @@
     "tag": "GALLERY",
     "titlePrefix": "Our Work",
     "titleHighlight": "In Pictures",
-    "description": "Take a look at our cleaning process, happy customers and the fresh results we deliver every day. Quality, care and cleanliness ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â in every frame.",
+    "description": "Take a look at our cleaning process, happy customers and the fresh results we deliver every day. Quality, care and cleanliness in every frame.",
     "mediaTypeTabs": [
       {
         "id": "photo",
@@ -2245,7 +2320,7 @@
         "categoryId": "laundry-process",
         "title": "Washing machine loading",
         "image": {
-          "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=700&q=80",
+          "src": "/freshly-washed-towels-stacked-wooden-floor.jpg",
           "alt": "Washing machine load clothes"
         }
       },
@@ -2255,7 +2330,7 @@
         "categoryId": "laundry-process",
         "title": "Fresh folded blue and white towels",
         "image": {
-          "src": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=700&q=80",
+          "src": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
           "alt": "Clean folded towels"
         }
       },
@@ -2265,7 +2340,7 @@
         "categoryId": "dry-cleaning",
         "title": "Hanging shirts and suits",
         "image": {
-          "src": "https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=700&q=80",
+          "src": "/laundromat-worker.jpg",
           "alt": "Shirts on wooden hangers"
         }
       },
@@ -2275,7 +2350,7 @@
         "categoryId": "ironing",
         "title": "Steam ironing garment",
         "image": {
-          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=700&q=80",
+          "src": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
           "alt": "Steam iron press"
         }
       },
@@ -2285,7 +2360,7 @@
         "categoryId": "dry-cleaning",
         "title": "Dry cleaned packed suits",
         "image": {
-          "src": "https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=700&q=80",
+          "src": "/laundry-basket-with-colorful-towels-background.jpg",
           "alt": "Garments in protective covers"
         }
       },
@@ -2295,7 +2370,7 @@
         "categoryId": "fold-packaging",
         "title": "Neat folding by executive",
         "image": {
-          "src": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=700&q=80",
+          "src": "/man-is-organizing-cleaning-house-stack-clean-terry-towels-hand-concept.jpg",
           "alt": "Folding clothes carefully"
         }
       },
@@ -2305,7 +2380,7 @@
         "categoryId": "stain-removal",
         "title": "Targeted stain treatment",
         "image": {
-          "src": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=700&q=80",
+          "src": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
           "alt": "Special treatment on fabric stains"
         }
       },
@@ -2315,7 +2390,7 @@
         "categoryId": "fold-packaging",
         "title": "Stacked folded clothes",
         "image": {
-          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=700&q=80",
+          "src": "/person-inside-laundromat-with-washing-machines.jpg",
           "alt": "Stacked freshly washed fabrics"
         }
       },
@@ -2325,7 +2400,7 @@
         "categoryId": "laundry-process",
         "title": "Premium shoe spa and cleaning",
         "image": {
-          "src": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=700&q=80",
+          "src": "/stack-colorful-folded-clothes-blue-background-cozy-vibrant-knitwear-fabrics.jpg",
           "alt": "Shoe cleaning process"
         }
       },
@@ -2335,7 +2410,7 @@
         "categoryId": "laundry-process",
         "title": "Spa rolled and stacked towels",
         "image": {
-          "src": "https://images.unsplash.com/photo-1584820927498-cfe5211fd8bf?auto=format&fit=crop&w=700&q=80",
+          "src": "/stack-laundry-are-stacked-top-each-other-laundry-room.jpg",
           "alt": "Clean rolled towels"
         }
       },
@@ -2345,7 +2420,7 @@
         "categoryId": "fold-packaging",
         "title": "Eco friendly laundry tote bag",
         "image": {
-          "src": "https://images.unsplash.com/photo-1597484662317-9bd7bdda2907?auto=format&fit=crop&w=700&q=80",
+          "src": "/towels-neatly-stacked-stylish-organized-laundry-room-maximum-efficiency-aesthetics.jpg",
           "alt": "Clean fresh delivery bag"
         }
       },
@@ -2355,7 +2430,7 @@
         "categoryId": "our-store",
         "title": "Store reception and drop-off desk",
         "image": {
-          "src": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=700&q=80",
+          "src": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg",
           "alt": "Laundry store front counter"
         }
       },
@@ -2366,7 +2441,7 @@
         "title": "Automated Washing Cycle",
         "duration": "0:45",
         "image": {
-          "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=700&q=80",
+          "src": "/young-latin-woman-holding-laundry-basket-screaming-proud-celebrating-victory-success-very-excited-with-raised-arms.jpg",
           "alt": "Washing cycle video"
         }
       },
@@ -2377,7 +2452,7 @@
         "title": "Industrial Steam Ironing Tutorial",
         "duration": "1:20",
         "image": {
-          "src": "https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=700&q=80",
+          "src": "/freshly-washed-towels-stacked-wooden-floor.jpg",
           "alt": "Steam ironing video"
         }
       },
@@ -2388,7 +2463,7 @@
         "title": "Deep Stain Removal Demo",
         "duration": "0:58",
         "image": {
-          "src": "https://images.unsplash.com/photo-1585421514738-01798e348b17?auto=format&fit=crop&w=700&q=80",
+          "src": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
           "alt": "Stain removal video"
         }
       },
@@ -2399,7 +2474,7 @@
         "title": "Customer Review & Unboxing",
         "duration": "1:15",
         "image": {
-          "src": "https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=700&q=80",
+          "src": "/laundromat-worker.jpg",
           "alt": "Customer unboxing video"
         }
       }
@@ -2631,7 +2706,7 @@
       "title": "Find Us on Map",
       "description": "Visit our store or drop off your laundry. We're located in a convenient and easy-to-reach area.",
       "buttonText": "GET DIRECTIONS",
-      "buttonLink": "https://maps.google.com"
+      "buttonLink": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg"
     }
   },
   "legalPolicies": {
@@ -3289,7 +3364,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team1.jpg",
           "alt": "Rohit Sharma"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3389,7 +3464,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team2.jpg",
           "alt": "Pooja Verma"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3489,7 +3564,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team3.jpg",
           "alt": "Amit Kumar"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3589,7 +3664,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team4.jpg",
           "alt": "Neha Singh"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3689,7 +3764,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team5.jpg",
           "alt": "Vikram Patel"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3789,7 +3864,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team6.jpg",
           "alt": "Suresh Yadav"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3889,7 +3964,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team7.jpg",
           "alt": "Anjali Mehta"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -3989,7 +4064,7 @@
       "description": "Passionate people. Professional service. Cleaner tomorrow.",
       "member": {
         "image": {
-          "src": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop",
+          "src": "/teams/team8.jpg",
           "alt": "Karan Malhotra"
         },
         "imageQuote": "Clean clothes create a brighter, more confident you.",
@@ -4100,11 +4175,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=600",
+            "src": "/laundry-basket-with-colorful-towels-background.jpg",
             "alt": "Expertise in House Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "src": "/man-is-organizing-cleaning-house-stack-clean-terry-towels-hand-concept.jpg",
             "alt": "Expertise in House Cleaning Image 2"
           }
         ]
@@ -4162,11 +4237,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "src": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
             "alt": "Expertise in Office Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=600",
+            "src": "/person-inside-laundromat-with-washing-machines.jpg",
             "alt": "Expertise in Office Cleaning Image 2"
           }
         ]
@@ -4224,11 +4299,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&q=80&w=600",
+            "src": "/stack-colorful-folded-clothes-blue-background-cozy-vibrant-knitwear-fabrics.jpg",
             "alt": "Expertise in Commercial Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "src": "/stack-laundry-are-stacked-top-each-other-laundry-room.jpg",
             "alt": "Expertise in Commercial Cleaning Image 2"
           }
         ]
@@ -4286,11 +4361,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "src": "/towels-neatly-stacked-stylish-organized-laundry-room-maximum-efficiency-aesthetics.jpg",
             "alt": "Expertise in Residential Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "src": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg",
             "alt": "Expertise in Residential Cleaning Image 2"
           }
         ]
@@ -4348,11 +4423,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&q=80&w=600",
+            "src": "/young-latin-woman-holding-laundry-basket-screaming-proud-celebrating-victory-success-very-excited-with-raised-arms.jpg",
             "alt": "Expertise in Window Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600",
+            "src": "/freshly-washed-towels-stacked-wooden-floor.jpg",
             "alt": "Expertise in Window Cleaning Image 2"
           }
         ]
@@ -4410,11 +4485,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1595428774223-ef52624120d2?auto=format&fit=crop&q=80&w=600",
+            "src": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
             "alt": "Expertise in Carpet Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+            "src": "/laundromat-worker.jpg",
             "alt": "Expertise in Carpet Cleaning Image 2"
           }
         ]
@@ -4472,11 +4547,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1601362840469-51e4d8d58785?auto=format&fit=crop&q=80&w=600",
+            "src": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
             "alt": "Expertise in Floor Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "src": "/laundry-basket-with-colorful-towels-background.jpg",
             "alt": "Expertise in Floor Cleaning Image 2"
           }
         ]
@@ -4534,11 +4609,11 @@
         ],
         "images": [
           {
-            "src": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?auto=format&fit=crop&q=80&w=600",
+            "src": "/man-is-organizing-cleaning-house-stack-clean-terry-towels-hand-concept.jpg",
             "alt": "Expertise in Car Cleaning Image 1"
           },
           {
-            "src": "https://images.unsplash.com/photo-1613665813446-82a78c468a1d?auto=format&fit=crop&q=80&w=600",
+            "src": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
             "alt": "Expertise in Car Cleaning Image 2"
           }
         ]
@@ -4588,7 +4663,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our laundry service service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&q=80&w=800",
+        "src": "/person-inside-laundromat-with-washing-machines.jpg",
         "alt": "Laundry Service Main Image"
       },
       "badge": {
@@ -4659,7 +4734,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our dry cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1520696954213-90d6e61f28b7?auto=format&fit=crop&q=80&w=800",
+        "src": "/stack-colorful-folded-clothes-blue-background-cozy-vibrant-knitwear-fabrics.jpg",
         "alt": "Dry Cleaning Main Image"
       },
       "badge": {
@@ -4730,7 +4805,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our steam ironing service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=800",
+        "src": "/teams/team1.jpg",
         "alt": "Steam Ironing Main Image"
       },
       "badge": {
@@ -4801,7 +4876,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our shoe cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&q=80&w=800",
+        "src": "/stack-laundry-are-stacked-top-each-other-laundry-room.jpg",
         "alt": "Shoe Cleaning Main Image"
       },
       "badge": {
@@ -4872,7 +4947,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our curtain cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800",
+        "src": "/towels-neatly-stacked-stylish-organized-laundry-room-maximum-efficiency-aesthetics.jpg",
         "alt": "Curtain Cleaning Main Image"
       },
       "badge": {
@@ -4943,7 +5018,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our carpet cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1558384462-8e3b3334208a?auto=format&fit=crop&q=80&w=800",
+        "src": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg",
         "alt": "Carpet Cleaning Main Image"
       },
       "badge": {
@@ -5014,7 +5089,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our bag cleaning service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&q=80&w=800",
+        "src": "/young-latin-woman-holding-laundry-basket-screaming-proud-celebrating-victory-success-very-excited-with-raised-arms.jpg",
         "alt": "Bag Cleaning Main Image"
       },
       "badge": {
@@ -5085,7 +5160,7 @@
       "title": "Fresh Clothes, A Brighter You",
       "description": "Our special care service is designed to give your everyday items the care they deserve. We use premium products and advanced techniques to remove dirt, stains, and odours, keeping them fresh and long-lasting.",
       "image": {
-        "src": "https://images.unsplash.com/photo-1583847268964-b28ce8f31586?auto=format&fit=crop&q=80&w=800",
+        "src": "/freshly-washed-towels-stacked-wooden-floor.jpg",
         "alt": "Special Care Main Image"
       },
       "badge": {

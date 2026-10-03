@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import { Caveat } from 'next/font/google';
 
 const caveat = Caveat({ subsets: ['latin'], weight: ['400', '700'] });
@@ -72,7 +73,13 @@ const SitemapSec = () => {
         </p>
 
         {/* Sitemap Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <motion.div 
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+        >
 
           {sections.map((section: SitemapSection) => (
             <div
@@ -145,7 +152,7 @@ const SitemapSec = () => {
             </div>
           </div>
 
-        </div>
+        </motion.div>
       </div>
     </section>
   );

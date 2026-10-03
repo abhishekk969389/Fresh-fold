@@ -2,6 +2,7 @@
 
 import React from "react";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 
 // React Icons
 import * as FiIcons from "react-icons/fi";
@@ -49,7 +50,13 @@ export default function ContactSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
           
           {/* Left Column: Heading, Info & Socials */}
-          <div className="lg:col-span-5 flex flex-col justify-between space-y-6 pt-2">
+          <motion.div 
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-5 flex flex-col justify-between space-y-6 pt-2"
+          >
             <div className="space-y-4">
               <div className="flex items-center gap-2.5">
                 <span className="w-8 h-[2.5px] bg-[#f59e0b]"></span>
@@ -94,10 +101,16 @@ export default function ContactSection() {
                 </a>
               ))}
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column: Expanded Form Card */}
-          <div className="lg:col-span-7 bg-[#d9f5fa]/75 rounded-[32px] p-6 sm:p-10 border border-cyan-100/90 shadow-xs flex flex-col justify-between">
+          <motion.div 
+            initial={{ opacity: 0, x: 30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="lg:col-span-7 bg-[#d9f5fa]/75 rounded-[32px] p-6 sm:p-10 border border-cyan-100/90 shadow-xs flex flex-col justify-between"
+          >
             
             {/* Form Header with Bigger Title and Note */}
             <div className="flex items-start justify-between gap-4 mb-6">
@@ -213,12 +226,18 @@ export default function ContactSection() {
               </div>
             </form>
 
-          </div>
+          </motion.div>
         </div>
       </div>
 
       {/* 4 Contact Info Highlights (Attached directly above the map) */}
-      <div className="w-full border-t border-gray-100 bg-[#fbfdff] py-10 px-4 sm:px-6 lg:px-8">
+      <motion.div 
+        initial={{ opacity: 0, scale: 0.95 }}
+        whileInView={{ opacity: 1, scale: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="w-full border-t border-gray-100 bg-[#fbfdff] py-10 px-4 sm:px-6 lg:px-8"
+      >
         <div className="max-w-[1340px] mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 divide-y sm:divide-y-0 sm:divide-x divide-cyan-100/70">
           {section.contactDetails.map((card: ContactDetailItem) => (
             <div
@@ -243,10 +262,16 @@ export default function ContactSection() {
             </div>
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Full Width Google Map with Floating 'Find Us on Map' Card */}
-      <div className="relative w-full h-[450px] sm:h-[500px]">
+      <motion.div 
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.5 }}
+        className="relative w-full h-[450px] sm:h-[500px]"
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224356.85923192592!2d77.23701088488971!3d28.522404036526275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce5a43173357b%3A0x37ffce30c87cc03f!2sNoida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1786345160037!5m2!1sen!2sin"
           width="100%"
@@ -283,7 +308,7 @@ export default function ContactSection() {
             <FiIcons.FiArrowRight className="text-sm" />
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }

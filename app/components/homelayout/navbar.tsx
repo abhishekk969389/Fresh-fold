@@ -154,7 +154,7 @@ export default function Navbar() {
   const { logo, topBar, navLinks, cta } = navbarData;
 
   return (
-    <header className="sticky top-0 z-[1000] w-full bg-white shadow-[0_4px_16px_rgba(0,0,0,0.06)]">
+    <header className="fixed top-0 left-0 right-0 z-[1000] w-full bg-white shadow-[0_4px_16px_rgba(0,0,0,0.06)]">
 
       {/* ══════════════════════════════════════════════════════
           DESKTOP LAYOUT
@@ -188,7 +188,7 @@ export default function Navbar() {
               <svg
                 aria-hidden="true"
                 viewBox="0 0 48 56"
-                className="absolute right-full top-0 h-full w-[48px] text-teal-dark pointer-events-none fill-current"
+                className="absolute right-[calc(100%-1px)] top-0 h-full w-[48px] text-teal-dark pointer-events-none fill-current"
                 preserveAspectRatio="none"
               >
                 <path d="M48,56 C20,56 28,0 0,0 L48,0 Z" />
@@ -210,7 +210,7 @@ export default function Navbar() {
               <svg
                 aria-hidden="true"
                 viewBox="0 0 48 56"
-                className="absolute left-full top-0 h-full w-[48px] text-teal-dark pointer-events-none fill-current"
+                className="absolute left-[calc(100%-1px)] top-0 h-full w-[48px] text-teal-dark pointer-events-none fill-current"
                 preserveAspectRatio="none"
               >
                 <path d="M0,56 C28,56 20,0 48,0 L0,0 Z" />
@@ -223,7 +223,7 @@ export default function Navbar() {
               <svg
                 aria-hidden="true"
                 viewBox="0 0 48 56"
-                className="absolute right-full top-0 h-full w-[48px] text-teal-light pointer-events-none fill-current"
+                className="absolute right-[calc(100%-1px)] top-0 h-full w-[48px] text-teal-light pointer-events-none fill-current"
                 preserveAspectRatio="none"
               >
                 <path d="M48,56 C20,56 28,0 0,0 L48,0 Z" />

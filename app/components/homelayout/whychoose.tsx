@@ -1,8 +1,11 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { data } from "@/app/data";
 import type { WhyChooseData } from "@/app/data";
 import { FaShieldAlt, FaLeaf, FaStopwatch, FaUsers, FaCoins, FaHeadset, FaRegHeart } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   FaShieldAlt,
@@ -56,7 +59,13 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10">
         
         {/* Header */}
-        <div className="flex flex-col items-center text-center mb-8">
+        <motion.div 
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="flex flex-col items-center text-center mb-8"
+        >
           <div className="flex items-center gap-4 mb-2">
             <span className={`w-8 h-px ${isLight ? 'bg-[#073c47]' : 'bg-[#fbbf24]'}`}></span>
             <span className={`${isLight ? 'text-[#073c47]' : 'text-[#fbbf24]'} font-bold tracking-widest text-[14px] uppercase`}>{whyChoose.tag}</span>
@@ -73,15 +82,22 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
           <p className={`${isLight ? 'text-gray-600' : 'text-gray-300'} text-[15px] sm:text-[16px] max-w-2xl mx-auto`}>
             {whyChoose.subtitle}
           </p>
-        </div>
+        </motion.div>
 
         {/* Grid Container */}
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_minmax(350px,400px)_1fr] gap-10 xl:gap-12 items-stretch">
           
           {/* Left Column (Features) */}
           <div className="flex flex-col gap-6 justify-between">
-            {whyChoose.featuresLeft.map(feature => (
-              <div key={feature.id} className={`${isLight ? 'bg-white border-[#00bcd4]/30 shadow-[0_4px_20px_rgba(0,188,212,0.1)] hover:border-[#00bcd4] hover:shadow-[0_8px_30px_rgba(0,188,212,0.2)]' : 'bg-[#092d36]/90 border-[#0d4a57] shadow-lg hover:border-[#00bcd4]/40'} backdrop-blur-sm border rounded-[24px] p-5 sm:p-6 flex items-center gap-5 sm:gap-6 group transition-all h-full`}>
+            {whyChoose.featuresLeft.map((feature, idx) => (
+              <motion.div 
+                key={feature.id} 
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.15 }}
+                className={`${isLight ? 'bg-white border-[#00bcd4]/30 shadow-[0_4px_20px_rgba(0,188,212,0.1)] hover:border-[#00bcd4] hover:shadow-[0_8px_30px_rgba(0,188,212,0.2)]' : 'bg-[#092d36]/90 border-[#0d4a57] shadow-lg hover:border-[#00bcd4]/40'} backdrop-blur-sm border rounded-[24px] p-5 sm:p-6 flex items-center gap-5 sm:gap-6 group transition-all h-full`}
+              >
                 
                 {/* Left: Icon & Number Badge Setup */}
                 <div className={`relative shrink-0 w-[72px] h-[72px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center ${isLight ? 'bg-[#073c47]' : 'bg-[#073c47] border border-[#0d5966]'}`}>
@@ -99,12 +115,18 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
                   <h4 className={`${isLight ? 'text-[#073c47]' : 'text-white'} font-bold text-[17px] sm:text-[19px] mb-2 tracking-wide`}>{feature.title}</h4>
                   <p className={`${isLight ? 'text-gray-600' : 'text-gray-300/90'} text-[13px] sm:text-[14px] leading-relaxed font-medium`}>{feature.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 
           {/* Center Column (Image) */}
-          <div className="relative w-full h-[500px] lg:h-auto rounded-[24px] border-2 border-[#145a68] overflow-hidden shadow-[0_0_40px_rgba(0,188,212,0.1)]">
+          <motion.div 
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.7 }}
+            className="relative w-full h-[500px] lg:h-auto rounded-[24px] border-2 border-[#145a68] overflow-hidden shadow-[0_0_40px_rgba(0,188,212,0.1)]"
+          >
             <div className={`absolute inset-0 z-10 pointer-events-none ${isLight ? 'bg-transparent' : 'bg-[#06242c]/20'}`}></div>
             <Image src={whyChoose.centerImage.src} alt={whyChoose.centerImage.alt} fill className="object-cover" />
             
@@ -133,12 +155,19 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
                 <span className="w-16 sm:w-20 h-[3px] sm:h-[4px] bg-[#fbbf24] rounded-full"></span>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Right Column (Features) */}
           <div className="flex flex-col gap-6 justify-between">
-            {whyChoose.featuresRight.map(feature => (
-              <div key={feature.id} className={`${isLight ? 'bg-white border-[#00bcd4]/30 shadow-[0_4px_20px_rgba(0,188,212,0.1)] hover:border-[#00bcd4] hover:shadow-[0_8px_30px_rgba(0,188,212,0.2)]' : 'bg-[#092d36]/90 border-[#0d4a57] shadow-lg hover:border-[#00bcd4]/40'} backdrop-blur-sm border rounded-[24px] p-5 sm:p-6 flex items-center gap-5 sm:gap-6 group transition-all h-full`}>
+            {whyChoose.featuresRight.map((feature, idx) => (
+              <motion.div 
+                key={feature.id} 
+                initial={{ opacity: 0, x: 30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: idx * 0.15 }}
+                className={`${isLight ? 'bg-white border-[#00bcd4]/30 shadow-[0_4px_20px_rgba(0,188,212,0.1)] hover:border-[#00bcd4] hover:shadow-[0_8px_30px_rgba(0,188,212,0.2)]' : 'bg-[#092d36]/90 border-[#0d4a57] shadow-lg hover:border-[#00bcd4]/40'} backdrop-blur-sm border rounded-[24px] p-5 sm:p-6 flex items-center gap-5 sm:gap-6 group transition-all h-full`}
+              >
                 
                 {/* Left: Icon & Number Badge Setup */}
                 <div className={`relative shrink-0 w-[72px] h-[72px] sm:w-[80px] sm:h-[80px] rounded-full flex items-center justify-center ${isLight ? 'bg-[#073c47]' : 'bg-[#073c47] border border-[#0d5966]'}`}>
@@ -156,7 +185,7 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
                   <h4 className={`${isLight ? 'text-[#073c47]' : 'text-white'} font-bold text-[17px] sm:text-[19px] mb-2 tracking-wide`}>{feature.title}</h4>
                   <p className={`${isLight ? 'text-gray-600' : 'text-gray-300/90'} text-[13px] sm:text-[14px] leading-relaxed font-medium`}>{feature.description}</p>
                 </div>
-              </div>
+              </motion.div>
             ))}
           </div>
 

@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import { IconType } from "react-icons";
+import { motion } from "framer-motion";
 
 // React Icons
 import * as FiIcons from "react-icons/fi";
@@ -34,7 +35,13 @@ export default function PricingSection() {
             <div className="max-w-[1360px] mx-auto px-6 xl:px-12 space-y-6">
 
                 {/* Top Category Tabs */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3">
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                    className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3"
+                >
                     {pricing.categories.map((cat: TabCategory) => {
                         const isActive = activeTab === cat.id;
                         return (
@@ -53,13 +60,19 @@ export default function PricingSection() {
                             </button>
                         );
                     })}
-                </div>
+                </motion.div>
 
                 {/* Content & Banner Header */}
                 <div className="flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-12">
 
                     {/* Left Text Header */}
-                    <div className="flex-1 space-y-2.5">
+                    <motion.div 
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.3 }}
+                        className="flex-1 space-y-2.5"
+                    >
                         <div className="flex items-center gap-2">
                             <span className="w-5 h-[2px] bg-[#00bcd4]"></span>
                             <span className="text-[#00bcd4] font-bold tracking-wider text-[12px] uppercase">
@@ -78,10 +91,16 @@ export default function PricingSection() {
                         <p className="text-[#5a7184] text-[14px] sm:text-[15px] leading-relaxed max-w-[540px]">
                             {pricing.description}
                         </p>
-                    </div>
+                    </motion.div>
 
                     {/* Right Banner Image */}
-                    <div className="relative w-full lg:w-[48%] h-[200px] sm:h-[220px] lg:h-[230px] rounded-[22px] overflow-hidden shrink-0 shadow-sm">
+                    <motion.div 
+                        initial={{ opacity: 0, x: 30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5, delay: 0.4 }}
+                        className="relative w-full lg:w-[48%] h-[200px] sm:h-[220px] lg:h-[230px] rounded-[22px] overflow-hidden shrink-0 shadow-sm"
+                    >
                         <Image
                             src={pricing.image.src}
                             alt={pricing.image.alt}
@@ -103,11 +122,17 @@ export default function PricingSection() {
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 </div>
 
                 {/* Highlight Features Row (Screenshot Design: Single Bar with Dividers) */}
-                <div className="w-full bg-[#eaf8fc] rounded-2xl md:rounded-[24px] border border-cyan-100/70 py-6 px-3 sm:px-6 shadow-sm">
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                    className="w-full bg-[#eaf8fc] rounded-2xl md:rounded-[24px] border border-cyan-100/70 py-6 px-3 sm:px-6 shadow-sm"
+                >
                     <div className="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-cyan-200/60">
                         {pricing.features.map((feat: HighlightFeature) => (
                             <div
@@ -131,10 +156,16 @@ export default function PricingSection() {
                             </div>
                         ))}
                     </div>
-                </div>
+                </motion.div>
 
                 {/* Pricing Table */}
-                <div className="bg-white rounded-[24px] overflow-hidden border border-gray-100 shadow-sm">
+                <motion.div 
+                    initial={{ opacity: 0, y: 30 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.6 }}
+                    className="bg-white rounded-[24px] overflow-hidden border border-gray-100 shadow-sm"
+                >
                     <div className="overflow-x-auto">
                         <table className="w-full text-left border-collapse">
                             <thead>
@@ -162,7 +193,7 @@ export default function PricingSection() {
                             </tbody>
                         </table>
                     </div>
-                </div>
+                </motion.div>
 
             </div>
         </section>
