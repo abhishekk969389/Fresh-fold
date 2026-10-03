@@ -227,7 +227,7 @@ export default function Banner() {
           </button>
           <div className="relative w-full max-w-4xl aspect-video px-4 sm:px-0" onClick={(e) => e.stopPropagation()}>
             <iframe
-              src={secondaryCta.videoUrl}
+              src={`${secondaryCta.videoUrl}?autoplay=1`}
               title="Video"
               className="w-full h-full rounded-xl shadow-2xl border-4 border-white/10"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

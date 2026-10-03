@@ -196,7 +196,7 @@ export default function Counting() {
               onClick={(e) => e.stopPropagation()}
             >
               <iframe
-                src={countingData.videoUrl}
+                src={`${countingData.videoUrl}?autoplay=1`}
                 title="Video"
                 className="w-full h-full rounded-xl shadow-2xl border-4 border-white/10"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

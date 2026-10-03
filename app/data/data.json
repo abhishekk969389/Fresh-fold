@@ -186,7 +186,7 @@
     "secondaryCta": {
       "label": "Watch Our Story",
       "href": "/about",
-      "videoUrl": "/laundry-basket-with-colorful-towels-background.jpg"
+      "videoUrl": "https://www.youtube.com/embed/8v2G4c9vYyQ"
     },
     "highlights": [
       {
@@ -434,7 +434,7 @@
       "Fresh",
       "Confident"
     ],
-    "videoUrl": "/wicker-laundry-basket-overflowing-with-colorful-clothes-sits-wooden-table-outside-sunny-day.jpg"
+    "videoUrl": "https://www.youtube.com/embed/8v2G4c9vYyQ"
   },
   "services": {
     "tag": "OUR SERVICES",
@@ -740,7 +740,7 @@
   },
   "counting": {
     "videoImage": "/laundry-basket-washing-machine-blurred-background-with-space-text-placement.jpg",
-    "videoUrl": "/no-stains-are-safe-shot-beautiful-young-woman-doing-laundry-home.jpg",
+    "videoUrl": "https://www.youtube.com/embed/8v2G4c9vYyQ",
     "stats": [
       {
         "id": "c1",
