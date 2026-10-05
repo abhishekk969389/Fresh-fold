@@ -17,13 +17,13 @@
         {
           "id": "phone",
           "icon": "FiPhone",
-          "primary": "+117 875 74885",
+          "primary": "+1 8557574885",
           "secondary": "Call Us Anytime"
         },
         {
           "id": "location",
           "icon": "FiMapPin",
-          "primary": "Syracuse, Connecticut - 17A",
+          "primary": "Syracuse- 17A, USA",
           "secondary": "Our Location"
         }
       ],
@@ -354,14 +354,14 @@
         "id": "phone",
         "icon": "FiPhone",
         "lines": [
-          "+112345678920"
+          "+1 2345678920"
         ]
       },
       {
         "id": "email",
         "icon": "FiMail",
         "lines": [
-          "support@freshfold.com"
+          "info@xyz.com"
         ]
       },
       {
@@ -2086,16 +2086,16 @@
         {
           "id": "c1",
           "icon": "FiPhoneCall",
-          "title": "1 (800) 765-43-21",
+          "title": "+1 6825658547",
           "subtitle": "Call us anytime",
           "href": "tel:18007654321"
         },
         {
           "id": "c2",
           "icon": "FiMail",
-          "title": "info@yourlaundrysite.com",
+          "title": "info@xyz.com",
           "subtitle": "Drop us an email",
-          "href": "mailto:info@yourlaundrysite.com"
+          "href": "info@xyz.com"
         }
       ]
     }
@@ -2690,15 +2690,15 @@
         "id": "email",
         "icon": "FiMail",
         "title": "Email Us",
-        "line1": "support@cleanin.com",
-        "line2": "support@cleanin.com"
+        "line1": "info@xyz.com",
+        "line2": "info@xyz.com"
       },
       {
         "id": "call",
         "icon": "FiPhoneCall",
         "title": "Call Us",
-        "line1": "+880 123 456 789",
-        "line2": "+880 123 456 789"
+        "line1": "+1 8012345678",
+        "line2": "+1 80 12345678"
       }
     ],
     "mapCard": {

@@ -24,33 +24,7 @@ export default function Works() {
   const worksData = (data as any).works as WorksData;
 
   return (
-    <section className="relative w-full mt-8 sm:mt-10 md:mt-12 lg:mt-14 overflow-hidden bg-[#f4fcfc]">
-
-      {/* Background Decor Left */}
-      <div className="absolute top-[15%] left-[-2%] lg:left-[2%] opacity-40 z-0 hidden lg:block">
-        <div className="transform -rotate-[15deg] flex flex-col items-start font-medium text-[#0092a3] leading-[1.1]" style={{ fontFamily: "'Brush Script MT', 'Comic Sans MS', cursive" }}>
-          <span className="text-[28px] lg:text-[22px] xl:text-[36px] ml-0">{worksData.leftSticker[0]}</span>
-          <span className="text-[28px] lg:text-[22px] xl:text-[36px] ml-6">{worksData.leftSticker[1]}</span>
-        </div>
-      </div>
-
-      {/* Background Decor Right */}
-      <div className="absolute top-[15%] right-[-2%] lg:right-[2%] opacity-40 z-0 hidden lg:block">
-        <div className="transform -rotate-[15deg] flex flex-col items-end font-medium text-[#0092a3] leading-[1.1]" style={{ fontFamily: "'Brush Script MT', 'Comic Sans MS', cursive" }}>
-          <span className="text-[26px] lg:text-[20px] xl:text-[32px] mr-12">{worksData.rightSticker[0]}</span>
-          <span className="text-[26px] lg:text-[20px] xl:text-[32px] mr-6">{worksData.rightSticker[1]}</span>
-          <div className="flex flex-col items-end relative">
-            <span className="text-[26px] lg:text-[20px] xl:text-[32px] z-10">{worksData.rightSticker[2]}</span>
-            <FaRegHeart className="text-[20px] lg:text-[14px] xl:text-[20px] mr-4 mt-2" />
-          </div>
-        </div>
-      </div>
-
-      {/* Decorative scattered dots/circles (optional enhancement) */}
-      <div className="absolute top-1/4 left-1/4 w-4 h-4 rounded-full bg-[#e0f7f9] -z-0"></div>
-      <div className="absolute bottom-1/4 right-1/4 w-8 h-8 rounded-full bg-[#e0f7f9] -z-0"></div>
-      <div className="absolute top-1/2 left-[10%] w-6 h-6 rounded-full bg-[#e0f7f9] -z-0"></div>
-      <div className="absolute bottom-1/3 right-[10%] w-5 h-5 rounded-full bg-[#e0f7f9] -z-0"></div>
+    <section className="relative w-full mt-2 sm:mt-4 md:mt-6 lg:mt-6 overflow-hidden bg-[#f4fcfc]">
 
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 relative z-10 text-center">
         {/* Header */}
