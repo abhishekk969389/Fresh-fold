@@ -199,32 +199,6 @@ export default function Services() {
                 priority
               />
 
-              {/* Cursive Sticker Text */}
-              <div
-                className="absolute top-[8%] sm:top-[10%] left-[6%] sm:left-[8%] transform -rotate-[12deg] flex flex-col items-start font-medium text-[#0b434f] leading-[1] drop-shadow-sm select-none"
-                style={{ fontFamily: "'Brush Script MT', 'Comic Sans MS', cursive" }}
-              >
-                <span className="text-[20px] sm:text-[28px] md:text-[36px] ml-0">Clean</span>
-                <span className="text-[20px] sm:text-[28px] md:text-[36px] ml-4 sm:ml-6">Fresh</span>
-                <div className="relative ml-3 sm:ml-4">
-                  <span className="text-[20px] sm:text-[28px] md:text-[36px] relative z-10">
-                    Confident
-                  </span>
-                  <svg
-                    className="absolute -bottom-1 left-0 w-[110%] h-2 sm:h-3 text-[#0b434f]"
-                    viewBox="0 0 100 10"
-                    preserveAspectRatio="none"
-                  >
-                    <path
-                      d="M0 8 Q 50 2 100 6"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2.5"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                </div>
-              </div>
             </div>
 
             {/* Quality Badge Overlay */}

@@ -11,14 +11,16 @@ import { BsCalendarCheck } from "react-icons/bs";
 
 import { data } from "@/app/data";
 import type { TopBarInfoItem, SocialLink, NavLink, NavbarData } from "@/app/data";
+import { MdOutlineMail } from "react-icons/md";
+import { FaXTwitter } from "react-icons/fa6";
 
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
-  FiClock,
+  MdOutlineMail,
   FiPhone,
   FiMapPin,
   FaFacebookF,
-  FaTwitter,
+  FaXTwitter,
   FaLinkedinIn,
   FaInstagram,
   BsCalendarCheck,

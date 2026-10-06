@@ -90,7 +90,7 @@ export default function MissionSec() {
             <div className="flex items-start gap-4 sm:gap-8">
               {mvData.mission.features.map(f => (
                 <div key={f.id} className="flex flex-col items-center text-center gap-3 w-20">
-                  <div className="w-16 h-16 rounded-full bg-[#e6f4f8] flex items-center justify-center text-[#073c47] shadow-sm transition-transform hover:scale-110">
+                  <div className="w-16 h-16 rounded-full bg-[#e6f4f8] hover:bg-[#073c47] hover:text-white flex items-center justify-center text-[#073c47] shadow-sm transition-transform hover:scale-110">
                     <DynamicIcon name={f.icon} className="text-[26px]" />
                   </div>
                   <span className="text-[#073c47] text-[12px] sm:text-[13px] font-semibold leading-tight whitespace-pre-line">
@@ -163,7 +163,7 @@ export default function MissionSec() {
 
               {/* Bottom Badge */}
               {mvData.vision.image.badge && (
-                <div className="absolute bottom-6 left-6 sm:bottom-8 sm:left-8 bg-[#007b8f]/95 backdrop-blur-sm rounded-[16px] px-5 py-4 flex items-center gap-4 shadow-xl">
+                <div className="absolute bottom-6 left-6 sm:bottom-8  sm:left-8 bg-[#007b8f]/95 backdrop-blur-sm rounded-[16px] px-5 py-4 flex items-center gap-4 shadow-xl">
                   {mvData.vision.image.badge.icon && (
                     <DynamicIcon name={mvData.vision.image.badge.icon} className="text-white text-[32px]" />
                   )}
@@ -209,8 +209,8 @@ export default function MissionSec() {
             {/* Features Row */}
             <div className="flex items-start gap-4 sm:gap-8">
               {mvData.vision.features.map(f => (
-                <div key={f.id} className="flex flex-col items-center text-center gap-3 w-20">
-                  <div className="w-16 h-16 rounded-full bg-[#e6f4f8] flex items-center justify-center text-[#073c47] shadow-sm transition-transform hover:scale-110">
+                <div key={f.id} className="flex flex-col  items-center text-center gap-3 w-20">
+                  <div className="w-16 h-16 rounded-full hover:bg-[#073c47] hover:text-white  bg-[#e6f4f8] flex items-center justify-center text-[#073c47] shadow-sm transition-transform hover:scale-110">
                     <DynamicIcon name={f.icon} className="text-[26px]" />
                   </div>
                   <span className="text-[#073c47] text-[12px] sm:text-[13px] font-semibold leading-tight whitespace-pre-line">

@@ -60,7 +60,7 @@ export default function ServiceContent({ details }: { details: ServiceDetailsDat
             {details.features.map((feat, idx) => (
               <React.Fragment key={idx}>
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-full bg-[#e0f7fa] text-[#00bcd4] flex items-center justify-center text-[18px] lg:text-[20px]">
+                  <div className="w-11 h-11 lg:w-12 lg:h-12 rounded-full hover:bg-[#00bcd4] hover:text-white bg-[#e0f7fa] text-[#00bcd4] flex items-center justify-center text-[18px] lg:text-[20px]">
                     <DynamicIcon name={feat.icon} />
                   </div>
                   <div className="flex flex-col mt-1">

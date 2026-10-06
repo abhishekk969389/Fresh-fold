@@ -21,7 +21,6 @@ export default async function TeamDetailsPage({ params }: { params: Promise<{ sl
           <TeamMemberExperience data={teamDetailsData} />
         </>
       ) : null}
-      <CTA />
     </>
   );
 }

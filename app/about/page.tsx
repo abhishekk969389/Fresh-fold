@@ -9,8 +9,10 @@ export default function AboutPage() {
   return (
     <>
       <Subbanner pageKey="about" />
-      <About/>
+      <About showButton={false} />
+      <div className="mt-4 sm:mt-6 md:mt-8 lg:mt-12">
       <Works/>
+      </div>
       <WhyChoose/>
       <CTA/>
     </>

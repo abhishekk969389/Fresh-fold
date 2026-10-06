@@ -10,6 +10,7 @@ import * as FiIcons from "react-icons/fi";
 import * as LuIcons from "react-icons/lu";
 import * as GiIcons from "react-icons/gi";
 import * as BiIcons from "react-icons/bi";
+import * as MdIcons from "react-icons/md";
 import { AppPricingData, HighlightFeature, PriceItem, TabCategory } from "@/app/data";
 import rawData from "@/app/data/data.json";
 
@@ -18,6 +19,7 @@ const iconMap: Record<string, IconType> = {
     ...LuIcons,
     ...GiIcons,
     ...BiIcons,
+    ...MdIcons,
 };
 
 const DynamicIcon: React.FC<{ name: string; className?: string }> = ({ name, className }) => {

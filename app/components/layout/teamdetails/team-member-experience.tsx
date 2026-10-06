@@ -15,7 +15,7 @@ interface Props {
 export default function TeamMemberExperience({ data }: Props) {
   const { member } = data;
   return (
-    <section className="w-full  mt-8 relative overflow-hidden">
+    <section className="w-full  mt-8 relative overflow-hidden mb-8 sm:mb-10 md:mb-12 lg:mb-14 ">
       <div className="max-w-[1360px] mx-auto px-6 xl:px-12 flex flex-col lg:flex-row gap-10 xl:gap-20">
         
         {/* Left Side: Timeline */}

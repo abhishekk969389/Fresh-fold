@@ -140,7 +140,7 @@ export default function WorksSec() {
                     )}
                     
                     {/* Floating Badge (Inside the Image) */}
-                    {step.badge && (
+                    {/* {step.badge && (
                       <div className={`absolute ${isEven ? 'left-4 md:left-8 bottom-6 md:bottom-10' : 'right-4 md:right-8 top-1/2 -translate-y-1/2'} bg-white rounded-2xl p-3 md:p-4 shadow-[0_15px_35px_rgba(0,0,0,0.15)] flex items-center gap-3 md:gap-4 z-20 border border-gray-100 min-w-[180px] md:min-w-[200px]`}>
                         <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#e6f8fa] text-[#00bcd4] flex items-center justify-center shrink-0">
                           {BadgeIcon && <BadgeIcon className="text-[20px] md:text-[22px]" />}
@@ -156,7 +156,7 @@ export default function WorksSec() {
                           )}
                         </div>
                       </div>
-                    )}
+                    )} */}
                   </div>
                 </div>
 

@@ -90,7 +90,7 @@ export default function ServicesList() {
                 />
 
                 {/* Floating White Badge */}
-                <div
+                {/* <div
                   className={`absolute bottom-3 ${
                     isImageLeft ? "right-3" : "left-3"
                   } bg-white/95 backdrop-blur-md text-[#083c48] px-4 py-3 rounded-t-[20px] rounded-bl-[20px] rounded-br-[40px] flex items-center gap-3 shadow-xl max-w-[260px] border border-white/60 z-10`}
@@ -106,7 +106,7 @@ export default function ServicesList() {
                       {service.badge.line2}
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Content Details Box */}

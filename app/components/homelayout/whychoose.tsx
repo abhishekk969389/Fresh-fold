@@ -129,32 +129,6 @@ export default function WhyChoose({ theme = 'dark' }: WhyChooseProps) {
           >
             <div className={`absolute inset-0 z-10 pointer-events-none ${isLight ? 'bg-transparent' : 'bg-[#06242c]/20'}`}></div>
             <Image src={whyChoose.centerImage.src} alt={whyChoose.centerImage.alt} fill className="object-cover" />
-            
-            {/* Cursive Sticker overlay */}
-            <div className={`absolute top-[10%] right-[15%] transform -rotate-[12deg] flex flex-col items-start font-medium leading-[1.1] z-20 ${isLight ? 'text-[#073c47]' : 'text-white/90'}`} style={{ fontFamily: "'Brush Script MT', 'Comic Sans MS', cursive" }}>
-              <span className="text-[34px] sm:text-[38px] drop-shadow-lg">{whyChoose.centerImage.stickerText[0]}</span>
-              <span className="text-[34px] sm:text-[38px] drop-shadow-lg ml-3">{whyChoose.centerImage.stickerText[1]}</span>
-              <span className="text-[34px] sm:text-[38px] drop-shadow-lg ml-6">{whyChoose.centerImage.stickerText[2]}</span>
-              <span className="text-[34px] sm:text-[38px] drop-shadow-lg ml-9">{whyChoose.centerImage.stickerText[3]}</span>
-              <FaRegHeart className="text-[24px] ml-16 mt-2" />
-            </div>
-
-            {/* Bottom Glassmorphic Badge */}
-            <div className={`absolute bottom-6 sm:bottom-8 left-1/2 -translate-x-1/2 w-max max-w-[95%] backdrop-blur-md rounded-full px-5 sm:px-8 py-3 sm:py-4 flex items-center gap-4 sm:gap-6 z-20 transition-transform hover:scale-105 ${isLight ? 'bg-[#073c47]/90 border-transparent shadow-[0_8px_32px_rgba(7,60,71,0.4)]' : 'bg-[#06242c]/70 border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.3)]'}`}>
-              
-              {/* Left: Icon */}
-              <DynamicIcon name={whyChoose.centerImage.badge.icon} className="text-white text-[36px] sm:text-[42px] shrink-0" />
-              
-              {/* Separator */}
-              <div className="w-[1px] h-[36px] sm:h-[42px] bg-white/20 shrink-0"></div>
-              
-              {/* Right: Text & Line */}
-              <div className="flex flex-col items-start justify-center pt-1">
-                <span className="text-white text-[12px] sm:text-[14px] font-bold tracking-wider leading-snug">{whyChoose.centerImage.badge.line1}</span>
-                <span className="text-white text-[12px] sm:text-[14px] font-bold tracking-wider leading-snug mb-[6px]">{whyChoose.centerImage.badge.line2}</span>
-                <span className="w-16 sm:w-20 h-[3px] sm:h-[4px] bg-[#fbbf24] rounded-full"></span>
-              </div>
-            </div>
           </motion.div>
 
           {/* Right Column (Features) */}

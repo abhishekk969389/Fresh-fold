@@ -10,14 +10,14 @@
       "info": [
         {
           "id": "hours",
-          "icon": "FiClock",
-          "primary": "8:00 am - 5:00 pm",
-          "secondary": "Sat - Sun"
+          "icon": "MdOutlineMail",
+          "primary": "dummy@xyz.com",
+          "secondary": "Email Us"
         },
         {
           "id": "phone",
           "icon": "FiPhone",
-          "primary": "+1 8557574885",
+          "primary": "+1 0000000000",
           "secondary": "Call Us Anytime"
         },
         {
@@ -36,7 +36,7 @@
         },
         {
           "id": "twitter",
-          "icon": "FaTwitter",
+          "icon": "FaXTwitter",
           "href": "/housewife-woman-holds-stack-clean-colored-clothes-hands-after-washing-drying.jpg",
           "label": "Twitter"
         },
@@ -354,7 +354,7 @@
         "id": "phone",
         "icon": "FiPhone",
         "lines": [
-          "+1 2345678920"
+          "+1 0000000000"
         ]
       },
       {
@@ -370,14 +370,6 @@
         "lines": [
           "123 Clean Street,",
           "New York, NY 10001, USA"
-        ]
-      },
-      {
-        "id": "hours",
-        "icon": "FiClock",
-        "lines": [
-          "Mon - Sat: 8:00 AM - 8:00 PM",
-          "Sunday: Closed"
         ]
       }
     ],
@@ -1476,17 +1468,17 @@
       {
         "id": "dry-cleaning",
         "name": "Dry Cleaning",
-        "icon": "BiHanger"
+        "icon": "GiHanger"
       },
       {
         "id": "steam-iron",
         "name": "Steam Iron",
-        "icon": "GiIron"
+        "icon": "MdIron"
       },
       {
         "id": "carpet-cleaning",
         "name": "Carpet Cleaning",
-        "icon": "GiCarpet"
+        "icon": "GiRedCarpet"
       },
       {
         "id": "shoe-cleaning",
@@ -1514,7 +1506,7 @@
     "titleLine2": "Laundry Pricing",
     "description": "Fresh, clean and neatly folded clothes delivered to your doorstep. Choose from our flexible pricing options designed for your everyday needs.",
     "image": {
-      "src": "/young-latin-woman-holding-laundry-basket-screaming-proud-celebrating-victory-success-very-excited-with-raised-arms.jpg",
+      "src": "/person-inside-laundromat-with-washing-machines.jpg",
       "alt": "Clean Towels and Laundry Detergent"
     },
     "badge": {
@@ -2041,7 +2033,7 @@
       ],
       "termsText": "I agree to the",
       "termsLinkText": "Terms & Conditions",
-      "termsLinkHref": "#",
+      "termsLinkHref": "/terms",
       "submitButton": {
         "text": "Book a Pickup",
         "icon": "LuCalendarCheck"
@@ -2086,7 +2078,7 @@
         {
           "id": "c1",
           "icon": "FiPhoneCall",
-          "title": "+1 6825658547",
+          "title": "+1 0000000000",
           "subtitle": "Call us anytime",
           "href": "tel:18007654321"
         },

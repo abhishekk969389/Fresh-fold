@@ -171,14 +171,6 @@ export default function Banner() {
           </div>
         </motion.div>
 
-        {/* ── Right teal panel highlights (Desktop only untouched) ── */}
-        <ul className="hidden lg:flex absolute z-10 left-[87.6%] right-[1.5%] top-[calc(20*var(--u))] flex-col list-none">
-          {highlights.map((item) => (
-            <HighlightItem key={item.id} item={item} />
-          ))}
-        </ul>
-
-        {/* ── Text on the hanging tag in the image (Desktop only untouched) ── */}
         <div className="hidden lg:flex absolute z-10 left-[85.4%] bottom-[calc(80*var(--s))] w-[5.4%] h-[calc(65*var(--s))] flex-col items-center justify-center gap-[calc(4*var(--s))] text-center text-navy">
           <span className="font-serif italic text-[length:calc(8.5*var(--s))] leading-tight">{tagText}</span>
           <LuHeart className="text-teal fill-current text-[length:calc(8*var(--s))]" />
@@ -199,21 +191,7 @@ export default function Banner() {
           ))}
         </ul>
 
-        {/* ── Script tagline (Desktop only untouched) ── */}
-        <p
-          className={`${script.className} hidden lg:block absolute z-10 right-[2.2%] bottom-[calc(14*var(--s))] -rotate-[8deg] text-right text-white text-[length:calc(18*var(--s))] leading-[1.05]`}
-        >
-          {tagline.split(" ").slice(0, 2).join(" ")}
-          <br />
-          {tagline.split(" ").slice(2).join(" ")}
-          <svg
-            viewBox="0 0 100 10"
-            className="block ml-auto mt-[calc(2*var(--s))] w-[calc(80*var(--s))] h-[calc(7*var(--s))] text-gold"
-            aria-hidden="true"
-          >
-            <path d="M2 8 Q 50 0 98 4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
-          </svg>
-        </p>
+     
       </div>
 
       {/* Video Modal via Portal */}

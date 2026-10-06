@@ -13,7 +13,11 @@ import { motion } from "framer-motion";
 
 const aboutData = (data as any).about as AboutData;
 
-export default function About() {
+interface AboutProps {
+  showButton?: boolean;
+}
+
+export default function About({ showButton = true }: AboutProps) {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
 
@@ -174,15 +178,17 @@ export default function About() {
             </ul>
 
             {/* CTA Button */}
-            <div>
-              <Link 
-                href={aboutData.ctaLink}
-                className="inline-flex items-center justify-center gap-3 bg-gold text-[#0b2d4a] font-bold text-[16px] px-8 py-3.5 rounded-full shadow-[0_4px_14px_rgba(255,190,48,0.4)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(255,190,48,0.5)] transition-all"
-              >
-                {aboutData.ctaText}
-                <LuArrowRight className="text-[20px]" />
-              </Link>
-            </div>
+            {showButton && (
+              <div>
+                <Link 
+                  href={aboutData.ctaLink}
+                  className="inline-flex items-center justify-center gap-3 bg-gold text-[#0b2d4a] font-bold text-[16px] px-8 py-3.5 rounded-full shadow-[0_4px_14px_rgba(255,190,48,0.4)] hover:-translate-y-1 hover:shadow-[0_6px_20px_rgba(255,190,48,0.5)] transition-all"
+                >
+                  {aboutData.ctaText}
+                  <LuArrowRight className="text-[20px]" />
+                </Link>
+              </div>
+            )}
 
           </motion.div>
         </div>
